@@ -4,6 +4,8 @@ from dataclasses import replace
 import math
 import unittest
 
+from scripts.verify_fixture import assert_same
+
 from sdea.benchmark import (
     Parameters, HISTORIES, aligned_patch_test, assay_likelihood, assurance_contrast,
     brier_risks, module_marginals, outcome_probability, run_benchmarks,
@@ -103,6 +105,19 @@ class TestSDEA(unittest.TestCase):
             outcome_probability(7, -0.2)
         with self.assertRaises(ValueError):
             outcome_probability(7, .5, endpoint="true_establishment")
+
+    def test_fixture_allows_machine_roundoff(self):
+        assert_same({"score": [0.1, {"p": 0.2}]}, {"score": [0.1 + 1e-15, {"p": 0.2}]})
+        with self.assertRaises(AssertionError):
+            assert_same({"score": 0.1}, {"score": 0.10001})
+
+    def test_fixture_rejects_structure_changes(self):
+        with self.assertRaises(AssertionError):
+            assert_same({"a": 2}, {"b": 2})
+        with self.assertRaises(AssertionError):
+            assert_same([True], [1])
+        with self.assertRaises(AssertionError):
+            assert_same([1, 2], [1])
 
     def test_deterministic_protocol(self):
         self.assertEqual(run_benchmarks(), run_benchmarks())

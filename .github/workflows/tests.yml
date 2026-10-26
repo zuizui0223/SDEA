@@ -15,4 +15,4 @@ jobs:
       - name: Recompute declared fixture
         run: |
           python scripts/run_benchmarks.py --output /tmp/sdea_v1.json
-          cmp /tmp/sdea_v1.json results/v1_exact_benchmarks.json
+          python scripts/verify_fixture.py results/v1_exact_benchmarks.json /tmp/sdea_v1.json

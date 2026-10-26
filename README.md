@@ -37,7 +37,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 python scripts/run_benchmarks.py --output results/v1_exact_benchmarks.json
 ```
 
-Results are in [`results/v1_exact_benchmarks.json`](results/v1_exact_benchmarks.json). Full model decisions, falsifiers and evidence tiers are in [`docs/PROTOCOL_V1.md`](docs/PROTOCOL_V1.md). Source ownership and pinned documents are in [`docs/SOURCE_REGISTRY.md`](docs/SOURCE_REGISTRY.md).
+Results are in [`results/v1_exact_benchmarks.json`](results/v1_exact_benchmarks.json). Cross-Python checks compare exact structure and floating-point agreement within specified numerical tolerance. Full model decisions, falsifiers and evidence tiers are in [`docs/PROTOCOL_V1.md`](docs/PROTOCOL_V1.md). Source ownership and pinned documents are in [`docs/SOURCE_REGISTRY.md`](docs/SOURCE_REGISTRY.md).
 
 ## Boundary / next step
 
