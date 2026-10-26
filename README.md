@@ -109,3 +109,26 @@ python scripts/verify_fixture.py results/v5_metapopulation_mc.json /tmp/sdea_v5.
 ```
 
 These findings are *kernel-specific counterexamples*, **not natural population recovery, measured A/B floral re-expression, or the same dynamics as the source repos**. Keep the PR Draft for source and ecological validity review. v5 excludes explicit donor seed-production budgets, large landscapes, genotype-dependent selection and real pollinator movement; v1–v4 remain distinct versioned results.
+
+
+## v6 — finite source seed budgets across three coupled patches (2026-10-26)
+
+**What changes:** Each occupied maternal source has a finite B seed-production **attempt** budget per generation, shared by local recruitment and any of the three destination patches. Paternal pollen location is drawn from a separate 3×3 movement operator. Mendelian offspring occupy at most K=2 adults per destination after optional genotype-weighted **over-capacity recruitment**; catastrophe, first colonization, later recolonization and visible A/B candidate expression are tracked separately. All 3 patches can dynamically become sources or go extinct. This is a new **synthetic** mechanistic counterexample, not a wild-population calibration, molecular ancestor-regain experiment, or source-repository reexecution.
+
+**Exact new result (finite shared source):** with 3 independent attempts, source viable-seed probability S=.755625 and allocations .2/.4/.4, each initially vacant receiver colonizes with probability **.66029688** but both colonize in the same generation with probability **.38245797**, rather than the **.43599197** predicted by multiplying the marginals. The discrepancy is **−.05353400**, because no single viable seed can be delivered twice. At B=1 joint colonization is structurally impossible; at B=8 it is .88823424 vs naive independence .89079203. The exact inclusion–exclusion proof and source-retention formula are in [v6 protocol](docs/PROTOCOL_V6.md).
+
+**Exploratory H=8 ensemble:** 8 distinct parameter cells × **3,000 independent whole-three-patch simulations** (24,000 landscapes). One A-only source with B=3 and all-local seeds survives at H in **20.03%**, vs **4.53%** with strong export (.2 retention/.4 to each receiver), while initially vacant patch1 is colonized at least once in **0% vs 84.17%**. Raising source attempt budget **B=3 to B=8 under the same strong allocation** changes H8 source occupation **4.53%→97.70%** and receiver colonization **84.17%→100%**. These are conditional fecundity/allocation contrasts, not claims that dispersal is universally harmful or that 8 is a natural critical budget.
+
+**Contrary/limited findings:** In an initial A-only / empty / B-only chain, patch1 ever simultaneously hosts one A+B-capable individual in **16.67%** under seed-only chains, **19.13%** under seed+pollen chains, and **26.00%** with fully connected seed+pollen, but adding the stipulated genotype-settlement selection gives an *inconclusive* −0.70 percentage-point effect on patch0 A support (95% MC interval approximately −1.78 to +0.38 pp). These are hypothesized route capacities, **not proven functional molecular re-expression**.
+
+All prior v1–v5 fixtures remain untouched. See [v6 numerical result](results/v6_finite_budget_mc.json), [generative code](src/sdea/finite_budget.py) and [27 new adversarial tests](tests/test_finite_budget.py).
+
+Reproduce (Python 3.11+, standard library only):
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_finite_budget.py --replicates 3000 --output /tmp/sdea_v6.json
+python scripts/verify_fixture.py results/v6_finite_budget_mc.json /tmp/sdea_v6.json
+```
+
+**Claims not established:** actual source seed budgets, pollinator movement rates, flower-color A/B identity, trait fixation, long-term ecological establishment, natural island effect direction, and independent model-class robustness outside this invented generator. Preserve Draft review pending these gates.

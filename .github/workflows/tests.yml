@@ -35,3 +35,8 @@ jobs:
         run: |
           python scripts/run_metapopulation.py --replicates 9000 --output /tmp/sdea_v5.json
           python scripts/verify_fixture.py results/v5_metapopulation_mc.json /tmp/sdea_v5.json
+
+      - name: Recompute v6 shared seed-budget fixture
+        run: |
+          python scripts/run_finite_budget.py --replicates 3000 --output /tmp/sdea_v6.json
+          python scripts/verify_fixture.py results/v6_finite_budget_mc.json /tmp/sdea_v6.json

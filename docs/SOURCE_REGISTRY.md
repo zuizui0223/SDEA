@@ -48,3 +48,15 @@ Prior sources and their *actual evidence claims* remain owned by [ANTO](https://
 - aza3 still exclusively owns the empirical Cirsium genomics, organ-stage pathway competence and reproduction experiments. v5 has no newly observed biological specimens or cross-clade generality.
 
 The v5 event source labels identify external-pollen or external-seed transmission only at the **one-generation gene reentry event**, not whole-lineage ancestry; exported donor seed has no explicit finite seed-bank or budget. Monte Carlo intervals concern virtual trajectories alone. Avoid claiming that pollen universally helps or that seed universally reduces retained ancestral traits.
+
+
+## SDEA v6 shared finite seed budgets (2026-10-26)
+
+[Exact allocation proof and predeclared synthetic contrasts](PROTOCOL_V6.md) · [3-patch finite-budget/selection source kernel](../src/sdea/finite_budget.py) · [frozen 24,000-landscape synthetic fixture](../results/v6_finite_budget_mc.json). The mathematical one-source two-vacancy negative association identifies a *missing shared-seed-budget coordinate* even when marginal arrival/colony risk is matched. **It does not independently verify the underlying source repos or any natural gene-flow correlation.**
+
+- ANTO provides *motivation* for composite latent route resources and separated expression/persistence, not an observed Cirsium regain.
+- EGWE provides *motivation* for testing forecast sufficiency of measured cross-layer/source state, not the EGC's exact fragmentation life cycle.
+- izu-core provides *motivation* for individual inheritance, finite reproduction and assurance–investment separability, not this genotype/recruitment kernel.
+- aza3 alone owns original Cirsium ancestry, function, phenotypes, seed performance and field/genomic validation. No v6 source budget, q-response, selection coefficient or migrant origin is currently calibrated to those organisms.
+
+The v6 fixture comprises 8 × 3,000 independently seeded **synthetic whole-landscape** replicates (not 24,000 natural islands or 3 × 8 × 3,000 independent patches). Numerical confidence bounds are MC simulation error only. Negative/inconclusive genotype-selection contrasts remain explicitly visible. No new empirical claim is promoted.
