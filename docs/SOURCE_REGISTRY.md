@@ -18,3 +18,7 @@ Pinned **context** at study initiation; not imported data or claims of independe
 - **Empirical confirmation:** **none in SDEA v1**. Requires independent prospective measurements and held-out taxa/populations.
 
 **Rule:** do not promote a computed one-step `joint` event to re-evolution, lasting functional recovery, genetic fixation, or established natural lineage. Multiple source repositories discussing the same claim are not independent empirical replicates.
+
+## v2 extension (2026-10-26)
+
+`src/sdea/multigeneration.py` is an **independently declared SDEA state space**, inspired by the above conceptual questions, not a direct numerical replication of the pinned parent sources. In particular, no `anto` route-failure parameter, `egwe` q-allele feedback coefficient or `izu-core` finite-diploid reproductive rate has been imported. The synthetic shared-toolkit collapse after a **visible** expression differs from ANTO v15's failure-triggered common-capacity cost; v2's binomial allele-copy resampling differs from the explicit diploid mating in Model 3. Cross-source *mechanism identity* is not established and must be tested before any quantitative parameter transfer. The exact synthetic frontiers depend on the event/horizon and cannot be added to the source results as independent replications.

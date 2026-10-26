@@ -16,3 +16,7 @@ jobs:
         run: |
           python scripts/run_benchmarks.py --output /tmp/sdea_v1.json
           python scripts/verify_fixture.py results/v1_exact_benchmarks.json /tmp/sdea_v1.json
+      - name: Recompute multigeneration fixture
+        run: |
+          python scripts/run_multigeneration.py --output /tmp/sdea_v2.json
+          python scripts/verify_fixture.py results/v2_multigeneration_exact.json /tmp/sdea_v2.json
