@@ -1,0 +1,18 @@
+name: SDEA exact-model tests
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run exact-model checks
+        run: PYTHONPATH=src python -m unittest discover -s tests -v
+      - name: Recompute declared fixture
+        run: |
+          python scripts/run_benchmarks.py --output /tmp/sdea_v1.json
+          cmp /tmp/sdea_v1.json results/v1_exact_benchmarks.json
