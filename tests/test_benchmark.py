@@ -8,6 +8,7 @@ from scripts.verify_fixture import assert_same
 
 from sdea.benchmark import (
     Parameters, HISTORIES, aligned_patch_test, assay_likelihood, assurance_contrast,
+    assurance_cost_crossover,
     brier_risks, module_marginals, outcome_probability, run_benchmarks,
     transmitted_frequency,
 )
@@ -106,6 +107,27 @@ class TestSDEA(unittest.TestCase):
         with self.assertRaises(ValueError):
             outcome_probability(7, .5, endpoint="true_establishment")
 
+    def test_assurance_cost_frontier_crosses(self):
+        roots = [assurance_cost_crossover(q)["cost_star"] for q in (.2, .5, .8)]
+        self.assertGreater(roots[0], roots[1])
+        self.assertGreater(roots[1], roots[2])
+        for q, root in zip((.2, .5, .8), roots):
+            self.assertGreater(assurance_contrast(q, root - .02)["difference_high_minus_low"]["joint"], 0)
+            self.assertLess(assurance_contrast(q, root + .02)["difference_high_minus_low"]["joint"], 0)
+            self.assertAlmostEqual(assurance_contrast(q, root)["difference_high_minus_low"]["joint"], 0., places=12)
+
+    def test_cost_frontier_domain_and_input_bounds(self):
+        with self.assertRaises(ValueError):
+            assurance_cost_crossover(0.)
+        with self.assertRaises(ValueError):
+            assurance_cost_crossover(1.)
+        with self.assertRaises(ValueError):
+            assurance_cost_crossover(.5, par=Parameters(mutation_rate=.02))
+        with self.assertRaises(ValueError):
+            assurance_cost_crossover(.5, par=Parameters(allele_frequency=0.))
+        with self.assertRaises(ValueError):
+            assurance_cost_crossover(.5, upper=.2)
+
     def test_fixture_allows_machine_roundoff(self):
         assert_same({"score": [0.1, {"p": 0.2}]}, {"score": [0.1 + 1e-15, {"p": 0.2}]})
         with self.assertRaises(AssertionError):
@@ -122,6 +144,7 @@ class TestSDEA(unittest.TestCase):
     def test_deterministic_protocol(self):
         self.assertEqual(run_benchmarks(), run_benchmarks())
         self.assertEqual(len(run_benchmarks()["assurance_tradeoff"]), 12)
+        self.assertEqual(len(run_benchmarks()["conditional_cost_frontier"]), 3)
 
 
 if __name__ == "__main__":

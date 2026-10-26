@@ -184,8 +184,43 @@ def assurance_contrast(q, cost, low=0.1, high=0.9, par=Parameters()):
                                           for k in results["low"]}}
 
 
+def assurance_cost_crossover(q, par=Parameters(), low=0.1, high=0.9,
+                             upper=8.0, iterations=80):
+    """Bisection for a *conditional* one-step assurance/access tradeoff frontier.
+
+    Defined only for 0<q<1, 0<p<1, 0<low<high and zero mutation/migration.
+    c* solves J(a=high,c*) = J(a=low,c*) for a complete toolkit (mask 7).
+    Existence is checked by opposite boundary signs; uniqueness is NOT
+    asserted for other kernels or for mutation/migration models.
+    """
+    if not 0 < q < 1:
+        raise ValueError("cost frontier requires 0 < q < 1")
+    if not (0 < par.allele_frequency < 1 and 0 < low < high <= 1):
+        raise ValueError("cost frontier requires interior allele frequency and ordered assurance")
+    if par.mutation_rate or par.immigrant_fraction:
+        raise ValueError("cost frontier defined only without mutation/migration")
+    if not (isfinite(upper) and upper > 0 and type(iterations) is int and iterations > 0):
+        raise ValueError("invalid cost frontier search bounds")
+
+    def difference(cost):
+        return assurance_contrast(q, cost, low=low, high=high, par=par)["difference_high_minus_low"]["joint"]
+
+    if not (difference(0.) > 0 and difference(upper) < 0):
+        raise ValueError("cost crossover not bracketed for this parameter regime")
+    left, right = 0., upper
+    for _ in range(iterations):
+        mid = (left + right)/2
+        if difference(mid) > 0:
+            left = mid
+        else:
+            right = mid
+    root = (left + right)/2
+    return {"q": q, "cost_star": root,
+            "joint_at_root_low": assurance_contrast(q, root, low, high, par)["low"]["joint"],
+            "joint_at_root_high": assurance_contrast(q, root, low, high, par)["high"]["joint"]}
+
 def run_benchmarks():
-    """Fixed protocol: no optimization or threshold selection from results."""
+    """Prespecified v1 core cells plus an explicitly exploratory cost frontier."""
     p = Parameters()
     risks = brier_risks(par=p)
     null = brier_risks(par=p, null_history=True)
@@ -195,6 +230,7 @@ def run_benchmarks():
     uniform_q = aligned_patch_test(q_high=.6, q_low=.6, par=p)
     assurance = [assurance_contrast(q, cost, par=p)
                  for cost in (0., .5, 1., 2.) for q in (.2, .5, .8)]
+    frontier = [assurance_cost_crossover(q, par=p) for q in (.2, .5, .8)]
     closed = outcome_probability(7, .6, replace(p, allele_frequency=0.), "genetic_support")
     reopened_mutation = outcome_probability(7, .6, replace(p, allele_frequency=0., mutation_rate=.02), "genetic_support")
     reopened_migration = outcome_probability(7, .6, replace(p, allele_frequency=0., immigrant_fraction=.02), "genetic_support")
@@ -207,6 +243,7 @@ def run_benchmarks():
                     "uninformative_assay": neutral_assay, "perfect_assay": perfect_assay},
         "patch_alignment": {"comparison": aligned, "equal_q_negative_control": uniform_q},
         "assurance_tradeoff": assurance,
+        "conditional_cost_frontier": frontier,
         "allele_reopening": {"closed_without_mutation_or_migration": closed,
                              "mutation_0_02": reopened_mutation,
                              "immigration_0_02": reopened_migration},

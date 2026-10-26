@@ -32,6 +32,10 @@ For q in {.20,.50,.80} and tradeoff penalty c in {0,.5,1,2}, contrast assurance 
 
 **Pass / falsifiers:** at c=0, more assurance raises S and J while G is unchanged. At q=.80, c=2, more assurance raises S but lowers G and J. Other cells can differ in sign: a coexistence demonstration, not a universal demographic tradeoff. A real test would intervene on assurance independently of genetic support and separate parentage, offspring number and selection.
 
+## E3b: exploratory conditional cost crossover (added after E3 inspection)
+
+This is **a transparently post-E3 analytical extension**, not a preregistered new confirmatory test. Under 0<q<1, 0<p<1 and no mutation or migration, for assurance aL=.1 and aH=.9 define c*(q) as a root of J(aH,c)-J(aL,c)=0. The model uses a fixed N=4, α=.65 and other default parameters. Run a bracketing bisection on c∈[0,8] for q in {.2,.5,.8}; explicitly fail if no change of sign exists. At c=0, S_H>S_L and G_H=G_L. When c is sufficiently large, G_H/G_L→0, so at least one crossing exists for these interior parameter settings. Check J_H-J_L signs immediately below/above each computed c*. This identifies a *conditional* tradeoff frontier, not a universal threshold or the evolution of assurance.
+
 ## E4: no-input closure and restoration route
 
 Set initial target allele frequency p=0. Without mutation or immigration, G must be exactly zero for any positive finite N. With independent input mutation_rate=.02 or immigrant_fraction=.02 (incoming frequency 1), G must be positive. A missing target allele is not identical to loss of the three-module toolkit, so these tests are about allele-support *logic* only, not ancestral gene-module recovery.
