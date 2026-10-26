@@ -87,3 +87,25 @@ python scripts/verify_fixture.py results/v4_landscape_exact.json /tmp/sdea_v4.js
 ```
 
 **Claim ceiling:** no coupled source dynamics, genetic fixation, fitness-mediated survival, Cirsium regain or calibrated gene-flow rate; phenotype expression has a stipulated environment-dependent law. All prior v1/v2/v3 source contracts and fixtures remain unchanged.
+
+
+## v5 — evolving two-patch metapopulation (2026-10-26)
+
+Unlike v4's static donor, v5 lets **both** finite diploid patches evolve, send/receive pollen and seeds in either direction, lose occupancy and reoccupy through incoming donor-produced seeds. Both candidate genetic routes A and B may be combined within an offspring by independently assorting Mendelian loci; their visible expression is a separate *assumed* q-dependent gate. Source genotype and population availability are no longer fixed, and no external immigrant reservoir exists.
+
+**Exact one-step operator controls:** An initially empty patch cannot be colonized by pollen-only flow (no maternal plant), but can be colonized by viable donor seeds. With two A-type adults in the other patch and the stated synthetic coefficients, the one-step colonization chance at seed-rate 0.35 is **0.458994**. In an A-only recipient and B-only donor contrast, B-seed immigration increases first-step recipient occupancy **0.681481→0.827679** while reducing A genetic support **0.681481→0.538165**; paternal B pollen can instead form an A+B individual in the very first generation (**0.143508** chance of at least one) while donor B seeds alone cannot do so in that same step.
+
+**Exploratory H=7 Monte Carlo:** nine synthetic settings × **9,000 independent entire two-patch landscape replicates** (81,000 histories). A vacant recipient patch is initially colonized at least once in **67.00%** of seed-only trials, versus **0%** under pollen-only, yet only **6.37%** of the seed-only trajectories still occupy that patch at H. Applying an additional 0.32 catastrophe probability to the evolving donor patch reduces initial recipient colonization from 67.00% to **59.86%** and recipient A support at H from 6.37% to **2.44%**. A separate A/B source configuration finds occupied both patches at H in **10.27%** with two-way seed+pollen flow versus **4.10%** with seed alone. Finite-run Monte Carlo sampling intervals are embedded in the JSON; **they do not measure real biological uncertainty**.
+
+**First occupation is not recolonization:** v5 explicitly distinguishes `colonized_initial_vacancy` from `recolonized_after_extinction`. Foreign pollen cannot create a mother where no adult survives, and a gene lost from **both** patches cannot reappear without mutation or an external source (not modeled). Pollen-specific paternal transmission and seed-produced diploid migrants are separately tagged upon entry only: this is **not a full ancestry pedigree**.
+
+[Complete v5 assumptions, falsifiers, exact identities and limitations](docs/PROTOCOL_V5.md) · [v5 finite-state meiosis/flow + Monte Carlo source](src/sdea/metapopulation.py) · [81,000 synthetic-path results and MC-only intervals](results/v5_metapopulation_mc.json).
+
+Reproduce via Python 3.11+, standard library only:
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_metapopulation.py --replicates 9000 --output /tmp/sdea_v5.json
+python scripts/verify_fixture.py results/v5_metapopulation_mc.json /tmp/sdea_v5.json
+```
+
+These findings are *kernel-specific counterexamples*, **not natural population recovery, measured A/B floral re-expression, or the same dynamics as the source repos**. Keep the PR Draft for source and ecological validity review. v5 excludes explicit donor seed-production budgets, large landscapes, genotype-dependent selection and real pollinator movement; v1–v4 remain distinct versioned results.

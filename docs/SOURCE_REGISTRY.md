@@ -36,3 +36,15 @@ Source ownership: [ANTO](https://github.com/zuizui0223/anto) retains the origina
 **New synthetic model, not independent empirical replication.** [Protocol](PROTOCOL_V4.md), [generator](../src/sdea/landscape.py), [immutable result](../results/v4_landscape_exact.json). Two biallelic unlinked loci are *hypothetically* A/B route-associated functional alleles. Donor flowers were not phenotyped; imported seed genotype is not proof that an already-expressed floral form colonized, and a migrant pollen allele is not intrinsic reactivation. The donor patch remains fixed and the receiving patch is conditionally recruited at fixed N, so the scope is a donor–recipient source model rather than a coupled metapopulation. Route-expression probabilities versus effective interaction q are stipulated mechanisms, not natural selection estimates.
 
 Prior sources and their *actual evidence claims* remain owned by [ANTO](https://github.com/zuizui0223/anto), [EGWE](https://github.com/zuizui0223/egwe), [izu-core](https://github.com/zuizui0223/izu-core). Original Cirsium experiments and phylogenetic/molecular datasets remain exclusively under [aza3](https://github.com/zuizui0223/aza3). The v4 exact numerical comparisons do not supply additional independent taxa, effect-size replication or real reproductive phenotypes.
+
+
+## SDEA v5 coupled population dispersal and fragility (2026-10-26)
+
+[Exact one-generation finite offspring source kernel, dynamic 7-generation two-patch Monte Carlo and genetic-event accounting](../src/sdea/metapopulation.py) · [frozen assumptions and inferential gates](PROTOCOL_V5.md) · [seed-pinned stochastic fixture](../results/v5_metapopulation_mc.json). Two evolving patches and reciprocally available pollen/seed are added to the **new** SDEA synthetic closure without importing a model-specific source hazard, taxon trait rate or ecological effect size.
+
+- ANTO contributes a **hypothesis inspiration**—joint capacities and alternative expression routes—not a proven same-plant molecular ancestral restoration in v5.
+- EGWE motivates **state sufficiency and spatial alignment**; the v5 q Markov law and +A/−B feedback are stipulated, not the EGC full fragmentation operator.
+- izu-core motivates **finite diploid mating, assurance, persistence versus remaining evolutionary possibilities**; its Model 3 life cycle and registered results are **not** copied or recalibrated.
+- aza3 still exclusively owns the empirical Cirsium genomics, organ-stage pathway competence and reproduction experiments. v5 has no newly observed biological specimens or cross-clade generality.
+
+The v5 event source labels identify external-pollen or external-seed transmission only at the **one-generation gene reentry event**, not whole-lineage ancestry; exported donor seed has no explicit finite seed-bank or budget. Monte Carlo intervals concern virtual trajectories alone. Avoid claiming that pollen universally helps or that seed universally reduces retained ancestral traits.
