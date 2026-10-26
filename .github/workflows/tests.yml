@@ -25,3 +25,8 @@ jobs:
         run: |
           python scripts/run_mendelian.py --output /tmp/sdea_v3.json
           python scripts/verify_fixture.py results/v3_mendelian_exact.json /tmp/sdea_v3.json
+
+      - name: Recompute v4 pollen-seed fixture
+        run: |
+          python scripts/run_landscape.py --output /tmp/sdea_v4.json
+          python scripts/verify_fixture.py results/v4_landscape_exact.json /tmp/sdea_v4.json

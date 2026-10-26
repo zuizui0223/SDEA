@@ -68,3 +68,22 @@ The exact one-generation identity is `P(aa)=(1-i)[(1-ū)^2+η Var(u)]`, where �
 A standard-library exact finite-multinomial generator tracks Mendelian gametes, selfing versus outcrossing, viable seed conditioning, genotype-specific parent weights, phenotype activation, 3-consecutive survived expression, mutation/immigrant inputs and feedback in a *single-locus, constant-N-conditional-on-occupancy* model. It is **not** the full izu-core Model 3, a natural-colour reversal, or a replicated empirical claim. Read [v3 protocol](docs/PROTOCOL_V3.md) and [frozen v3 synthetic result](results/v3_mendelian_exact.json).
 
 Reproduce with `PYTHONPATH=src python -m unittest discover -s tests -v`, `python scripts/run_mendelian.py --output /tmp/sdea_v3.json`, then `python scripts/verify_fixture.py results/v3_mendelian_exact.json /tmp/sdea_v3.json`. v1/v2 results and source-specific constraints are retained without rewriting prior outcomes.
+
+
+## v4 — pollen versus seed gene flow and dual-route compatibility (2026-10-26)
+
+v4 is a **new and independently labeled conditional synthetic model**. A fixed source patch supplies pollen or donor-produced diploid seed genotypes to a finite receiving patch with two independently assorting Mendelian loci representing candidate ancestral-compatible **A** and alternative-compatible **B** routes. The donor is a stipulated reservoir, not an evolving metapopulation; recipient recruitment is conditional on viable local reproduction and fixed N=2, with no natural phenotype or fitness measurements.
+
+**The key identification counterexample:** Set both recipient diploids to lack route A and both source diploids to carry homozygous A. Compare a one-generation pollen pulse at `m_p=0.4` with a seed pulse at `m_s=0.3250393701`, matched for the chance that each recruit *carries* A. Both generate exactly **28.7696%** generation-one visible-A expression and **54.4428%** generation-one A support; nevertheless A support at generation four after input stops is **26.9981%** (pollen) versus **42.3286%** (seed). Immediate visible A alone cannot identify the movement policy (balanced optimal accuracy **50%**), but a complete genotype census can (**77.2214%**) under this exact hypothesis pair. The genetic-copy inputs are intentionally *not* matched: the experiment reveals why two mechanisms can yield equal photos but different inherited resources.
+
+A second contrast starts with locally retained route A and a B-only donor: pollen can construct dual-capable **A+B offspring in the first generation** (54.4428% chance at the tested pollen value), whereas seed-only import supplies route B but creates **no** initially dual-capable offspring. Later local crosses can create joint capacity under both. Route A/B labels are abstract genetic competence, not measured ancestral pigment pathways, true re-evolution or ecological establishment.
+
+Read [the complete v4 protocol, counterexamples and falsifiers](docs/PROTOCOL_V4.md), [the finite Mendelian source/recipient model](src/sdea/landscape.py), [the frozen machine readout](results/v4_landscape_exact.json), and [24 independent v4 tests](tests/test_landscape.py). Reproduce with:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_landscape.py --output /tmp/sdea_v4.json
+python scripts/verify_fixture.py results/v4_landscape_exact.json /tmp/sdea_v4.json
+```
+
+**Claim ceiling:** no coupled source dynamics, genetic fixation, fitness-mediated survival, Cirsium regain or calibrated gene-flow rate; phenotype expression has a stipulated environment-dependent law. All prior v1/v2/v3 source contracts and fixtures remain unchanged.
