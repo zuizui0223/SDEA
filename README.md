@@ -57,3 +57,14 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 The kernel is a declared synthetic **independent allele-copy/binomial** approximation, *not* izu-core's Mendelian Model 3; optional expression-triggered toolkit damage is *not* ANTO's empirically measured molecular cost. No measured rates or live plant trait regain are inferred. v2 should be reviewed within the existing Draft PR before any merge.
+
+
+## v3 — explicit diploid mating-structure bridge (2026-10-26)
+
+**New falsifiable mechanism:** equal present-day phenotype, census and target-allele count are not sufficient to predict next-generation target-locus loss when selfing couples maternal gametes. With N=4 and two target copies, two heterozygotes and one homozygote have equal loss risk 10.0113% under neutral random outcrossing. Under the stipulated q=.75, a=1, δ=.2 mating kernel, their **conditional-on-reproduction** next-generation loss risks differ (11.2304% versus 13.9990%). These are synthetic, not observed genetic or flower-colour outcomes.
+
+The exact one-generation identity is `P(aa)=(1-i)[(1-ū)^2+η Var(u)]`, where η is the viable selfed-offspring fraction and Var(u) is weighted between-parent variance in gamete A-probability. The *conditional* probability of losing all A copies among N recruited diploids is `P(aa)^N`. Consequently the v1–v2 **cost-free assurance leaves allele support unchanged** property is not portable to a mating policy that also changes selfing: assurance may increase the viable-reproduction gate yet reduce conditional genetic support even when direct allele cost c=0. Environmental genotype selection can reverse the risk ordering; none of these signs is universal.
+
+A standard-library exact finite-multinomial generator tracks Mendelian gametes, selfing versus outcrossing, viable seed conditioning, genotype-specific parent weights, phenotype activation, 3-consecutive survived expression, mutation/immigrant inputs and feedback in a *single-locus, constant-N-conditional-on-occupancy* model. It is **not** the full izu-core Model 3, a natural-colour reversal, or a replicated empirical claim. Read [v3 protocol](docs/PROTOCOL_V3.md) and [frozen v3 synthetic result](results/v3_mendelian_exact.json).
+
+Reproduce with `PYTHONPATH=src python -m unittest discover -s tests -v`, `python scripts/run_mendelian.py --output /tmp/sdea_v3.json`, then `python scripts/verify_fixture.py results/v3_mendelian_exact.json /tmp/sdea_v3.json`. v1/v2 results and source-specific constraints are retained without rewriting prior outcomes.

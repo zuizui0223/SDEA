@@ -20,3 +20,8 @@ jobs:
         run: |
           python scripts/run_multigeneration.py --output /tmp/sdea_v2.json
           python scripts/verify_fixture.py results/v2_multigeneration_exact.json /tmp/sdea_v2.json
+
+      - name: Recompute v3 genotype-mating fixture
+        run: |
+          python scripts/run_mendelian.py --output /tmp/sdea_v3.json
+          python scripts/verify_fixture.py results/v3_mendelian_exact.json /tmp/sdea_v3.json
