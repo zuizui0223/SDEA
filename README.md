@@ -151,3 +151,24 @@ python scripts/run_network_topology.py --replicates 2500 --horizon 7 --output /t
 python scripts/verify_fixture.py results/v7_network_topology_mc.json /tmp/sdea_v7.json
 ```
 **Evidence ceiling:** synthetic fixed-q, no mutation, no source budget reallocation by adult genotype, no empirically validated developmental or genetic pathway, no real seed/pollen observations, and no source-repository independent replication. The observed H7 null/inconclusive results are retained.
+
+
+## v7b — directed seed reachability after identical first censuses (2026-10-27)
+
+**Complementary to v7, not a replacement.** The six-patch v7 compares *degree-balanced, isomorphic* network placement with matched incoming/outgoing totals; its exact first-hybrid-zygote contrast is positive but many seven-generation retention comparisons are inconclusive. **v7b** instead isolates a deliberately different property: the **presence/absence of a directed seed path** in a three-patch system. Its cycle versus backflow graphs have identical **per-source seed budget** B=3, local retention 60%, export 40%, initial A-only genotype distribution, q=.75 in all patches/years, selfing, germline model and local pollen routing. They **do not** preserve the same incoming column sums or all graph degrees; these are part of the deliberately varied routing intervention.
+
+**Sharp exact witness:** At generation zero, only patch0 has two A-only diploids; patches1 and2 are vacant. The cycle 0→1→2→0 and backflow 0↔1,2→0 have identical source0 and (empty) source2 routing rows, so their **full generation-1 genotype/population state laws are identical**, with P(patch1 colonized)=**0.6602968801** and P(patch2 colonized)=0. At generation2 the forward cycle has **P(patch2 occupied)=0.1904815097**, whereas backflow has **exactly zero** because no initial source can reach patch2 by seeds. The analytic binomial formula and an independent categorical enumeration agree. Pollen-only mobility cannot create a new mother in the empty unreachable patch.
+
+**Predictive-state consequence:** With the full post-generation-1 genotype state known but future seed routing hidden, the exact binary t2 patch2-occupancy Bayes Brier risk is **0.0701901781**. Including the operator reduces it to **0.0451396014**; the exact gain is **0.0250505768**. This is **missing future forcing/transition law**, not non-Markov ancestral memory. A same-operator negative control has Brier gain 0.
+
+**Exploratory seven-generation validation:** Eight separately analyzed scenario cells × **4,000 independently seeded whole-three-patch histories** = 32,000 synthetic landscapes. From the one-A-only source, patch2 is ever colonized in **45.15%** under cycle and **0%** under backflow. In a *different* initial family, with A-only patch0 and B-only patch2, the event of a joint A+B-capable individual ever appearing in patch1 is **43.20% cycle** and **46.90% backflow** (independent Monte Carlo difference **+3.70 points**, simulation-only 95% interval +1.52 to +5.88 points). The balanced network is an exploratory third treatment: it changes direct incoming flow to patch1 and must not be described as matching the first-census control. The symmetry control (two identical A sources, cycle vs reversed cycle) gave −0.25 pp for patch1 ever-colonized with a simulation interval crossing zero.
+
+**Falsifiers and provenance:** [precise v7b protocol](docs/PROTOCOL_V7B.md), [independent restricted generator](src/sdea/network_reachability.py), [27 new tests](tests/test_network_reachability.py) and [v7b deterministic numerical record](results/v7b_network_reachability_mc.json). Runs in the *same Draft PR* but does not alter v7 or older fixtures:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_network_reachability.py --replicates 4000 --output /tmp/sdea_v7b.json
+python scripts/verify_fixture.py results/v7b_network_reachability_mc.json /tmp/sdea_v7b.json
+```
+
+**Inference limit:** mathematical and finite synthetic probability only, not empirical gene-flow, actual ancestral trait restoration, universal network superiority, independent cross-taxon confirmation or source-repository replication. Realized total viable seed production varies endogenously after different colonization trajectories even though each occupied source has a fixed budget.
