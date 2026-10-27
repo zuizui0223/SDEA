@@ -172,3 +172,23 @@ python scripts/verify_fixture.py results/v7b_network_reachability_mc.json /tmp/s
 ```
 
 **Inference limit:** mathematical and finite synthetic probability only, not empirical gene-flow, actual ancestral trait restoration, universal network superiority, independent cross-taxon confirmation or source-repository replication. Realized total viable seed production varies endogenously after different colonization trajectories even though each occupied source has a fixed budget.
+
+
+## v8 — structural genetic access versus selection-dependent establishment (2026-10-28)
+
+**New versioned synthetic test** retaining all prior v1–v7b protocols and fixtures. The v8 model imports the existing SDEA v7 six-patch Network, degree-balanced clustered/alternating/components graphs, two-locus Mendelian founders, K=2 recruited adults per patch, B=3 seed attempts per occupied source and fixed q=.75. Only the post-zygotic relative recruitment weight w of viable A+B seeds is changed: 0 lethal, 1/3 competitively disfavored, 1 neutral, and 3 competitively favored. These are constructed *selection policies*, not molecular or field estimates.
+
+**Exact stage separation:** For a fixed seed pool [A+B,A,B] with K=2, P(A+B recruited) = 1−2/[(w+1)(w+2)], giving **0%, 35.7143%, 66.6667%, 90.0000%** across the four weights. Initial Mendelian viable A+B seed production is selection-invariant: **0%** for disconnected A/B triangles, **96.8125%** for clustered and **99.9996%** for alternating connected graphs. A genotype that is not formed cannot be made by selection at recruitment.
+
+**Executed H=7 factorial:** 12 policies × 2,000 independent whole-six-patch synthetic histories (24,000), with paired PRNG keys and separate production/recruitment streams. H7 joint adult presence: clustered **0 / 54.40 / 62.00 / 68.05%**; alternating **0 / 54.70 / 64.30 / 69.70%** under lethal/disfavored/neutral/favored policies. Favored−neutral H7 difference **+6.05 pp** clustered (paired simulation 95% +4.78 to +7.32), **+5.40 pp** alternating (+4.18 to +6.62). Nonlethal selection changes genetic retention while the any-patch-occupied H7 indicator remains **unchanged** within a network under this genotype-independent reproduction kernel. Hard lethal exclusion also lowers occupancy.
+
+**Important negative:** Alternating versus clustered H7 joint adult retention remains statistically unresolved under either neutral (difference +2.30 pp, paired simulation 95% −0.58 to +5.18) or favored (+1.65 pp, −1.15 to +4.45). Large exact differences at generation-one zygote formation do not guarantee a long-horizon directional advantage.
+
+[v8 protocol and falsifiers](docs/PROTOCOL_V8.md) · [reproduction/selection source](src/sdea/selection_filter.py) · [full frozen model result](results/v8_selection_filter_mc.json) · [new adverse tests](tests/test_selection_filter.py).
+
+Run Python 3.11+ standard library: 
+- PYTHONPATH=src python -m unittest discover -s tests -v
+- python scripts/run_selection_filter.py --replicates 2000 --horizon 7 --seed 1182026 --output /tmp/sdea_v8.json
+- python scripts/verify_fixture.py results/v8_selection_filter_mc.json /tmp/sdea_v8.json
+
+**Evidence ceiling:** no independent source-repo simulation reproduction, measured plant natural selection, actual trait re-evolution, pollen genetics calibration, experimentally established A/B pathways or long-run lineage establishment. Per-occupied-source budgets match ex ante; total realized descendant seed output is endogenous. Keep Draft for mechanistic and cross-species validity review.
