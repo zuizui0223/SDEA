@@ -132,3 +132,22 @@ python scripts/verify_fixture.py results/v6_finite_budget_mc.json /tmp/sdea_v6.j
 ```
 
 **Claims not established:** actual source seed budgets, pollinator movement rates, flower-color A/B identity, trait fixation, long-term ecological establishment, natural island effect direction, and independent model-class robustness outside this invented generator. Preserve Draft review pending these gates.
+
+
+## v7 — matched six-patch network–genotype alignment (2026-10-27)
+
+**The original v6 research gap is now tested directly:** all network policies begin with the same six fully occupied patches, the same A-only versus B-only two-locus diploid genotypes, the same q=.75, the same K=2 and per-occupied-source finite seed-attempt budget B=3, and (within active policies) the same two-neighbor degree, 25% local retention and identical incoming/outgoing flow marginals. The connected clustered and alternating 6-cycles are **graph-isomorphic**; only which genotype-bearing patches are neighbors changes. Two disjoint A-only/B-only triangles form a strict no-cross-route negative control. Source budgets are matched initially and per **occupied** source thereafter; total realized output is an **endogenous demographic mediator** and is not fixed over later generations.
+
+**Analytical generation-one theorem:** The cross-route outcross zygote production probability for a source site is `(1−a(1−q)) q × opposing-route paternal-flow mass`. Independent B attempts yield `P(any A+B seed formed)=1−product_i(1−h_i)^B`. For B=3, this probability is **96.8125%** for clustered, **99.9996%** for alternating and **0** for separated components; expected hybrid seeds are **2.9953 vs 8.9859** (clustered/alternating). These are **viable zygotes produced**, not recruited, observed flowers, genotype fixation, or ecological establishment. The first-generation event is independent of where formed seeds are sent (pollen and seed are distinct operators).
+
+**Monte Carlo H=7 result:** 12 network × operator scenarios, **2,500 whole-six-patch landscape histories per scenario = 30,000**. For **both active seed and pollen flow**, final A+B-capable adult presence is **60.28% clustered vs 62.80% alternating**: paired difference **+2.52 percentage points** with simulation-only 95% interval **[−0.10,+5.14]**, so a directional long-horizon difference is *not resolved*. In seed-only it is 26.88% vs 26.00% (−0.88 pp); in pollen-only 82.92% vs 82.92% (0 pp), both unresolved within the paired intervals. With the two isolated triangles, within-individual A+B capacity is structurally impossible despite separate persistence of each route elsewhere. A late-added 2×2 crossed seed–pollen topology check is **exploratory**; no supported final-access interaction emerged.
+
+**Observation saturation:** varying B in a separate exact mathematical sensitivity shows that a binary 'at least one hybrid seed' indicator saturates while the expected hybrid-seed **number** still differs threefold at fixed B=3. The exact balanced-prior Brier improvement of knowing the connected topology falls from 0.0226945 at B=1 to 0.00025394 at B=3. This is a constructed predictive-state counterexample, not a measured natural-history signal.
+
+Code: [v7 six-patch kernel](src/sdea/network_topology.py) · [v7 protocol, exact proof and falsifiers](docs/PROTOCOL_V7.md) · [v7 frozen machine record](results/v7_network_topology_mc.json) · [27 new adverse/normalization tests](tests/test_network_topology.py). All v1–v6 fixtures are preserved. Reproduce via:
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_network_topology.py --replicates 2500 --horizon 7 --output /tmp/sdea_v7.json
+python scripts/verify_fixture.py results/v7_network_topology_mc.json /tmp/sdea_v7.json
+```
+**Evidence ceiling:** synthetic fixed-q, no mutation, no source budget reallocation by adult genotype, no empirically validated developmental or genetic pathway, no real seed/pollen observations, and no source-repository independent replication. The observed H7 null/inconclusive results are retained.

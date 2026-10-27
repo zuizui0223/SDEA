@@ -60,3 +60,12 @@ The v5 event source labels identify external-pollen or external-seed transmissio
 - aza3 alone owns original Cirsium ancestry, function, phenotypes, seed performance and field/genomic validation. No v6 source budget, q-response, selection coefficient or migrant origin is currently calibrated to those organisms.
 
 The v6 fixture comprises 8 × 3,000 independently seeded **synthetic whole-landscape** replicates (not 24,000 natural islands or 3 × 8 × 3,000 independent patches). Numerical confidence bounds are MC simulation error only. Negative/inconclusive genotype-selection contrasts remain explicitly visible. No new empirical claim is promoted.
+
+
+## SDEA v7 matched network-genotype alignment (2026-10-27)
+
+[New independent synthetic generator](../src/sdea/network_topology.py) · [model boundaries, exact hybrid-formation proof and negative endpoints](PROTOCOL_V7.md) · [30,000 entire six-patch simulated histories](../results/v7_network_topology_mc.json).
+
+v7 changes which A-only/B-only patches are neighbors while holding each occupied source's finite production opportunity, initial genetic resources, per-node flow degree and in/outgoing movement marginals fixed. It demonstrates **genotype-to-network alignment**, rather than an effect of the unlabelled graph alone. The deterministic first-zygote comparison is exact under stated assumptions; seven-generation forecasts use *paired Monte Carlo precision only*. In the matched connected-ring contrast, directional late genotype retention is **unresolved**, and that negative result is not replaced by other endpoints. The first-stage presence/absence readout saturates with larger budgets, motivating joint genomic/parentage state measurement.
+
+ANTO motivates latent pathway capacity (not measured trait re-expression here), EGWE state sufficiency (not a direct rerun of its fragmentation kernel), izu-core finite diploid reproduction (not its Model 3), and aza3 remains the sole owner of original empirical Cirsium molecular/genomic and reproduction data. None of the v7 allele names represents a validated ancestral or de novo biochemical route, and there is no newly measured field dispersal or evolutionary survival. No independent natural or cross-species generality is claimed.
