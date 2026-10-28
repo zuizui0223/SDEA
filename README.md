@@ -211,3 +211,22 @@ python scripts/run_empirical_admission.py --fetch-pinned --output /tmp/sdea_v9.j
 If source access or checksum validation fails, the result is `SOURCE_UNAVAILABLE_OR_DRIFT`, **never** a null result or an invented zero. EGWE and ANTO scores are source reports; SDEA does **not** refit those original datasets. This stage is empirical *admission/partial-stage confirmation only*, **not** a validation of the entire SDEA evolutionary theory.
 
 **Externally rerun original data admitted:** [frozen v9 source-checked result](results/v9_empirical_admission.json), independently regenerated at the pinned Git blobs by [GitHub Actions run #40610725397](https://github.com/zuizui0223/SDEA/actions/runs/40610725397). It contains only bounded derived summaries (not redistributed plant-level raw CSVs). Read `full_contract_decision=NOT_IDENTIFIABLE_FROM_THESE_SOURCES` as a **measurement limitation**, not a biological absence-of-reexpression result.
+
+
+## v10 — external-year transfer of same-mother reproductive-route association (2026-10-28)
+
+**Retrospective, exploratory REAL ORIGINAL-DATA prediction test; not a new simulation, not independently sampled species.** SDEA v10 reuses v9's SHA-locked USDA CC0 source from [aza3](https://github.com/zuizui0223/aza3), with **106** original `Cirsium undulatum` mother-year rows, excluding solely the **original inconsistent 2007|327** mother, leaving **105** valid mother-years in 8 year×treatment cells. Raw plant-level rows remain in the empirical-owner repository and are never copied into SDEA.
+
+**Strict information contrast:** Predict 4 mutually exclusive mother-year good-seed states (neither, apical-only, lateral-only, both). Fit a symmetric per-cell pseudocount **0.5** on the **training year only**. The joint categorical model and its independence/product-marginals control have **exactly identical fitted apical and lateral success marginals**, differing solely in retained within-mother covariance. Score untouched held-out mothers by natural-log 4-category loss and **unhalved** categorical Brier. Both directions use the same treatments: **2007→2008 (67 mothers)**, **2008→2007 (38 mothers)**. Within-year leave-one-mother-out is transparently secondary.
+
+**Crucial negative transfer:** joint-minus-independent per-mother log loss / Brier = **+0.057425 / +0.009949** for 2007→2008 and **−0.117906 / +0.000913** for 2008→2007. The prespecified joint-transfer gate fails because joint information **does not improve both metrics in both held-out directions**. Pooling opposite signs does not rescue it. In no-damage/ambient (`ndni`), within-mother apical–lateral good-seed covariance changes sign between source years (**2007 −0.04938, 2008 +0.04889**), a direct descriptive illustration of unstable ecological association. Two years from the *same published study*, not replicated lineage-level experiments, so no universal year effect or random-sample inference is justified.
+
+Read [v10 protocol](docs/PROTOCOL_V10.md), [source-locked pure-standard-library predictive algorithm](src/sdea/empirical_transfer.py), [23 adverse/negative-control unit tests](tests/test_empirical_transfer.py). The code reads original bytes through v9 Git SHA enforcement; the previous v1–v9 numerical fixtures remain unchanged. The v10 run/report is only a test of **contemporaneous anatomical maternal reproductive routes**, not heritable joint molecular modules, causal removal/replacement, ancestral phenotype recovery or long-run ecological establishment.
+
+Reproduce with Python 3.11+:
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_empirical_transfer.py --fetch-pinned --output /tmp/sdea_v10.json
+```
+
+**Do not promote joint-state marginal descriptive adequacy to cross-year predictability.** Unmeasured pollinator/seed-predator and year/protocol differences may explain failure; they are not experimentally decomposed. The full evolutionary accessibility chain remains empirically unidentified.
