@@ -230,3 +230,5 @@ python scripts/run_empirical_transfer.py --fetch-pinned --output /tmp/sdea_v10.j
 ```
 
 **Do not promote joint-state marginal descriptive adequacy to cross-year predictability.** Unmeasured pollinator/seed-predator and year/protocol differences may explain failure; they are not experimentally decomposed. The full evolutionary accessibility chain remains empirically unidentified.
+
+The original pinned USDA data were re-read independently by GitHub Actions: [frozen v10 real-data cross-year forecasting receipt](results/v10_real_joint_transfer.json). This records the **negative transfer** as a primary output. Numerical source provenance: [original source CI execution #40614715787](https://github.com/zuizui0223/SDEA/actions/runs/40614715787). No original maternal row-level data are redistributed.

@@ -67,3 +67,7 @@ jobs:
       - name: Run v10 whole-year heldout original-source transfer
         run: |
           python scripts/run_empirical_transfer.py --fetch-pinned --output /tmp/sdea_v10.json
+
+      - name: Verify frozen v10 year-heldout real maternal-route forecast
+        run: |
+          python scripts/verify_fixture.py results/v10_real_joint_transfer.json /tmp/sdea_v10.json
