@@ -209,3 +209,5 @@ python scripts/run_empirical_admission.py --fetch-pinned --output /tmp/sdea_v9.j
 ```
 
 If source access or checksum validation fails, the result is `SOURCE_UNAVAILABLE_OR_DRIFT`, **never** a null result or an invented zero. EGWE and ANTO scores are source reports; SDEA does **not** refit those original datasets. This stage is empirical *admission/partial-stage confirmation only*, **not** a validation of the entire SDEA evolutionary theory.
+
+**Externally rerun original data admitted:** [frozen v9 source-checked result](results/v9_empirical_admission.json), independently regenerated at the pinned Git blobs by [GitHub Actions run #40610725397](https://github.com/zuizui0223/SDEA/actions/runs/40610725397). It contains only bounded derived summaries (not redistributed plant-level raw CSVs). Read `full_contract_decision=NOT_IDENTIFIABLE_FROM_THESE_SOURCES` as a **measurement limitation**, not a biological absence-of-reexpression result.

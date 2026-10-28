@@ -59,3 +59,7 @@ jobs:
       - name: Verify pinned v9 natural-data evidence admission
         run: |
           python scripts/run_empirical_admission.py --fetch-pinned --output /tmp/sdea_v9.json
+
+      - name: Compare v9 original-source report to frozen receipt
+        run: |
+          python scripts/verify_fixture.py results/v9_empirical_admission.json /tmp/sdea_v9.json
