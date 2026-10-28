@@ -253,3 +253,5 @@ python scripts/run_empirical_drift.py --fetch-pinned --output /tmp/sdea_v11.json
 ```
 
 All v1–v10 sources and fixtures remain unchanged. A source checksum mismatch or absent original data **fails closed** rather than creating a fake null.
+
+**Executed source and frozen negative record:** [v11 source-verified drift and train-only shrinkage fixture](results/v11_real_transfer_drift.json), generated from the original pinned USDA Git blob by [GitHub Actions original-source run #40618487013](https://github.com/zuizui0223/SDEA/actions/runs/40618487013), no source rows copied into SDEA. The fixture stores actual exact signed distribution-shift vectors and the complete candidate lambda sensitivity; do not overread them as causal ecology/selection or cross-clade gene restoration.

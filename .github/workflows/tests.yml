@@ -75,3 +75,7 @@ jobs:
       - name: Run v11 pinned marginal-association drift and shrinkage transfer
         run: |
           python scripts/run_empirical_drift.py --fetch-pinned --output /tmp/sdea_v11.json
+
+      - name: Verify frozen v11 original maternal-route drift and transfer
+        run: |
+          python scripts/verify_fixture.py results/v11_real_transfer_drift.json /tmp/sdea_v11.json
