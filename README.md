@@ -232,3 +232,24 @@ python scripts/run_empirical_transfer.py --fetch-pinned --output /tmp/sdea_v10.j
 **Do not promote joint-state marginal descriptive adequacy to cross-year predictability.** Unmeasured pollinator/seed-predator and year/protocol differences may explain failure; they are not experimentally decomposed. The full evolutionary accessibility chain remains empirically unidentified.
 
 The original pinned USDA data were re-read independently by GitHub Actions: [frozen v10 real-data cross-year forecasting receipt](results/v10_real_joint_transfer.json). This records the **negative transfer** as a primary output. Numerical source provenance: [original source CI execution #40614715787](https://github.com/zuizui0223/SDEA/actions/runs/40614715787). No original maternal row-level data are redistributed.
+
+
+## v11 — decomposition of year-shifted maternal reproductive routes (2026-10-28)
+
+**Posthoc natural-source transport diagnostic, not a new original biological cohort or another synthetic evolutionary result.** An original-data runner SHA-verifies the same West & Louda USDA CC0 maternal CSV mirrored by empirical owner [aza3](https://github.com/zuizui0223/aza3) and freezes the original 106/105 mother-year cohort split (38 mothers in 2007, 67 in 2008, eight year×treatment cells, source anomaly 2007|327 excluded only from joint status). The raw mother-level CSV is never copied into SDEA.
+
+**Exact year-shift decomposition:** For the four-category same-mother good-seed distribution, denote `Q_year` the product of the two observed anatomical route marginals and `c_year` their binary covariance. The equality `P2008-P2007 = (Q2008-Q2007)+(c2008-c2007)*(+1,-1,-1,+1)` holds exactly. In no-apical-damage/ambient-herbivory treatment (`ndni`), both apical and lateral success probabilities fall from **7/9 to 2/15** and covariance changes **−0.049383→+0.048889**. Full four-state total variation across the years = **0.8000**, marginal-product shift TV = **0.7017**, association-vector TV norm = **0.1965**. These norm magnitudes cannot be added and they do **not** identify causal contribution percentages.
+
+**Train-year-only shrinkage counterfactual:** Fit a single fixed four-cell association weight `lambda` from the predeclared grid (0,.1,.25,.5,.75,1) by training-year leave-one-mother-out **log loss**. All candidate predictions share exactly the original v10 smoothed apical/lateral Bernoulli marginals; only within-mother dependence differs. 2007 training selects **lambda=.25**; in untouched 2008 test data (67 mother-years), the held-out loss change relative to independence is **+0.008410 log loss / +0.001466 categorical Brier** (both worsen). 2008 training selects **lambda=.75**; on untouched 2007 (38 mothers), differences are **−0.103753 / −0.001242** (both improve). The two-direction improvement gate is **not met**, so joint association transfer remains unreplicated. These are retrospective choices made *after viewing v10*, not independent prospective model-selection evidence.
+
+This is a **genuine mixed/negative real-data result** about **contemporaneous anatomical seed-production routes**, not ancestral pigment re-expression, genetic module redundancy, causally established year mechanism, mating system evolution, heritable offspring, or observed natural ecological establishment. Fréchet bounds express what the two individual route margins alone can and cannot identify; transportability is a separate question.
+
+[v11 source-pinned protocol](docs/PROTOCOL_V11.md) · [numerical and exact-identity source](src/sdea/empirical_drift.py) · [30 new adversarial tests](tests/test_empirical_drift.py).
+
+Reproduce (requires original source fetch authorization):
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_empirical_drift.py --fetch-pinned --output /tmp/sdea_v11.json
+```
+
+All v1–v10 sources and fixtures remain unchanged. A source checksum mismatch or absent original data **fails closed** rather than creating a fake null.
