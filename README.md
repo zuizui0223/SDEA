@@ -192,3 +192,20 @@ Run Python 3.11+ standard library:
 - python scripts/verify_fixture.py results/v8_selection_filter_mc.json /tmp/sdea_v8.json
 
 **Evidence ceiling:** no independent source-repo simulation reproduction, measured plant natural selection, actual trait re-evolution, pollen genetics calibration, experimentally established A/B pathways or long-run lineage establishment. Per-occupied-source budgets match ex ante; total realized descendant seed output is endogenous. Keep Draft for mechanistic and cross-species validity review.
+
+
+## v9 — pinned real-data evidence admission (2026-10-28)
+
+**First direct original-source replay, not another synthetic evolutionary result.** A new standard-library source-pinned auditor retrieves the original *Cirsium undulatum* CC0 USDA mother-plant CSV from [aza3](https://github.com/zuizui0223/aza3) at an immutable commit. It verifies original Git blob bytes before reading 106 maternal records, reports the sole incoherent `2007|327` record, then separately calculates **105 coherent same-mother paired apical versus lateral good-seed functions** in eight year×treatment strata. In the 2008 damaged/insecticide cell (n=19) the observed counts are **apical-only 4, lateral-only 8, both 7, neither 0**. In the 2008 damaged/ambient cell (n=12), **7 lateral-only, 5 neither**. These are **contemporaneous anatomical reproductive routes**, not ancestral flower trait re-expression, genetic redundancy, experimental organ-removal benefits or inherited trait recovery.
+
+A second *source-reported-only* receipt gate checks [EGWE](https://github.com/zuizui0223/egwe) Honshu–Izu 8-site ecological source scores and 23-mother *Oenothera* mating scores, the [ANTO](https://github.com/zuizui0223/anto) nonrandom Petunia/cross-clade mechanism registry, [aza3](https://github.com/zuizui0223/aza3) Ryukyu **young-leaf only** RNA source readiness, and [izu-core](https://github.com/zuizui0223/izu-core) as an explicitly model-only research source. The joint prospective ancestral floral-genotype/history/expression/descendant fitness contract is **not identifiable in these sources**. `0/5` is a descriptive tally across five deliberately heterogeneous evidence units, **not** a wild-plant event prevalence.
+
+Original biological source records remain in their original repositories; only derived **reproducibility code, SHA locks and bounded results** enter SDEA. See [v9 protocol, source ownership and falsifiers](docs/PROTOCOL_V9.md), [six exact immutable source blob pins](data/v9_source_lock.json), [auditor](src/sdea/empirical_admission.py), [offline gate tests](tests/test_empirical_admission.py), [reproduction script](scripts/run_empirical_admission.py).
+
+Run with network **explicitly enabled**:
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_empirical_admission.py --fetch-pinned --output /tmp/sdea_v9.json
+```
+
+If source access or checksum validation fails, the result is `SOURCE_UNAVAILABLE_OR_DRIFT`, **never** a null result or an invented zero. EGWE and ANTO scores are source reports; SDEA does **not** refit those original datasets. This stage is empirical *admission/partial-stage confirmation only*, **not** a validation of the entire SDEA evolutionary theory.

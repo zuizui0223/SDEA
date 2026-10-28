@@ -55,3 +55,7 @@ jobs:
         run: |
           python scripts/run_selection_filter.py --replicates 2000 --horizon 7 --seed 1182026 --output /tmp/sdea_v8.json
           python scripts/verify_fixture.py results/v8_selection_filter_mc.json /tmp/sdea_v8.json
+
+      - name: Verify pinned v9 natural-data evidence admission
+        run: |
+          python scripts/run_empirical_admission.py --fetch-pinned --output /tmp/sdea_v9.json
