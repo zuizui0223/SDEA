@@ -111,3 +111,7 @@ jobs:
       - name: Verify frozen v15 original Ulex source plus genetic and trait heldout sites
         run: |
           python scripts/verify_fixture.py results/v15_ulex_partial.json /tmp/sdea_v15.json
+
+      - name: Run v16 Ulex genomic identity placebo original-source audit
+        run: |
+          python scripts/run_kinship_identity.py --fetch-pinned --reps 1000 --seed 20261029 --output /tmp/sdea_v16.json
