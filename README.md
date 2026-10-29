@@ -255,3 +255,24 @@ python scripts/run_empirical_drift.py --fetch-pinned --output /tmp/sdea_v11.json
 All v1–v10 sources and fixtures remain unchanged. A source checksum mismatch or absent original data **fails closed** rather than creating a fake null.
 
 **Executed source and frozen negative record:** [v11 source-verified drift and train-only shrinkage fixture](results/v11_real_transfer_drift.json), generated from the original pinned USDA Git blob by [GitHub Actions original-source run #40618487013](https://github.com/zuizui0223/SDEA/actions/runs/40618487013), no source rows copied into SDEA. The fixture stores actual exact signed distribution-shift vectors and the complete candidate lambda sensitivity; do not overread them as causal ecology/selection or cross-clade gene restoration.
+
+
+## v12 — four-site real ecological response transport (2026-10-29)
+
+**New, genuinely independent original biological source from v9–v11, but *not* independent field observations conducted by SDEA:** 2022 *Cirsium arvense* heads from Karpate et al. [original author source commit](https://github.com/Yogita25/Multitrophic_Interactions/blob/8a151c62ed069f775a16b9bc5fbdce209cbb8691/seeds.csv), exact Git blob SHA `ca99c762162d15f006f0c73b4603ca71fd320a29`. SHA-gated 615 original head records → 612 eligible → 164 **site×source-block×treatment plant proxies** → 45 source site blocks → 36 complete **four-arm matched site blocks** (campus 12, construction 9, ditch 8, rapseed 7). The earlier independently implemented [aza3 calculation](https://github.com/zuizui0223/aza3/blob/d54aba2dcac3ecbfd4c4fb6bd5b0b88562f3595d/data/evidence/cirsium_arvense_four_arm_joint_response_independent_js_v1.json) is pinned and checked **only as an arithmetic cross-validation of the same original 2022 study**; it is NOT a second species/site-sampling cohort.
+
+**Entire-site leave-one-site-out (LOSO) external-context forecast:** For each one of the four heldout sites, predict the within-block **treatment−Control** effect from the other three sites, then compare **4 equally weighted heldout SITE MEANS** against a zero-effect forecasting baseline. Primary viable-seed-per-flower proportion for compound Pollinator Exclusion *bagging*: site-balanced MSE `0.279159→0.008672`, **4/4 negative heldout site means**, **4/4 sites improve on the zero predictor**, and original complete blocks **36/36 negative**. A separate insect-emergence-per-head response: MSE `3.469351→1.982104`, **4/4 directional sign agreement**, yet only **2/4** sites improve squared-error magnitude (strong site heterogeneity). Same-block seed-and-insect decreases occur in 25/36; there are 8 zero-insect-change and 3 insect-increase blocks. **Because seed-change sign is negative in all 36, this joint-sign count does not by itself identify a nontrivial response-covariance or mediation effect.**
+
+**Crucial adverse control:** Under Predator Exclusion−Control, the viable-fraction mean varies in sign across sites; site-balanced MSE **worsens** `0.002590→0.004467`, sign agreement **2/4**. Predator-exclusion insect emergence direction agrees 4/4, but its magnitude improves in only 2/4. Hence predictive transport is **outcome- and intervention-specific**, not a universal floral-pathway law. No difference in p-value is translated into a genetic or causal phenotype return.
+
+**Scope:** A site×block×treatment row is an inferred plant proxy, not a verified mother plant ID or independently randomized treatment; an organza pollinator-exclusion bag also changes other insect access and microclimate. Insects emerged cannot be assigned one-to-one to seed predation. Viable seed classification is not germination or lifetime fitness. Four sites are **one** study in one field year, not four independent biological replications, and this analysis is retrospective with previous aza3 original-data result inspected first. No heritable genetic route, flower-color reversal or natural long-term establishment is established.
+
+[Full v12 scientific protocol](docs/PROTOCOL_V12.md), [read-only pinned source lock](data/v12_source_lock.json), [source-pinned four-site original analysis code](src/sdea/site_transfer.py), [28 negative/adversarial tests](tests/test_site_transfer.py). The previous v1–v11 results are unchanged.
+
+Reproduce (standard library, network only when explicitly enabled):
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_site_transfer.py --fetch-pinned --output /tmp/sdea_v12.json
+```
+
+Frozen source report will be included as an additional fixture after the original-source runner has succeeded in independent GitHub CI. The entire cross-layer ancestral flower-history/trait-restoration/fitness sequence remains **NOT IDENTIFIED**.
