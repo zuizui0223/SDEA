@@ -95,3 +95,7 @@ jobs:
       - name: Verify frozen v13 original Ipomopsis heldout-year stage forecasts
         run: |
           python scripts/verify_fixture.py results/v13_ipomopsis_stage_transfer.json /tmp/sdea_v13.json
+
+      - name: Run v14 context-conditional Ipomopsis year-heldout source
+        run: |
+          python scripts/run_within_context.py --fetch-pinned --output /tmp/sdea_v14.json
