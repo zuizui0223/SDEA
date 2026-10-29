@@ -103,7 +103,8 @@ def _csv(raw:bytes, *, header:tuple[str,...]|None=None)->tuple[tuple[str,...],li
 
 
 def _number(value: str, *, positive:bool=False, nonnegative:bool=False)->float|None:
-    if value is None or value.strip() in ('','NA','.'):return None
+    # Explicit original spreadsheet error is missing, NEVER a zero outcome.
+    if value is None or value.strip() in ('','NA','.','#VALUE!'):return None
     try: v=float(value)
     except ValueError as exc:raise UlexGateError('NONNUMERIC_SOURCE_VALUE') from exc
     if not math.isfinite(v) or positive and v<=0 or nonnegative and v<0:
@@ -132,6 +133,9 @@ def parse_fruit_and_traits(payloads:dict[str,bytes])->tuple[list[dict],dict]:
     for r in fruit:
         site,ind=_key(r)
         if not site or not ind:raise UlexGateError('EMPTY_FRUIT_KEY')
+        # Count archival formula-errors by FIELD; do not reveal individual rows.
+        for col in ('elev','weight','area','scars','fruits','nofruit'):
+            if r[col].strip()=='#VALUE!':reasons['source_formula_error_'+col]+=1
         nums={c:_number(r[c],nonnegative=c in ('scars','fruits','nofruit'),positive=c in ('weight','area'))
               for c in ('elev','weight','area','scars','fruits','nofruit')}
         if any(v is None for v in nums.values()):

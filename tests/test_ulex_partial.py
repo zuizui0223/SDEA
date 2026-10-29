@@ -98,6 +98,27 @@ class SourceAndGrain(unittest.TestCase):
         with self.assertRaisesRegex(m.UlexGateError,'ACCOUNTING_INCONSISTENCY'):
             m.parse_fruit_and_traits(d)
 
+    def test_original_spreadsheet_error_counted_missing_not_zero(self):
+        d=corpus()
+        raw=d['fruits.and.mean.floral.traits.csv'].decode()
+        self.assertIn('S0,P000,450,2.0,10.0,30,6,24',raw)
+        d['fruits.and.mean.floral.traits.csv']=raw.replace(
+            'S0,P000,450,2.0,10.0,30,6,24',
+            'S0,P000,450,#VALUE!,10.0,30,6,24',1).encode()
+        rows,a=m.parse_fruit_and_traits(d)
+        self.assertEqual(len(rows),209)
+        self.assertEqual(a['ineligible_reasons']['source_formula_error_weight'],1)
+        self.assertEqual(a['ineligible_reasons']['missing_fruit_or_trait_field'],1)
+
+    def test_arbitrary_nonnumeric_cannot_sneak_through_as_missing(self):
+        d=corpus()
+        raw=d['fruits.and.mean.floral.traits.csv'].decode()
+        d['fruits.and.mean.floral.traits.csv']=raw.replace(
+            'S0,P000,450,2.0,10.0,30,6,24',
+            'S0,P000,450,UNKNOWN,10.0,30,6,24',1).encode()
+        with self.assertRaisesRegex(m.UlexGateError,'NONNUMERIC'):
+            m.parse_fruit_and_traits(d)
+
     def test_noninteger_fruit_bad(self):
         d=corpus();s=d['fruits.and.mean.floral.traits.csv'].decode().replace(',30,6,24',',30,6.1,24',1)
         d['fruits.and.mean.floral.traits.csv']=s.encode()
