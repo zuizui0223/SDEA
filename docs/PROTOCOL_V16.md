@@ -73,3 +73,14 @@ python scripts/run_kinship_identity.py --fetch-pinned --reps 1000 --seed 2026102
 ```
 
 The existing GitHub workflow first replays **all earlier v1–v15 fixtures**. The v16 runner independently retrieves the source, rechecks all five original MD5s and the entire frozen v15 output, then computes the new site-stratified null. Only after a successful original-source CI run is a **second** immutable aggregated v16 receipt committed and added to CI for exact numerical re-verification. All earlier source data owners, versions and results are unchanged.
+
+
+## Verified original-source v16 result (2026-10-29; after fixed design)
+
+Exact original 5-file published MD5 re-fetch and full v15 archived JSON reexecution passed on GitHub CI. Six heldout populations and 202 matched original genotyped plants were unchanged; no original identity-level rows were published. Source-verified real individual K effect: equal-site MSE gain `+0.00001722707955827231`, weighted gain `+0.000015025280809784342`. Site-averaged K is *worse* than the floral trait-only baseline on average (equal-site `−0.000003975001487723674`) and the true individual K beats the site-average K in **5 of 6** original sites (equal-site identity difference `+0.000021202081045995982`).
+
+However, the predeclared **1,000 within-site genomic-ID bijection placebo reference** has equal-site median gain `+0.000006031471041766846`, 97.5th percentile `+0.000048235195960355115`, with **312/1,000 remappings attaining an equal or greater gain than the true source genotype assignment**. The true original genomic gain is thus not beyond the placebo 97.5% benchmark, and the fixed conjunction **fails**, even though the site-averaged K comparison alone is somewhat favorable. The fully versioned [source-run result](../results/v16_ulex_genomic_placebo.json) reports all six signed site estimates, both aggregate weights, and reference summaries.
+
+The placebo group is an **exploratory noncausal sensitivity reference**: it is not valid to claim `p=0.312` for absence of heritability, because genotype labels within a real source population are not exchangeable under documented randomized allocation. It would also be wrong to assert the small original observed gain is *entirely caused* by geography, because true individual K slightly outperformed a site-averaged K model. The narrow defensible conclusion is **insufficient robust evidence that the chosen fixed heuristic genomic relatedness smoother adds portable individual-identity-specific fruit prediction**.
+
+Scientific ceiling unchanged: data are from *one* contemporary study, not actual genotype-mediated floral pathway restoration, actual plant-level pollinator contact, independent source-population replicated randomized genome experiments or a descendant fitness trajectory.
