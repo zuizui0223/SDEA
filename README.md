@@ -278,3 +278,22 @@ python scripts/run_site_transfer.py --fetch-pinned --output /tmp/sdea_v12.json
 Frozen source report will be included as an additional fixture after the original-source runner has succeeded in independent GitHub CI. The entire cross-layer ancestral flower-history/trait-restoration/fitness sequence remains **NOT IDENTIFIED**.
 
 **Source-replayed evidence receipt:** [v12 frozen genuine original-head held-out-site results](results/v12_site_transfer_real.json). Reproduced from the author-pinned original 615-head source in [CI source run #40807391636](https://github.com/zuizui0223/SDEA/actions/runs/40807391636). The frozen source readout contains only aggregate site fold metrics, no sampled individual head or plant raw records. Missing/changed originals invalidate CI rather than being imputed as ecological zero.
+
+
+## v13 — independent Ipomopsis stage-specific year-heldout forecast (2026-10-29)
+
+**New independently sourced original published botanical study — but not an independently randomized replication of the Cirsium v12 bagging contrast.** Source: Campbell et al. 2022 American Naturalist, [DOI 10.1086/716740](https://doi.org/10.1086/716740); [original open dataset 10.7280/D1KM49](https://zenodo.org/records/5083399), published file `Selection_by_pollinators_and_predators.csv`, **author MD5 `12ed3dbe6d269c5f808f9c6b230d468c`**. A [previous original-file audit from aza3](https://github.com/zuizui0223/aza3/blob/d54aba2dcac3ecbfd4c4fb6bd5b0b88562f3595d/data/evidence/ipomopsis_two_stage_trait_selection_independent_original_js_v1.json) is separately checked by Git blob SHA; this is the **same Ipomopsis study** as the prior audit and not a second new experiment. The published cohort has 437 original rows from 2010–2018 with no stable plant individual ID; 367 rows have paired width, initiated-seed and fruit-fly escape measures.
+
+**New falsifiable predictive estimand, distinct from prior correlation audits:** Hold out **one whole original source year** (9 year folds). In each fold, test whether adding *measured corolla width* to a fixed type+physical-site baseline improves heldout original-row MSE for (a) `log1p(seedsinit)` and separately for (b) `flyescape` (fraction of fruits escaping fruit-fly attack), whose baseline *also conditions on observed initiated-seed log count*. Fixed ridge penalty 1, all scaling learned on training years only. Track MSE improvement by year, equal-year and original-row-weighted, with an exploratory strict 7/9-year readiness gate per endpoint. **Do not pool the two endpoint scores**, infer direct causal effects from conditional stage regressions, or treat years/rows as independent species or ecological origins.
+
+**Cross-source STOP:** v12's treatment is **physical organza Pollinator Exclusion vs Control**, with viable seeds/original Flowers and head insect emergence. Ipomopsis has no matched bagging intervention or equivalent denominator. Therefore **the numeric Cirsium v12 bag effect CANNOT be directly transported, pooled or independently validated by this study**. A scientifically valid outcome here is only a second botanical original-study *stage-specific forecasting* assessment.
+
+[v13 source/interpretation protocol](docs/PROTOCOL_V13.md) · [source immutable receipt and original MD5](data/v13_source_lock.json) · [new read-only source and held-out modeling code](src/sdea/external_stage_transfer.py) · [29 new fail-closed tests](tests/test_external_stage_transfer.py). Source identity mismatch causes a CI failure; no synthetic zero is substituted. The source raw original row file is **not copied into SDEA**. v1–v12 model and original-source fixtures stay untouched.
+
+Reproduce on network-authorized CI:
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+python scripts/run_external_stage_transfer.py --fetch-pinned --output /tmp/sdea_v13.json
+```
+
+The v13 machine readout becomes a versioned frozen fixture only after the original registered MD5 and earlier aza3 receipt SHA are verified on an independent GitHub Actions run. No genetic ancestral memory, homologous morphology or trait re-evolution is empirically tested by this accession.
