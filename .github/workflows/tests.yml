@@ -1,0 +1,121 @@
+name: SDEA exact-model tests
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run exact-model checks
+        run: PYTHONPATH=src python -m unittest discover -s tests -v
+      - name: Recompute declared fixture
+        run: |
+          python scripts/run_benchmarks.py --output /tmp/sdea_v1.json
+          python scripts/verify_fixture.py results/v1_exact_benchmarks.json /tmp/sdea_v1.json
+      - name: Recompute multigeneration fixture
+        run: |
+          python scripts/run_multigeneration.py --output /tmp/sdea_v2.json
+          python scripts/verify_fixture.py results/v2_multigeneration_exact.json /tmp/sdea_v2.json
+
+      - name: Recompute v3 genotype-mating fixture
+        run: |
+          python scripts/run_mendelian.py --output /tmp/sdea_v3.json
+          python scripts/verify_fixture.py results/v3_mendelian_exact.json /tmp/sdea_v3.json
+
+      - name: Recompute v4 pollen-seed fixture
+        run: |
+          python scripts/run_landscape.py --output /tmp/sdea_v4.json
+          python scripts/verify_fixture.py results/v4_landscape_exact.json /tmp/sdea_v4.json
+
+      - name: Recompute v5 coupled metapopulation fixture
+        run: |
+          python scripts/run_metapopulation.py --replicates 9000 --output /tmp/sdea_v5.json
+          python scripts/verify_fixture.py results/v5_metapopulation_mc.json /tmp/sdea_v5.json
+
+      - name: Recompute v6 shared seed-budget fixture
+        run: |
+          python scripts/run_finite_budget.py --replicates 3000 --output /tmp/sdea_v6.json
+          python scripts/verify_fixture.py results/v6_finite_budget_mc.json /tmp/sdea_v6.json
+
+      - name: Recompute v7 matched network-topology fixture
+        run: |
+          python scripts/run_network_topology.py --replicates 2500 --horizon 7 --output /tmp/sdea_v7.json
+          python scripts/verify_fixture.py results/v7_network_topology_mc.json /tmp/sdea_v7.json
+
+      - name: Recompute v7b directed seed-reachability fixture
+        run: |
+          python scripts/run_network_reachability.py --replicates 4000 --output /tmp/sdea_v7b.json
+          python scripts/verify_fixture.py results/v7b_network_reachability_mc.json /tmp/sdea_v7b.json
+
+      - name: Recompute v8 selection-recruitment fixture
+        run: |
+          python scripts/run_selection_filter.py --replicates 2000 --horizon 7 --seed 1182026 --output /tmp/sdea_v8.json
+          python scripts/verify_fixture.py results/v8_selection_filter_mc.json /tmp/sdea_v8.json
+
+      - name: Verify pinned v9 natural-data evidence admission
+        run: |
+          python scripts/run_empirical_admission.py --fetch-pinned --output /tmp/sdea_v9.json
+
+      - name: Compare v9 original-source report to frozen receipt
+        run: |
+          python scripts/verify_fixture.py results/v9_empirical_admission.json /tmp/sdea_v9.json
+
+      - name: Run v10 whole-year heldout original-source transfer
+        run: |
+          python scripts/run_empirical_transfer.py --fetch-pinned --output /tmp/sdea_v10.json
+
+      - name: Verify frozen v10 year-heldout real maternal-route forecast
+        run: |
+          python scripts/verify_fixture.py results/v10_real_joint_transfer.json /tmp/sdea_v10.json
+
+      - name: Run v11 pinned marginal-association drift and shrinkage transfer
+        run: |
+          python scripts/run_empirical_drift.py --fetch-pinned --output /tmp/sdea_v11.json
+
+      - name: Verify frozen v11 original maternal-route drift and transfer
+        run: |
+          python scripts/verify_fixture.py results/v11_real_transfer_drift.json /tmp/sdea_v11.json
+
+      - name: Run v12 original-author four-site ecological transfer
+        run: |
+          python scripts/run_site_transfer.py --fetch-pinned --output /tmp/sdea_v12.json
+
+      - name: Verify frozen v12 original four-site ecological transfer
+        run: |
+          python scripts/verify_fixture.py results/v12_site_transfer_real.json /tmp/sdea_v12.json
+
+      - name: Run v13 independent Ipomopsis stage and year-transfer original source
+        run: |
+          python scripts/run_external_stage_transfer.py --fetch-pinned --output /tmp/sdea_v13.json
+
+      - name: Verify frozen v13 original Ipomopsis heldout-year stage forecasts
+        run: |
+          python scripts/verify_fixture.py results/v13_ipomopsis_stage_transfer.json /tmp/sdea_v13.json
+
+      - name: Run v14 context-conditional Ipomopsis year-heldout source
+        run: |
+          python scripts/run_within_context.py --fetch-pinned --output /tmp/sdea_v14.json
+
+      - name: Verify frozen v14 within-context original Ipomopsis source forecast
+        run: |
+          python scripts/verify_fixture.py results/v14_within_context.json /tmp/sdea_v14.json
+
+      - name: Run v15 source-authenticated Ulex plant G-T-F heldout-sites
+        run: |
+          python scripts/run_ulex_partial.py --fetch-pinned --output /tmp/sdea_v15.json
+
+      - name: Verify frozen v15 original Ulex source plus genetic and trait heldout sites
+        run: |
+          python scripts/verify_fixture.py results/v15_ulex_partial.json /tmp/sdea_v15.json
+
+      - name: Run v16 Ulex genomic identity placebo original-source audit
+        run: |
+          python scripts/run_kinship_identity.py --fetch-pinned --reps 1000 --seed 20261029 --output /tmp/sdea_v16.json
+
+      - name: Verify frozen v16 source-pinned genomic identity and site placebo
+        run: |
+          python scripts/verify_fixture.py results/v16_ulex_genomic_placebo.json /tmp/sdea_v16.json

@@ -1,0 +1,357 @@
+{
+  "alignment": {
+    "aligned": 0.11741689298267266,
+    "difference": 0.1086673124514087,
+    "endpoint": "three_consecutive_survived_ever",
+    "independent_patches": true,
+    "misaligned": 0.008749580531263956
+  },
+  "assurance_cost_conditions": {
+    "c0.0_a0.1": {
+      "alive": 0.0778277779746959,
+      "alive_and_allele_supported": 0.048017582295843,
+      "alive_and_current_three": 0.00976609929709696,
+      "alive_and_ever_three": 0.034426152196218064,
+      "alive_and_joint_toolkit_supported": 0.048017582295843,
+      "extinct": 0.922172222025303,
+      "first_expression_ever": 0.8230409742236439,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.1223578575922094
+    },
+    "c0.0_a0.9": {
+      "alive": 0.7371293926784711,
+      "alive_and_allele_supported": 0.4141423486481393,
+      "alive_and_current_three": 0.0513272047336223,
+      "alive_and_ever_three": 0.23863628172722015,
+      "alive_and_joint_toolkit_supported": 0.4141423486481393,
+      "extinct": 0.26287060732152845,
+      "first_expression_ever": 0.9119688057194993,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.27423478530015577
+    },
+    "c3.0_a0.1": {
+      "alive": 0.07782777797469605,
+      "alive_and_allele_supported": 0.023799389403712515,
+      "alive_and_current_three": 0.005238293897590126,
+      "alive_and_ever_three": 0.025414439968276536,
+      "alive_and_joint_toolkit_supported": 0.023799389403712515,
+      "extinct": 0.9221722220253049,
+      "first_expression_ever": 0.803201117536878,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.09678883902486621
+    },
+    "c3.0_a0.9": {
+      "alive": 0.7371293926784709,
+      "alive_and_allele_supported": 9.281790241055867e-09,
+      "alive_and_current_three": 1.1603743918976379e-08,
+      "alive_and_ever_three": 0.002716602556099248,
+      "alive_and_joint_toolkit_supported": 9.281790241055867e-09,
+      "extinct": 0.26287060732152845,
+      "first_expression_ever": 0.6445056076386513,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.003303669905858233
+    }
+  },
+  "baseline": {
+    "complete": {
+      "alive": 0.13131759034979953,
+      "alive_and_allele_supported": 0.039243024978080306,
+      "alive_and_current_three": 0.00802663310925044,
+      "alive_and_ever_three": 0.04124211261799446,
+      "alive_and_joint_toolkit_supported": 0.039243024978080306,
+      "extinct": 0.8686824096502002,
+      "first_expression_ever": 0.8186652034293482,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.1174168929826727
+    },
+    "histories": {
+      "even": {
+        "alive": 0.13131759034979967,
+        "alive_and_allele_supported": 0.03924302497808031,
+        "alive_and_current_three": 0,
+        "alive_and_ever_three": 0,
+        "alive_and_joint_toolkit_supported": 0,
+        "extinct": 0.8686824096502022,
+        "first_expression_ever": 0.0,
+        "generation": 8,
+        "three_consecutive_survived_ever": 0.0
+      },
+      "odd": {
+        "alive": 0.13131759034979965,
+        "alive_and_allele_supported": 0.03924302497808031,
+        "alive_and_current_three": 0.00200665827731261,
+        "alive_and_ever_three": 0.010310528154498615,
+        "alive_and_joint_toolkit_supported": 0.009810756244520076,
+        "extinct": 0.8686824096502012,
+        "first_expression_ever": 0.20466630085733706,
+        "generation": 8,
+        "three_consecutive_survived_ever": 0.029354223245668176
+      }
+    },
+    "incomplete": {
+      "alive": 0.13131759034979967,
+      "alive_and_allele_supported": 0.03924302497808031,
+      "alive_and_current_three": 0,
+      "alive_and_ever_three": 0,
+      "alive_and_joint_toolkit_supported": 0,
+      "extinct": 0.8686824096502006,
+      "first_expression_ever": 0.0,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.0
+    }
+  },
+  "finite_horizon_frontiers": [
+    {
+      "cost_star": 1.5903151518957515,
+      "diff_at_cost_zero": 0.2042101295310021,
+      "diff_at_upper": -0.011958776093282306,
+      "endpoint": "alive_and_ever_three",
+      "horizon": 8,
+      "root_residual": -2.5673907444456745e-16
+    },
+    {
+      "cost_star": 0.805469063175039,
+      "diff_at_cost_zero": 0.15187692770794636,
+      "diff_at_upper": -0.05307729844040932,
+      "endpoint": "three_consecutive_survived_ever",
+      "horizon": 8,
+      "root_residual": -1.0685896612017132e-15
+    },
+    {
+      "cost_star": 0.714673229153945,
+      "diff_at_cost_zero": 0.3661247663522963,
+      "diff_at_upper": -0.0024309452064571082,
+      "endpoint": "alive_and_joint_toolkit_supported",
+      "horizon": 8,
+      "root_residual": 2.2620794126737565e-15
+    }
+  ],
+  "negative_controls": {
+    "allele_absent_closed": {
+      "alive": 0.13131759034979948,
+      "alive_and_allele_supported": 0,
+      "alive_and_current_three": 0,
+      "alive_and_ever_three": 0,
+      "alive_and_joint_toolkit_supported": 0,
+      "extinct": 0.8686824096502006,
+      "first_expression_ever": 0.0,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.0
+    },
+    "allele_mutation_input": {
+      "alive": 0.1313175903497992,
+      "alive_and_allele_supported": 0.08158167901402938,
+      "alive_and_current_three": 0.009763988756892937,
+      "alive_and_ever_three": 0.023641541022046807,
+      "alive_and_joint_toolkit_supported": 0.08158167901402938,
+      "extinct": 0.8686824096501995,
+      "first_expression_ever": 0.3656532621677514,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.04131791861553848
+    },
+    "complete_with_certain_post_expression_damage": {
+      "alive": 0.13131759034979956,
+      "alive_and_allele_supported": 0.039243024978080306,
+      "alive_and_current_three": 0,
+      "alive_and_ever_three": 0,
+      "alive_and_joint_toolkit_supported": 5.809919166291867e-05,
+      "extinct": 0.8686824096502012,
+      "first_expression_ever": 0.8186652034293487,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.0
+    },
+    "module_reacquisition_input": {
+      "alive": 0.1313175903497996,
+      "alive_and_allele_supported": 0.0392430249780803,
+      "alive_and_current_three": 0.0008454719437433125,
+      "alive_and_ever_three": 0.001419955815100297,
+      "alive_and_joint_toolkit_supported": 0.01030495748834112,
+      "extinct": 0.8686824096501993,
+      "first_expression_ever": 0.020917068142130534,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.0019286362046629568
+    },
+    "modules_absent_closed": {
+      "alive": 0.13131759034979967,
+      "alive_and_allele_supported": 0.03924302497808031,
+      "alive_and_current_three": 0,
+      "alive_and_ever_three": 0,
+      "alive_and_joint_toolkit_supported": 0,
+      "extinct": 0.8686824096502006,
+      "first_expression_ever": 0.0,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.0
+    }
+  },
+  "parameters": {
+    "activation": 0.75,
+    "assurance": 0.3,
+    "assurance_cost": 1.0,
+    "consecutive_required": 3,
+    "diploids": 3,
+    "expression_recoupling": 0.0,
+    "high_stays_high": 0.85,
+    "immigrant_allele_frequency": 1.0,
+    "immigrant_fraction": 0.0,
+    "low_becomes_high": 0.15,
+    "module_reacquisition": 0.0,
+    "module_retention": 1.0,
+    "mutation": 0.0,
+    "post_expression_damage": 0.0,
+    "q_high": 0.8,
+    "q_low": 0.2,
+    "selection_strength": 0.5
+  },
+  "prediction_null_history": {
+    "assay": 0.005019010328047122,
+    "assay_history": 0.005019010328047122,
+    "full": 0.00494265009559989,
+    "full_history": 0.00494265009559989,
+    "history": 0.0051286873295431305,
+    "visible": 0.0051286873295431305
+  },
+  "prediction_sufficiency": {
+    "assay": 0.005019010328047122,
+    "assay_history": 0.004976530751487438,
+    "full": 0.00494265009559989,
+    "full_history": 0.00494265009559989,
+    "history": 0.005102110581836953,
+    "visible": 0.0051286873295431305
+  },
+  "protocol": "SDEA multigeneration synthetic exact v2 (2026-10-26)",
+  "source": "new constructed finite transition kernel; not reexecution of ANTO, EGWE, izu-core",
+  "time_course_complete": [
+    {
+      "alive": 0.8600000000000002,
+      "alive_and_allele_supported": 0.7595760582782977,
+      "alive_and_current_three": 0,
+      "alive_and_ever_three": 0,
+      "alive_and_joint_toolkit_supported": 0.7595760582782977,
+      "extinct": 0.14,
+      "first_expression_ever": 0.6000000000000003,
+      "generation": 1,
+      "three_consecutive_survived_ever": 0.0
+    },
+    {
+      "alive": 0.6854200000000003,
+      "alive_and_allele_supported": 0.4931648973927172,
+      "alive_and_current_three": 0,
+      "alive_and_ever_three": 0,
+      "alive_and_joint_toolkit_supported": 0.4931648973927172,
+      "extinct": 0.31458,
+      "first_expression_ever": 0.7617897004132775,
+      "generation": 2,
+      "three_consecutive_survived_ever": 0.0
+    },
+    {
+      "alive": 0.5295923000000001,
+      "alive_and_allele_supported": 0.3142094123608226,
+      "alive_and_current_three": 0.07398772557872382,
+      "alive_and_ever_three": 0.07398772557872382,
+      "alive_and_joint_toolkit_supported": 0.3142094123608226,
+      "extinct": 0.4704077000000004,
+      "first_expression_ever": 0.8033828782201958,
+      "generation": 3,
+      "three_consecutive_survived_ever": 0.07398772557872382
+    },
+    {
+      "alive": 0.4036454419000001,
+      "alive_and_allele_supported": 0.2016919283231629,
+      "alive_and_current_three": 0.04515618953617759,
+      "alive_and_ever_three": 0.07649747414251934,
+      "alive_and_joint_toolkit_supported": 0.2016919283231629,
+      "extinct": 0.5963545580999997,
+      "first_expression_ever": 0.8144355897485309,
+      "generation": 4,
+      "three_consecutive_survived_ever": 0.09205020139319485
+    },
+    {
+      "alive": 0.3057498048755001,
+      "alive_and_allele_supported": 0.13122361054954204,
+      "alive_and_current_three": 0.028442205904630216,
+      "alive_and_ever_three": 0.07081085752026396,
+      "alive_and_joint_toolkit_supported": 0.13122361054954204,
+      "extinct": 0.6942501951244995,
+      "first_expression_ever": 0.8174773668147327,
+      "generation": 5,
+      "three_consecutive_survived_ever": 0.10362415742090633
+    },
+    {
+      "alive": 0.23093592973695554,
+      "alive_and_allele_supported": 0.08659751324433221,
+      "alive_and_current_three": 0.018336731757582575,
+      "alive_and_ever_three": 0.0618497436546441,
+      "alive_and_joint_toolkit_supported": 0.08659751324433221,
+      "extinct": 0.7690640702630439,
+      "first_expression_ever": 0.8183398842135692,
+      "generation": 6,
+      "three_consecutive_survived_ever": 0.11114061245673043
+    },
+    {
+      "alive": 0.1741971940439134,
+      "alive_and_allele_supported": 0.057927620558148686,
+      "alive_and_current_three": 0.012039580788789724,
+      "alive_and_ever_three": 0.05114214887509745,
+      "alive_and_joint_toolkit_supported": 0.057927620558148686,
+      "extinct": 0.8258028059560858,
+      "first_expression_ever": 0.8185906786257748,
+      "generation": 7,
+      "three_consecutive_survived_ever": 0.11506591154632062
+    },
+    {
+      "alive": 0.13131759034979953,
+      "alive_and_allele_supported": 0.039243024978080306,
+      "alive_and_current_three": 0.00802663310925044,
+      "alive_and_ever_three": 0.04124211261799446,
+      "alive_and_joint_toolkit_supported": 0.039243024978080306,
+      "extinct": 0.8686824096502002,
+      "first_expression_ever": 0.8186652034293482,
+      "generation": 8,
+      "three_consecutive_survived_ever": 0.1174168929826727
+    },
+    {
+      "alive": 0.09896458457817671,
+      "alive_and_allele_supported": 0.02690051617371125,
+      "alive_and_current_three": 0.005423529421039907,
+      "alive_and_ever_three": 0.03269052229087286,
+      "alive_and_joint_toolkit_supported": 0.02690051617371125,
+      "extinct": 0.9010354154218237,
+      "first_expression_ever": 0.8186877863873061,
+      "generation": 9,
+      "three_consecutive_survived_ever": 0.11882303408120062
+    },
+    {
+      "alive": 0.07457246262703035,
+      "alive_and_allele_supported": 0.018643620552992915,
+      "alive_and_current_three": 0.0037094759996413535,
+      "alive_and_ever_three": 0.02559149940956599,
+      "alive_and_joint_toolkit_supported": 0.018643620552992915,
+      "extinct": 0.92542753737297,
+      "first_expression_ever": 0.8186947558133151,
+      "generation": 10,
+      "three_consecutive_survived_ever": 0.11965930513024334
+    },
+    {
+      "alive": 0.05618883203980108,
+      "alive_and_allele_supported": 0.013053634815999068,
+      "alive_and_current_three": 0.002565717630325684,
+      "alive_and_ever_three": 0.019865179122392017,
+      "alive_and_joint_toolkit_supported": 0.013053634815999068,
+      "extinct": 0.9438111679601999,
+      "first_expression_ever": 0.8186969445421273,
+      "generation": 11,
+      "three_consecutive_survived_ever": 0.12016876744442473
+    },
+    {
+      "alive": 0.0423359055033324,
+      "alive_and_allele_supported": 0.009226152984990703,
+      "alive_and_current_three": 0.0017931129249193927,
+      "alive_and_ever_three": 0.01532444256601112,
+      "alive_and_joint_toolkit_supported": 0.009226152984990703,
+      "extinct": 0.9576640944966688,
+      "first_expression_ever": 0.8186976435316371,
+      "generation": 12,
+      "three_consecutive_survived_ever": 0.1204815924161875
+    }
+  ]
+}

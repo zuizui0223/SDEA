@@ -1,0 +1,634 @@
+{
+  "alternative_invasion_and_joint_competence": {
+    "both": {
+      "alternative_provenance": {
+        "any_route_reopened": 0.8359941333002666,
+        "per_recruit_from_pollen": 0.1950236220472441,
+        "per_recruit_from_seed": 0.4,
+        "probabilities": {
+          "both": 0.1560188976377953,
+          "none": 0.16400586669973338,
+          "pollen_only": 0.1959941333002666,
+          "seed_only": 0.4839811023622047
+        },
+        "route": "alternative"
+      },
+      "horizon_4_persistent": {
+        "allele_supported_alternative": 0.9943028471491553,
+        "allele_supported_ancestral": 0.15878629521364396,
+        "first_route_by_horizon": {
+          "alternative": 0.42153598305246576,
+          "ancestral": 0.43916332240689565,
+          "none": 0.021217652346362987,
+          "simultaneous": 0.11808304219427551
+        },
+        "generation": 4,
+        "joint_in_individual": 0.1270855118076325,
+        "mass": 0.9999999999999999
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.3520130309380619,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.22429146956108176,
+          "ancestral": 0.3757108328865421,
+          "none": 0.3042052727390032,
+          "simultaneous": 0.09579242481337295
+        },
+        "genotype_distribution": {
+          "0-0": 0.0,
+          "0-1": 0.0,
+          "0-2": 0.4,
+          "1-0": 0.0,
+          "1-1": 0.1950236220472441,
+          "1-2": 0.0,
+          "2-0": 0.4049763779527559,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 1.9900472440944883,
+          "ancestral": 2.0099527559055117
+        },
+        "route_support_any": {
+          "alternative": 0.8359941333002666,
+          "ancestral": 0.84
+        }
+      }
+    },
+    "closed": {
+      "alternative_provenance": {
+        "any_route_reopened": 0.0,
+        "per_recruit_from_pollen": 0.0,
+        "per_recruit_from_seed": 0.0,
+        "probabilities": {
+          "both": 0.0,
+          "none": 1.0,
+          "pollen_only": 0.0,
+          "seed_only": 0.0
+        },
+        "route": "alternative"
+      },
+      "horizon_4_persistent": {
+        "allele_supported_alternative": 0.0,
+        "allele_supported_ancestral": 1.0,
+        "first_route_by_horizon": {
+          "alternative": 0.0,
+          "ancestral": 0.9946540271468544,
+          "none": 0.005345972853145602,
+          "simultaneous": 7.567761804239126e-17
+        },
+        "generation": 4,
+        "joint_in_individual": 0.0,
+        "mass": 1.0
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.0,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.0,
+          "ancestral": 0.7296,
+          "none": 0.27040000000000003,
+          "simultaneous": 5.551115123125783e-17
+        },
+        "genotype_distribution": {
+          "0-0": 0.0,
+          "0-1": 0.0,
+          "0-2": 0.0,
+          "1-0": 0.0,
+          "1-1": 0.0,
+          "1-2": 0.0,
+          "2-0": 1.0,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 0.0,
+          "ancestral": 4.0
+        },
+        "route_support_any": {
+          "alternative": 0.0,
+          "ancestral": 1.0
+        }
+      }
+    },
+    "pollen": {
+      "alternative_provenance": {
+        "any_route_reopened": 0.5444281480562961,
+        "per_recruit_from_pollen": 0.3250393700787402,
+        "per_recruit_from_seed": 0.0,
+        "probabilities": {
+          "both": 0.0,
+          "none": 0.45557185194370386,
+          "pollen_only": 0.5444281480562961,
+          "seed_only": 0.0
+        },
+        "route": "alternative"
+      },
+      "horizon_4_persistent": {
+        "allele_supported_alternative": 0.8564711988686302,
+        "allele_supported_ancestral": 0.8091994291674122,
+        "first_route_by_horizon": {
+          "alternative": 0.11839496036474607,
+          "ancestral": 0.7804678357986177,
+          "none": 0.003742998867501641,
+          "simultaneous": 0.0973942049691346
+        },
+        "generation": 4,
+        "joint_in_individual": 0.6189822799764095,
+        "mass": 1.0
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.5444281480562961,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.07990935532496449,
+          "ancestral": 0.63107434387994,
+          "none": 0.21707534179031956,
+          "simultaneous": 0.0719409590047761
+        },
+        "genotype_distribution": {
+          "0-0": 0.0,
+          "0-1": 0.0,
+          "0-2": 0.0,
+          "1-0": 0.0,
+          "1-1": 0.3250393700787402,
+          "1-2": 0.0,
+          "2-0": 0.6749606299212598,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 0.6500787401574804,
+          "ancestral": 3.3499212598425196
+        },
+        "route_support_any": {
+          "alternative": 0.5444281480562961,
+          "ancestral": 1.0
+        }
+      }
+    },
+    "seed": {
+      "alternative_provenance": {
+        "any_route_reopened": 0.64,
+        "per_recruit_from_pollen": 0.0,
+        "per_recruit_from_seed": 0.4,
+        "probabilities": {
+          "both": 0.0,
+          "none": 0.36,
+          "pollen_only": 0.0,
+          "seed_only": 0.64
+        },
+        "route": "alternative"
+      },
+      "horizon_4_persistent": {
+        "allele_supported_alternative": 0.9662062848164175,
+        "allele_supported_ancestral": 0.26426779897575225,
+        "first_route_by_horizon": {
+          "alternative": 0.3582544766476992,
+          "ancestral": 0.5184272209011467,
+          "none": 0.0219104342911756,
+          "simultaneous": 0.10140786815997858
+        },
+        "generation": 4,
+        "joint_in_individual": 0.15111453571741518,
+        "mass": 1.0
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.0,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.16588800000000004,
+          "ancestral": 0.419328,
+          "none": 0.34105599999999997,
+          "simultaneous": 0.07372800000000002
+        },
+        "genotype_distribution": {
+          "0-0": 0.0,
+          "0-1": 0.0,
+          "0-2": 0.4,
+          "1-0": 0.0,
+          "1-1": 0.0,
+          "1-2": 0.0,
+          "2-0": 0.6,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 1.6,
+          "ancestral": 2.4
+        },
+        "route_support_any": {
+          "alternative": 0.64,
+          "ancestral": 0.84
+        }
+      }
+    }
+  },
+  "ancestral_reopening_pulse": {
+    "closed": {
+      "horizon_4_pulse": {
+        "allele_supported_alternative": 0.0,
+        "allele_supported_ancestral": 0.0,
+        "first_route_by_horizon": {
+          "alternative": 0.0,
+          "ancestral": 0.0,
+          "none": 1.0,
+          "simultaneous": 0.0
+        },
+        "generation": 4,
+        "joint_in_individual": 0.0,
+        "mass": 1.0
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.0,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.0,
+          "ancestral": 0.0,
+          "none": 1.0,
+          "simultaneous": 0.0
+        },
+        "genotype_distribution": {
+          "0-0": 1.0,
+          "0-1": 0.0,
+          "0-2": 0.0,
+          "1-0": 0.0,
+          "1-1": 0.0,
+          "1-2": 0.0,
+          "2-0": 0.0,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 0.0,
+          "ancestral": 0.0
+        },
+        "route_support_any": {
+          "alternative": 0.0,
+          "ancestral": 0.0
+        }
+      },
+      "route_provenance": {
+        "any_route_reopened": 0.0,
+        "per_recruit_from_pollen": 0.0,
+        "per_recruit_from_seed": 0.0,
+        "probabilities": {
+          "both": 0.0,
+          "none": 1.0,
+          "pollen_only": 0.0,
+          "seed_only": 0.0
+        },
+        "route": "ancestral"
+      }
+    },
+    "pollen": {
+      "horizon_4_pulse": {
+        "allele_supported_alternative": 0.0,
+        "allele_supported_ancestral": 0.2699807525085963,
+        "first_route_by_horizon": {
+          "alternative": 0.0,
+          "ancestral": 0.43574333981495084,
+          "none": 0.5642566601850493,
+          "simultaneous": 1.1036726038878579e-17
+        },
+        "generation": 4,
+        "joint_in_individual": 0.0,
+        "mass": 1.0000000000000002
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.0,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.0,
+          "ancestral": 0.28769589885547775,
+          "none": 0.7123041011445224,
+          "simultaneous": 5.8647859958007706e-18
+        },
+        "genotype_distribution": {
+          "0-0": 0.6749606299212598,
+          "0-1": 0.0,
+          "0-2": 0.0,
+          "1-0": 0.3250393700787402,
+          "1-1": 0.0,
+          "1-2": 0.0,
+          "2-0": 0.0,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 0.0,
+          "ancestral": 0.6500787401574804
+        },
+        "route_support_any": {
+          "alternative": 0.0,
+          "ancestral": 0.5444281480562961
+        }
+      },
+      "route_provenance": {
+        "any_route_reopened": 0.5444281480562961,
+        "per_recruit_from_pollen": 0.3250393700787402,
+        "per_recruit_from_seed": 0.0,
+        "probabilities": {
+          "both": 0.0,
+          "none": 0.45557185194370386,
+          "pollen_only": 0.5444281480562961,
+          "seed_only": 0.0
+        },
+        "route": "ancestral"
+      }
+    },
+    "seed_equal_nominal_rate": {
+      "horizon_4_pulse": {
+        "allele_supported_alternative": 0.0,
+        "allele_supported_ancestral": 0.5074767349465908,
+        "first_route_by_horizon": {
+          "alternative": 0.0,
+          "ancestral": 0.5908930866112418,
+          "none": 0.4091069133887581,
+          "simultaneous": 2.2134366212964316e-17
+        },
+        "generation": 4,
+        "joint_in_individual": 0.0,
+        "mass": 1.0
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.0,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.0,
+          "ancestral": 0.347136,
+          "none": 0.652864,
+          "simultaneous": 8.881784197001254e-18
+        },
+        "genotype_distribution": {
+          "0-0": 0.6,
+          "0-1": 0.0,
+          "0-2": 0.0,
+          "1-0": 0.0,
+          "1-1": 0.0,
+          "1-2": 0.0,
+          "2-0": 0.4,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 0.0,
+          "ancestral": 1.6
+        },
+        "route_support_any": {
+          "alternative": 0.0,
+          "ancestral": 0.64
+        }
+      },
+      "route_provenance": {
+        "any_route_reopened": 0.64,
+        "per_recruit_from_pollen": 0.0,
+        "per_recruit_from_seed": 0.4,
+        "probabilities": {
+          "both": 0.0,
+          "none": 0.36,
+          "pollen_only": 0.0,
+          "seed_only": 0.64
+        },
+        "route": "ancestral"
+      }
+    },
+    "seed_matched_carriers": {
+      "horizon_4_pulse": {
+        "allele_supported_alternative": 0.0,
+        "allele_supported_ancestral": 0.4232859931660331,
+        "first_route_by_horizon": {
+          "alternative": 0.0,
+          "ancestral": 0.49975563333236755,
+          "none": 0.5002443666676326,
+          "simultaneous": 1.7160303204812357e-17
+        },
+        "generation": 4,
+        "joint_in_individual": 0.0,
+        "mass": 1.0000000000000002
+      },
+      "immediate": {
+        "at_least_one_dual_competent": 0.0,
+        "effective_local_selfing": 0.18740157480314956,
+        "first_generation_expression": {
+          "alternative": 0.0,
+          "ancestral": 0.28769589885547775,
+          "none": 0.7123041011445224,
+          "simultaneous": 5.8647859958007706e-18
+        },
+        "genotype_distribution": {
+          "0-0": 0.6749606299212598,
+          "0-1": 0.0,
+          "0-2": 0.0,
+          "1-0": 0.0,
+          "1-1": 0.0,
+          "1-2": 0.0,
+          "2-0": 0.3250393700787402,
+          "2-1": 0.0,
+          "2-2": 0.0
+        },
+        "local_viability_gate": 0.635,
+        "mean_allele_copies": {
+          "alternative": 0.0,
+          "ancestral": 1.3001574803149607
+        },
+        "route_support_any": {
+          "alternative": 0.0,
+          "ancestral": 0.5444281480562961
+        }
+      },
+      "route_provenance": {
+        "any_route_reopened": 0.5444281480562961,
+        "per_recruit_from_pollen": 0.0,
+        "per_recruit_from_seed": 0.3250393700787402,
+        "probabilities": {
+          "both": 0.0,
+          "none": 0.45557185194370386,
+          "pollen_only": 0.0,
+          "seed_only": 0.5444281480562961
+        },
+        "route": "ancestral"
+      }
+    }
+  },
+  "constant_low_environment": {
+    "allele_supported_alternative": 0.3070491033605758,
+    "allele_supported_ancestral": 0.3070491033605756,
+    "first_route_by_horizon": {
+      "alternative": 0.4458308418373717,
+      "ancestral": 0.14096817994999,
+      "none": 0.39061759529068446,
+      "simultaneous": 0.022583382921953457
+    },
+    "generation": 4,
+    "joint_in_individual": 0.09968606280576503,
+    "mass": 0.9999999999999997
+  },
+  "defaults": {
+    "activation_alternative": 0.8,
+    "activation_ancestral": 0.8,
+    "assurance": 0.35,
+    "donor_q": 0.8,
+    "inbreeding_depression": 0.15,
+    "pollen_rate": 0.0,
+    "recipient_q": 0.6,
+    "recruits": 2,
+    "seed_rate": 0.0,
+    "tie_ancestral": 0.5
+  },
+  "environment_switch_alternative": {
+    "allele_supported_alternative": 0.3268426457824622,
+    "allele_supported_ancestral": 0.3268426457824623,
+    "first_route_by_horizon": {
+      "alternative": 0.43463556649542906,
+      "ancestral": 0.19647938355498595,
+      "none": 0.3462080127676566,
+      "simultaneous": 0.022677037181927855
+    },
+    "generation": 4,
+    "joint_in_individual": 0.11552856968174348,
+    "mass": 0.9999999999999994
+  },
+  "matched_seed_rate_for_carrier_equivalence": 0.3250393700787402,
+  "neutral_environment_symmetry": {
+    "at_least_one_dual_competent": 0.33608432925490495,
+    "effective_local_selfing": 0.26503340757238303,
+    "first_generation_expression": {
+      "alternative": 0.2182826268542245,
+      "ancestral": 0.21828262685422456,
+      "none": 0.5256216018019202,
+      "simultaneous": 0.03781314448963061
+    },
+    "genotype_distribution": {
+      "0-0": 0.4236080178173719,
+      "0-1": 0.08819599109131403,
+      "0-2": 0.1074051026757934,
+      "1-0": 0.08819599109131403,
+      "1-1": 0.1851897946484132,
+      "1-2": 0.0,
+      "2-0": 0.1074051026757934,
+      "2-1": 0.0,
+      "2-2": 0.0
+    },
+    "local_viability_gate": 0.56125,
+    "mean_allele_copies": {
+      "alternative": 0.976391982182628,
+      "ancestral": 0.976391982182628
+    },
+    "route_support_any": {
+      "alternative": 0.6165800761307598,
+      "ancestral": 0.6165800761307598
+    }
+  },
+  "phenotype_equivalent_but_genetically_distinct_history": {
+    "best_equal_prior_origin_accuracy_from_full_genotypes": 0.772214074028148,
+    "best_equal_prior_origin_accuracy_from_visible": 0.5,
+    "full_genotype_count_total_variation": 0.5444281480562961,
+    "note": "classification identifies constructed movement assignment, not natural ancestral regain",
+    "visible_any_expression_pollen": 0.28769589885547764,
+    "visible_any_expression_seed": 0.28769589885547764,
+    "visible_binary_total_variation": 0.0
+  },
+  "protocol": "SDEA v4 exact source-recipient two-route flow (2026-10-26)",
+  "status": "SYNTHETIC; independent unlinked loci, fixed donor, conditional recruitment, not re-evolution",
+  "symmetrical_route_donor_q_gradient": {
+    "0.2": {
+      "at_least_one_dual_competent": 0.33608432925490495,
+      "effective_local_selfing": 0.6230366492146596,
+      "first_generation_expression": {
+        "alternative": 0.3522940180129964,
+        "ancestral": 0.0687273611453228,
+        "none": 0.5605502456646527,
+        "simultaneous": 0.01842837517702791
+      },
+      "genotype_distribution": {
+        "0-0": 0.5095287958115182,
+        "0-1": 0.04523560209424084,
+        "0-2": 0.1074051026757934,
+        "1-0": 0.04523560209424084,
+        "1-1": 0.1851897946484132,
+        "1-2": 0.0,
+        "2-0": 0.1074051026757934,
+        "2-1": 0.0,
+        "2-2": 0.0
+      },
+      "local_viability_gate": 0.38199999999999995,
+      "mean_allele_copies": {
+        "alternative": 0.8904712041884817,
+        "ancestral": 0.8904712041884817
+      },
+      "route_support_any": {
+        "alternative": 0.5615315524995772,
+        "ancestral": 0.5615315524995772
+      }
+    },
+    "0.5": {
+      "at_least_one_dual_competent": 0.33608432925490495,
+      "effective_local_selfing": 0.26503340757238303,
+      "first_generation_expression": {
+        "alternative": 0.2182826268542245,
+        "ancestral": 0.21828262685422456,
+        "none": 0.5256216018019202,
+        "simultaneous": 0.03781314448963061
+      },
+      "genotype_distribution": {
+        "0-0": 0.4236080178173719,
+        "0-1": 0.08819599109131403,
+        "0-2": 0.1074051026757934,
+        "1-0": 0.08819599109131403,
+        "1-1": 0.1851897946484132,
+        "1-2": 0.0,
+        "2-0": 0.1074051026757934,
+        "2-1": 0.0,
+        "2-2": 0.0
+      },
+      "local_viability_gate": 0.56125,
+      "mean_allele_copies": {
+        "alternative": 0.976391982182628,
+        "ancestral": 0.976391982182628
+      },
+      "route_support_any": {
+        "alternative": 0.6165800761307598,
+        "ancestral": 0.6165800761307598
+      }
+    },
+    "0.8": {
+      "at_least_one_dual_competent": 0.33608432925490495,
+      "effective_local_selfing": 0.07405102675793401,
+      "first_generation_expression": {
+        "alternative": 0.0797523703290871,
+        "ancestral": 0.40840291458918765,
+        "none": 0.4844110106413476,
+        "simultaneous": 0.027433704440377682
+      },
+      "genotype_distribution": {
+        "0-0": 0.37777224642190416,
+        "0-1": 0.11111387678904792,
+        "0-2": 0.1074051026757934,
+        "1-0": 0.11111387678904792,
+        "1-1": 0.1851897946484132,
+        "1-2": 0.0,
+        "2-0": 0.1074051026757934,
+        "2-1": 0.0,
+        "2-2": 0.0
+      },
+      "local_viability_gate": 0.8035000000000001,
+      "mean_allele_copies": {
+        "alternative": 1.022227753578096,
+        "ancestral": 1.022227753578096
+      },
+      "route_support_any": {
+        "alternative": 0.6444367739304824,
+        "ancestral": 0.6444367739304824
+      }
+    }
+  }
+}

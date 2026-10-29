@@ -1,0 +1,2184 @@
+{
+  "exact_first_step": {
+    "identity": "first-generation genotype/recruitment access only; independent recruit slots; source and receiver A/B homozygotes",
+    "no_flow": {
+      "any_ancestral_support_generation1": 0.681480859375,
+      "any_joint_competence_generation1": 0,
+      "any_occupancy_generation1": 0.681480859375,
+      "per_recruit_joint_competence": 0,
+      "per_recruit_viability": 0.43562500000000004
+    },
+    "pollen_only": {
+      "any_ancestral_support_generation1": 0.681480859375,
+      "any_joint_competence_generation1": 0.1435075927734374,
+      "any_occupancy_generation1": 0.681480859375,
+      "per_recruit_joint_competence": 0.07453125,
+      "per_recruit_viability": 0.43562500000000004
+    },
+    "seed_only": {
+      "any_ancestral_support_generation1": 0.5381653161722104,
+      "any_joint_competence_generation1": 0,
+      "any_occupancy_generation1": 0.8276791638199152,
+      "per_recruit_joint_competence": 0,
+      "per_recruit_viability": 0.5848845507812499
+    }
+  },
+  "exploratory_mc_contrasts": [
+    {
+      "difference_second_minus_first": 0.67,
+      "endpoint": "patch0_colonized_initial_vacancy",
+      "first": "empty_pollen_only",
+      "mc_95_difference_interval": [
+        0.6602854831122843,
+        0.6797145168877158
+      ],
+      "mc_standard_error": 0.004956477243634501,
+      "method": "independent landscape replicates; approximate Wald interval; exploratory synthetic comparison",
+      "p_first": 0.0,
+      "p_second": 0.67,
+      "replicates_first": 9000,
+      "replicates_second": 9000,
+      "second": "empty_seed_only"
+    },
+    {
+      "difference_second_minus_first": 0.07144444444444453,
+      "endpoint": "patch0_colonized_initial_vacancy",
+      "first": "empty_seed_source_fragile",
+      "mc_95_difference_interval": [
+        0.05741115702529232,
+        0.08547773186359675
+      ],
+      "mc_standard_error": 0.007159972086143103,
+      "method": "independent landscape replicates; approximate Wald interval; exploratory synthetic comparison",
+      "p_first": 0.5985555555555555,
+      "p_second": 0.67,
+      "replicates_first": 9000,
+      "replicates_second": 9000,
+      "second": "empty_seed_only"
+    },
+    {
+      "difference_second_minus_first": 0.039222222222222214,
+      "endpoint": "patch0_A_supported",
+      "first": "empty_seed_source_fragile",
+      "mc_95_difference_interval": [
+        0.03325370598324226,
+        0.04519073846120217
+      ],
+      "mc_standard_error": 0.0030452173030009813,
+      "method": "independent landscape replicates; approximate Wald interval; exploratory synthetic comparison",
+      "p_first": 0.024444444444444446,
+      "p_second": 0.06366666666666666,
+      "replicates_first": 9000,
+      "replicates_second": 9000,
+      "second": "empty_seed_only"
+    },
+    {
+      "difference_second_minus_first": 0.24566666666666667,
+      "endpoint": "patch0_joint_ever",
+      "first": "distinct_no_flow",
+      "mc_95_difference_interval": [
+        0.2367729845518052,
+        0.25456034878152817
+      ],
+      "mc_standard_error": 0.004537676296612563,
+      "method": "independent landscape replicates; approximate Wald interval; exploratory synthetic comparison",
+      "p_first": 0.0,
+      "p_second": 0.24566666666666667,
+      "replicates_first": 9000,
+      "replicates_second": 9000,
+      "second": "distinct_pollen_only"
+    },
+    {
+      "difference_second_minus_first": 0.06166666666666667,
+      "endpoint": "both_patches_occupied",
+      "first": "distinct_seed_only",
+      "mc_95_difference_interval": [
+        0.05417636621027176,
+        0.06915696712306157
+      ],
+      "mc_standard_error": 0.003821652089261662,
+      "method": "independent landscape replicates; approximate Wald interval; exploratory synthetic comparison",
+      "p_first": 0.041,
+      "p_second": 0.10266666666666667,
+      "replicates_first": 9000,
+      "replicates_second": 9000,
+      "second": "distinct_both_flows"
+    },
+    {
+      "difference_second_minus_first": 0.023333333333333334,
+      "endpoint": "patch0_joint_in_individual",
+      "first": "distinct_seed_only",
+      "mc_95_difference_interval": [
+        0.01922376272448237,
+        0.0274429039421843
+      ],
+      "mc_standard_error": 0.0020967582268178646,
+      "method": "independent landscape replicates; approximate Wald interval; exploratory synthetic comparison",
+      "p_first": 0.008666666666666666,
+      "p_second": 0.032,
+      "replicates_first": 9000,
+      "replicates_second": 9000,
+      "second": "distinct_both_flows"
+    },
+    {
+      "difference_second_minus_first": -0.018555555555555547,
+      "endpoint": "patch0_q_high_at_horizon",
+      "first": "distinct_both_flows",
+      "mc_95_difference_interval": [
+        -0.032404916659715496,
+        -0.004706194451395595
+      ],
+      "mc_standard_error": 0.0070661304051514865,
+      "method": "independent landscape replicates; approximate Wald interval; exploratory synthetic comparison",
+      "p_first": 0.35044444444444445,
+      "p_second": 0.3318888888888889,
+      "replicates_first": 9000,
+      "replicates_second": 9000,
+      "second": "distinct_both_with_q_feedback"
+    }
+  ],
+  "protocol": "SDEA v5 (2026-10-26) dynamic bidirectional 2-patch synthetic bridge",
+  "recolonization_exact": {
+    "donor_two_A_high_q_seed_0": 0.0,
+    "donor_two_A_high_q_seed_035": 0.4589937802734374,
+    "no_viable_donor": 0.0
+  },
+  "scenarios": {
+    "distinct_both_flows": {
+      "event_counts": {
+        "both_patches_extinct": 6911,
+        "both_patches_joint_in_individual": 145,
+        "both_patches_occupied": 924,
+        "global_A_absent": 7971,
+        "global_B_absent": 7639,
+        "patch0_A_first": 1976,
+        "patch0_A_supported": 701,
+        "patch0_B_first": 4241,
+        "patch0_B_supported": 950,
+        "patch0_alternative_gene_entered_via_pollen": 1375,
+        "patch0_alternative_gene_entered_via_seed": 5794,
+        "patch0_ancestral_gene_entered_via_pollen": 289,
+        "patch0_ancestral_gene_entered_via_seed": 1743,
+        "patch0_any_A_ever": 2922,
+        "patch0_any_B_ever": 5089,
+        "patch0_colonized_initial_vacancy": 0,
+        "patch0_joint_ever": 3444,
+        "patch0_joint_in_individual": 288,
+        "patch0_occupied": 1482,
+        "patch0_q_high_at_horizon": 3154,
+        "patch0_recolonized_after_extinction": 1944,
+        "patch0_simultaneous_first": 251,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 5601,
+        "patch1_joint_in_individual": 311,
+        "patch1_occupied": 1531,
+        "patch1_recolonized_after_extinction": 986
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 1.068111111111111,
+        "patch0_initial_colonizations": 0.0,
+        "patch0_recolonizations": 0.23277777777777778
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.45,
+          0.45
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.35,
+          0.35
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.7678888888888888,
+        "both_patches_joint_in_individual": 0.01611111111111111,
+        "both_patches_occupied": 0.10266666666666667,
+        "global_A_absent": 0.8856666666666667,
+        "global_B_absent": 0.8487777777777777,
+        "patch0_A_first": 0.21955555555555556,
+        "patch0_A_supported": 0.07788888888888888,
+        "patch0_B_first": 0.4712222222222222,
+        "patch0_B_supported": 0.10555555555555556,
+        "patch0_alternative_gene_entered_via_pollen": 0.1527777777777778,
+        "patch0_alternative_gene_entered_via_seed": 0.6437777777777778,
+        "patch0_ancestral_gene_entered_via_pollen": 0.03211111111111111,
+        "patch0_ancestral_gene_entered_via_seed": 0.19366666666666665,
+        "patch0_any_A_ever": 0.32466666666666666,
+        "patch0_any_B_ever": 0.5654444444444444,
+        "patch0_colonized_initial_vacancy": 0.0,
+        "patch0_joint_ever": 0.38266666666666665,
+        "patch0_joint_in_individual": 0.032,
+        "patch0_occupied": 0.16466666666666666,
+        "patch0_q_high_at_horizon": 0.35044444444444445,
+        "patch0_recolonized_after_extinction": 0.216,
+        "patch0_simultaneous_first": 0.02788888888888889,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.6223333333333333,
+        "patch1_joint_in_individual": 0.034555555555555555,
+        "patch1_occupied": 0.1701111111111111,
+        "patch1_recolonized_after_extinction": 0.10955555555555556
+      },
+      "replicates": 9000,
+      "seed": 700719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.7590535479774625,
+          0.7764956420047848
+        ],
+        "both_patches_joint_in_individual": [
+          0.013708800582107075,
+          0.018926320789652496
+        ],
+        "both_patches_occupied": [
+          0.09656449870056487,
+          0.10910787650618882
+        ],
+        "global_A_absent": [
+          0.8789271832709435,
+          0.8920770632775348
+        ],
+        "global_B_absent": [
+          0.841227353239064,
+          0.8560305925735758
+        ],
+        "patch0_A_first": [
+          0.2111241472392596,
+          0.22822626523888534
+        ],
+        "patch0_A_supported": [
+          0.0725304670600588,
+          0.08360749530304443
+        ],
+        "patch0_B_first": [
+          0.46092389969518593,
+          0.4815451006343861
+        ],
+        "patch0_B_supported": [
+          0.09937486301746024,
+          0.11207282489752177
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.14549317434677364,
+          0.16035866360655557
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.6338247336245709,
+          0.6536081373157147
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.028663814798934793,
+          0.03595765387993538
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.1856338968663664,
+          0.20196082864957876
+        ],
+        "patch0_any_A_ever": [
+          0.31506927568505394,
+          0.33441366840785924
+        ],
+        "patch0_any_B_ever": [
+          0.5551776202261691,
+          0.5756554253563873
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_ever": [
+          0.37267728047443677,
+          0.3927561726067523
+        ],
+        "patch0_joint_in_individual": [
+          0.02855883624029035,
+          0.03584050502672489
+        ],
+        "patch0_occupied": [
+          0.15714772667127258,
+          0.17247174435053458
+        ],
+        "patch0_q_high_at_horizon": [
+          0.34065315228704696,
+          0.3603633513562111
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.20762030108356538,
+          0.22462203421522164
+        ],
+        "patch0_simultaneous_first": [
+          0.02468334544543596,
+          0.03149728158294669
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.6122671784457494,
+          0.6322951020065335
+        ],
+        "patch1_joint_in_individual": [
+          0.03097617434537897,
+          0.03853209739429976
+        ],
+        "patch1_occupied": [
+          0.16248970957009434,
+          0.17801400463260464
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.10326857491585675,
+          0.1161756998259029
+        ]
+      }
+    },
+    "distinct_both_with_q_feedback": {
+      "event_counts": {
+        "both_patches_extinct": 6940,
+        "both_patches_joint_in_individual": 151,
+        "both_patches_occupied": 918,
+        "global_A_absent": 8006,
+        "global_B_absent": 7640,
+        "patch0_A_first": 2017,
+        "patch0_A_supported": 701,
+        "patch0_B_first": 4176,
+        "patch0_B_supported": 925,
+        "patch0_alternative_gene_entered_via_pollen": 1362,
+        "patch0_alternative_gene_entered_via_seed": 5735,
+        "patch0_ancestral_gene_entered_via_pollen": 299,
+        "patch0_ancestral_gene_entered_via_seed": 1699,
+        "patch0_any_A_ever": 2826,
+        "patch0_any_B_ever": 4984,
+        "patch0_colonized_initial_vacancy": 0,
+        "patch0_joint_ever": 3402,
+        "patch0_joint_in_individual": 289,
+        "patch0_occupied": 1465,
+        "patch0_q_high_at_horizon": 2987,
+        "patch0_recolonized_after_extinction": 1975,
+        "patch0_simultaneous_first": 257,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 5657,
+        "patch1_joint_in_individual": 302,
+        "patch1_occupied": 1513,
+        "patch1_recolonized_after_extinction": 1003
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 1.0767777777777778,
+        "patch0_initial_colonizations": 0.0,
+        "patch0_recolonizations": 0.23955555555555555
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.12,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": -0.12,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.45,
+          0.45
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.35,
+          0.35
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.7711111111111111,
+        "both_patches_joint_in_individual": 0.016777777777777777,
+        "both_patches_occupied": 0.102,
+        "global_A_absent": 0.8895555555555555,
+        "global_B_absent": 0.8488888888888889,
+        "patch0_A_first": 0.22411111111111112,
+        "patch0_A_supported": 0.07788888888888888,
+        "patch0_B_first": 0.464,
+        "patch0_B_supported": 0.10277777777777777,
+        "patch0_alternative_gene_entered_via_pollen": 0.15133333333333332,
+        "patch0_alternative_gene_entered_via_seed": 0.6372222222222222,
+        "patch0_ancestral_gene_entered_via_pollen": 0.03322222222222222,
+        "patch0_ancestral_gene_entered_via_seed": 0.18877777777777777,
+        "patch0_any_A_ever": 0.314,
+        "patch0_any_B_ever": 0.5537777777777778,
+        "patch0_colonized_initial_vacancy": 0.0,
+        "patch0_joint_ever": 0.378,
+        "patch0_joint_in_individual": 0.03211111111111111,
+        "patch0_occupied": 0.16277777777777777,
+        "patch0_q_high_at_horizon": 0.3318888888888889,
+        "patch0_recolonized_after_extinction": 0.21944444444444444,
+        "patch0_simultaneous_first": 0.028555555555555556,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.6285555555555555,
+        "patch1_joint_in_individual": 0.033555555555555554,
+        "patch1_occupied": 0.1681111111111111,
+        "patch1_recolonized_after_extinction": 0.11144444444444444
+      },
+      "replicates": 9000,
+      "seed": 800719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.7623169640981203,
+          0.7796739208279203
+        ],
+        "both_patches_joint_in_individual": [
+          0.01432300541794433,
+          0.019644880424944847
+        ],
+        "both_patches_occupied": [
+          0.09591616957155227,
+          0.1084234411640718
+        ],
+        "global_A_absent": [
+          0.8829129225990607,
+          0.8958657833643403
+        ],
+        "global_B_absent": [
+          0.8413406505030662,
+          0.8561394227214288
+        ],
+        "patch0_A_first": [
+          0.21561479211271845,
+          0.23284284425147883
+        ],
+        "patch0_A_supported": [
+          0.0725304670600588,
+          0.08360749530304443
+        ],
+        "patch0_B_first": [
+          0.4537144386874391,
+          0.4743162798715622
+        ],
+        "patch0_B_supported": [
+          0.09667256154202608,
+          0.10922194107658253
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.14407823895920152,
+          0.1588859426400135
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.6272323445519556,
+          0.6470950090888887
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.02971422781558776,
+          0.037128514981831756
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.18082633986997526,
+          0.19699477952435274
+        ],
+        "patch0_any_A_ever": [
+          0.30449250627247987,
+          0.3236662062823596
+        ],
+        "patch0_any_B_ever": [
+          0.5434870049577307,
+          0.5640226623800577
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_ever": [
+          0.3680363550239717,
+          0.3880677467593101
+        ],
+        "patch0_joint_in_individual": [
+          0.028663814798934793,
+          0.03595765387993538
+        ],
+        "patch0_occupied": [
+          0.15529508013655796,
+          0.17054822488371535
+        ],
+        "patch0_q_high_at_horizon": [
+          0.3222338869152743,
+          0.3416873389482097
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.21101463804126777,
+          0.2281136470250222
+        ],
+        "patch0_simultaneous_first": [
+          0.025310582944594515,
+          0.032202808554917736
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.618520042329167,
+          0.6384813731869923
+        ],
+        "patch1_joint_in_individual": [
+          0.030029569142758075,
+          0.03747955589022625
+        ],
+        "patch1_occupied": [
+          0.16052700753519059,
+          0.1759784132541196
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.10510822165089012,
+          0.11811221909240341
+        ]
+      }
+    },
+    "distinct_no_flow": {
+      "event_counts": {
+        "both_patches_extinct": 8633,
+        "both_patches_joint_in_individual": 0,
+        "both_patches_occupied": 1,
+        "global_A_absent": 8899,
+        "global_B_absent": 8733,
+        "patch0_A_first": 2671,
+        "patch0_A_supported": 101,
+        "patch0_B_first": 0,
+        "patch0_B_supported": 0,
+        "patch0_alternative_gene_entered_via_pollen": 0,
+        "patch0_alternative_gene_entered_via_seed": 0,
+        "patch0_ancestral_gene_entered_via_pollen": 0,
+        "patch0_ancestral_gene_entered_via_seed": 0,
+        "patch0_any_A_ever": 2671,
+        "patch0_any_B_ever": 0,
+        "patch0_colonized_initial_vacancy": 0,
+        "patch0_joint_ever": 0,
+        "patch0_joint_in_individual": 0,
+        "patch0_occupied": 101,
+        "patch0_q_high_at_horizon": 3148,
+        "patch0_recolonized_after_extinction": 0,
+        "patch0_simultaneous_first": 0,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 0,
+        "patch1_joint_in_individual": 0,
+        "patch1_occupied": 267,
+        "patch1_recolonized_after_extinction": 0
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 0.9887777777777778,
+        "patch0_initial_colonizations": 0.0,
+        "patch0_recolonizations": 0.0
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.0,
+          0.0
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.0,
+          0.0
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.9592222222222222,
+        "both_patches_joint_in_individual": 0.0,
+        "both_patches_occupied": 0.00011111111111111112,
+        "global_A_absent": 0.9887777777777778,
+        "global_B_absent": 0.9703333333333334,
+        "patch0_A_first": 0.29677777777777775,
+        "patch0_A_supported": 0.011222222222222222,
+        "patch0_B_first": 0.0,
+        "patch0_B_supported": 0.0,
+        "patch0_alternative_gene_entered_via_pollen": 0.0,
+        "patch0_alternative_gene_entered_via_seed": 0.0,
+        "patch0_ancestral_gene_entered_via_pollen": 0.0,
+        "patch0_ancestral_gene_entered_via_seed": 0.0,
+        "patch0_any_A_ever": 0.29677777777777775,
+        "patch0_any_B_ever": 0.0,
+        "patch0_colonized_initial_vacancy": 0.0,
+        "patch0_joint_ever": 0.0,
+        "patch0_joint_in_individual": 0.0,
+        "patch0_occupied": 0.011222222222222222,
+        "patch0_q_high_at_horizon": 0.3497777777777778,
+        "patch0_recolonized_after_extinction": 0.0,
+        "patch0_simultaneous_first": 0.0,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.0,
+        "patch1_joint_in_individual": 0.0,
+        "patch1_occupied": 0.029666666666666668,
+        "patch1_recolonized_after_extinction": 0.0
+      },
+      "replicates": 9000,
+      "seed": 400719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.9549364739119427,
+          0.9631161192845022
+        ],
+        "both_patches_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "both_patches_occupied": [
+          1.961410870664112e-05,
+          0.0006291599559423414
+        ],
+        "global_A_absent": [
+          0.98638345203269,
+          0.9907550327171677
+        ],
+        "global_B_absent": [
+          0.9666224030308327,
+          0.9736429313511058
+        ],
+        "patch0_A_first": [
+          0.28742790489436665,
+          0.3063010588229579
+        ],
+        "patch0_A_supported": [
+          0.00924496728283239,
+          0.013616547967310062
+        ],
+        "patch0_B_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_any_A_ever": [
+          0.28742790489436665,
+          0.3063010588229579
+        ],
+        "patch0_any_B_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_occupied": [
+          0.00924496728283239,
+          0.013616547967310062
+        ],
+        "patch0_q_high_at_horizon": [
+          0.33999109514486525,
+          0.3596926440272632
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_simultaneous_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_occupied": [
+          0.02635706864889428,
+          0.03337759696916733
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ]
+      }
+    },
+    "distinct_pollen_only": {
+      "event_counts": {
+        "both_patches_extinct": 8439,
+        "both_patches_joint_in_individual": 10,
+        "both_patches_occupied": 51,
+        "global_A_absent": 8662,
+        "global_B_absent": 8705,
+        "patch0_A_first": 2491,
+        "patch0_A_supported": 164,
+        "patch0_B_first": 922,
+        "patch0_B_supported": 72,
+        "patch0_alternative_gene_entered_via_pollen": 2218,
+        "patch0_alternative_gene_entered_via_seed": 0,
+        "patch0_ancestral_gene_entered_via_pollen": 20,
+        "patch0_ancestral_gene_entered_via_seed": 0,
+        "patch0_any_A_ever": 2746,
+        "patch0_any_B_ever": 1329,
+        "patch0_colonized_initial_vacancy": 0,
+        "patch0_joint_ever": 2211,
+        "patch0_joint_in_individual": 44,
+        "patch0_occupied": 215,
+        "patch0_q_high_at_horizon": 3143,
+        "patch0_recolonized_after_extinction": 0,
+        "patch0_simultaneous_first": 84,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 5910,
+        "patch1_joint_in_individual": 100,
+        "patch1_occupied": 397,
+        "patch1_recolonized_after_extinction": 0
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 0.9761111111111112,
+        "patch0_initial_colonizations": 0.0,
+        "patch0_recolonizations": 0.0
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.45,
+          0.45
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.0,
+          0.0
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.9376666666666666,
+        "both_patches_joint_in_individual": 0.0011111111111111111,
+        "both_patches_occupied": 0.005666666666666667,
+        "global_A_absent": 0.9624444444444444,
+        "global_B_absent": 0.9672222222222222,
+        "patch0_A_first": 0.2767777777777778,
+        "patch0_A_supported": 0.018222222222222223,
+        "patch0_B_first": 0.10244444444444445,
+        "patch0_B_supported": 0.008,
+        "patch0_alternative_gene_entered_via_pollen": 0.24644444444444444,
+        "patch0_alternative_gene_entered_via_seed": 0.0,
+        "patch0_ancestral_gene_entered_via_pollen": 0.0022222222222222222,
+        "patch0_ancestral_gene_entered_via_seed": 0.0,
+        "patch0_any_A_ever": 0.3051111111111111,
+        "patch0_any_B_ever": 0.14766666666666667,
+        "patch0_colonized_initial_vacancy": 0.0,
+        "patch0_joint_ever": 0.24566666666666667,
+        "patch0_joint_in_individual": 0.004888888888888889,
+        "patch0_occupied": 0.02388888888888889,
+        "patch0_q_high_at_horizon": 0.3492222222222222,
+        "patch0_recolonized_after_extinction": 0.0,
+        "patch0_simultaneous_first": 0.009333333333333334,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.6566666666666666,
+        "patch1_joint_in_individual": 0.011111111111111112,
+        "patch1_occupied": 0.04411111111111111,
+        "patch1_recolonized_after_extinction": 0.0
+      },
+      "replicates": 9000,
+      "seed": 500719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.9324827920747063,
+          0.9424770832218814
+        ],
+        "both_patches_joint_in_individual": [
+          0.0006036618879250407,
+          0.0020442588834183534
+        ],
+        "both_patches_occupied": [
+          0.004312821400902415,
+          0.007442323256493301
+        ],
+        "global_A_absent": [
+          0.9583152070611349,
+          0.9661790810791031
+        ],
+        "global_B_absent": [
+          0.9633396941356244,
+          0.9707060727143758
+        ],
+        "patch0_A_first": [
+          0.26763116890478844,
+          0.2861148606786479
+        ],
+        "patch0_A_supported": [
+          0.01565738616127326,
+          0.021198156035730074
+        ],
+        "patch0_B_first": [
+          0.09634837985018467,
+          0.10887974053285916
+        ],
+        "patch0_B_supported": [
+          0.006357903104327565,
+          0.010061917202021783
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.23765070904226077,
+          0.25545453710477833
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.001439057384952822,
+          0.0034301375049399195
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_any_A_ever": [
+          0.29568301274064446,
+          0.31470550686580023
+        ],
+        "patch0_any_B_ever": [
+          0.1404875365577463,
+          0.1551464404502559
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_ever": [
+          0.2368827303729577,
+          0.2546676238910969
+        ],
+        "patch0_joint_in_individual": [
+          0.003644017881875194,
+          0.00655623489253598
+        ],
+        "patch0_occupied": [
+          0.020931340034388034,
+          0.027252700167216967
+        ],
+        "patch0_q_high_at_horizon": [
+          0.3394393970143183,
+          0.3591337050985354
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_simultaneous_first": [
+          0.007545503240019388,
+          0.011539846008589174
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.646791954748255,
+          0.6664076959672027
+        ],
+        "patch1_joint_in_individual": [
+          0.009144526632263453,
+          0.013494861206024063
+        ],
+        "patch1_occupied": [
+          0.04005973131900381,
+          0.0485514978401993
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ]
+      }
+    },
+    "distinct_seed_only": {
+      "event_counts": {
+        "both_patches_extinct": 7904,
+        "both_patches_joint_in_individual": 36,
+        "both_patches_occupied": 369,
+        "global_A_absent": 8617,
+        "global_B_absent": 8215,
+        "patch0_A_first": 1885,
+        "patch0_A_supported": 255,
+        "patch0_B_first": 3795,
+        "patch0_B_supported": 511,
+        "patch0_alternative_gene_entered_via_pollen": 0,
+        "patch0_alternative_gene_entered_via_seed": 6031,
+        "patch0_ancestral_gene_entered_via_pollen": 0,
+        "patch0_ancestral_gene_entered_via_seed": 996,
+        "patch0_any_A_ever": 2405,
+        "patch0_any_B_ever": 4444,
+        "patch0_colonized_initial_vacancy": 0,
+        "patch0_joint_ever": 1576,
+        "patch0_joint_in_individual": 78,
+        "patch0_occupied": 734,
+        "patch0_q_high_at_horizon": 3213,
+        "patch0_recolonized_after_extinction": 1761,
+        "patch0_simultaneous_first": 198,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 1859,
+        "patch1_joint_in_individual": 86,
+        "patch1_occupied": 731,
+        "patch1_recolonized_after_extinction": 1044
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 1.129,
+        "patch0_initial_colonizations": 0.0,
+        "patch0_recolonizations": 0.21055555555555555
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.0,
+          0.0
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.35,
+          0.35
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.8782222222222222,
+        "both_patches_joint_in_individual": 0.004,
+        "both_patches_occupied": 0.041,
+        "global_A_absent": 0.9574444444444444,
+        "global_B_absent": 0.9127777777777778,
+        "patch0_A_first": 0.20944444444444443,
+        "patch0_A_supported": 0.028333333333333332,
+        "patch0_B_first": 0.4216666666666667,
+        "patch0_B_supported": 0.05677777777777778,
+        "patch0_alternative_gene_entered_via_pollen": 0.0,
+        "patch0_alternative_gene_entered_via_seed": 0.6701111111111111,
+        "patch0_ancestral_gene_entered_via_pollen": 0.0,
+        "patch0_ancestral_gene_entered_via_seed": 0.11066666666666666,
+        "patch0_any_A_ever": 0.26722222222222225,
+        "patch0_any_B_ever": 0.49377777777777776,
+        "patch0_colonized_initial_vacancy": 0.0,
+        "patch0_joint_ever": 0.1751111111111111,
+        "patch0_joint_in_individual": 0.008666666666666666,
+        "patch0_occupied": 0.08155555555555556,
+        "patch0_q_high_at_horizon": 0.357,
+        "patch0_recolonized_after_extinction": 0.19566666666666666,
+        "patch0_simultaneous_first": 0.022,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.20655555555555555,
+        "patch1_joint_in_individual": 0.009555555555555555,
+        "patch1_occupied": 0.08122222222222222,
+        "patch1_recolonized_after_extinction": 0.116
+      },
+      "replicates": 9000,
+      "seed": 600719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.87130400478327,
+          0.8848177051709277
+        ],
+        "both_patches_joint_in_individual": [
+          0.0028908056596956334,
+          0.005532427819876062
+        ],
+        "both_patches_occupied": [
+          0.037095383344297315,
+          0.04529627828296764
+        ],
+        "global_A_absent": [
+          0.9530753548083198,
+          0.9614231997984463
+        ],
+        "global_B_absent": [
+          0.9067708633397101,
+          0.9184324717013722
+        ],
+        "patch0_A_first": [
+          0.20116255150648088,
+          0.217974266492865
+        ],
+        "patch0_A_supported": [
+          0.025101448050989912,
+          0.031967688624812474
+        ],
+        "patch0_B_first": [
+          0.4114998506144739,
+          0.4319003240277973
+        ],
+        "patch0_B_supported": [
+          0.05218311078630199,
+          0.061750643324363697
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.6603266483054463,
+          0.6797504192444587
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.10435064779329012,
+          0.11731490106701886
+        ],
+        "patch0_any_A_ever": [
+          0.25818077753192875,
+          0.2764622946319833
+        ],
+        "patch0_any_B_ever": [
+          0.4834535184966465,
+          0.5041073464394772
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_ever": [
+          0.16739815510154835,
+          0.18310129263462274
+        ],
+        "patch0_joint_in_individual": [
+          0.006950285804268274,
+          0.01080229897321068
+        ],
+        "patch0_occupied": [
+          0.07607815575091106,
+          0.08739001120340506
+        ],
+        "patch0_q_high_at_horizon": [
+          0.34716450158825646,
+          0.3669575193544427
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.1876012040508377,
+          0.20399181487849627
+        ],
+        "patch0_simultaneous_first": [
+          0.01916727450397921,
+          0.025240599696091895
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.19831780179147637,
+          0.21504370349964122
+        ],
+        "patch1_joint_in_individual": [
+          0.0077444868734827515,
+          0.01178511719883568
+        ],
+        "patch1_occupied": [
+          0.07575549571927472,
+          0.0870462889994766
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.1095474212488878,
+          0.12278024338045807
+        ]
+      }
+    },
+    "empty_no_flow": {
+      "event_counts": {
+        "both_patches_extinct": 8758,
+        "both_patches_joint_in_individual": 0,
+        "both_patches_occupied": 0,
+        "global_A_absent": 8758,
+        "global_B_absent": 9000,
+        "patch0_A_first": 0,
+        "patch0_A_supported": 0,
+        "patch0_B_first": 0,
+        "patch0_B_supported": 0,
+        "patch0_alternative_gene_entered_via_pollen": 0,
+        "patch0_alternative_gene_entered_via_seed": 0,
+        "patch0_ancestral_gene_entered_via_pollen": 0,
+        "patch0_ancestral_gene_entered_via_seed": 0,
+        "patch0_any_A_ever": 0,
+        "patch0_any_B_ever": 0,
+        "patch0_colonized_initial_vacancy": 0,
+        "patch0_joint_ever": 0,
+        "patch0_joint_in_individual": 0,
+        "patch0_occupied": 0,
+        "patch0_q_high_at_horizon": 3152,
+        "patch0_recolonized_after_extinction": 0,
+        "patch0_simultaneous_first": 0,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 0,
+        "patch1_joint_in_individual": 0,
+        "patch1_occupied": 242,
+        "patch1_recolonized_after_extinction": 0
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [],
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 0.0,
+        "patch0_initial_colonizations": 0.0,
+        "patch0_recolonizations": 0.0
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.0,
+          0.0
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.0,
+          0.0
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.9731111111111111,
+        "both_patches_joint_in_individual": 0.0,
+        "both_patches_occupied": 0.0,
+        "global_A_absent": 0.9731111111111111,
+        "global_B_absent": 1.0,
+        "patch0_A_first": 0.0,
+        "patch0_A_supported": 0.0,
+        "patch0_B_first": 0.0,
+        "patch0_B_supported": 0.0,
+        "patch0_alternative_gene_entered_via_pollen": 0.0,
+        "patch0_alternative_gene_entered_via_seed": 0.0,
+        "patch0_ancestral_gene_entered_via_pollen": 0.0,
+        "patch0_ancestral_gene_entered_via_seed": 0.0,
+        "patch0_any_A_ever": 0.0,
+        "patch0_any_B_ever": 0.0,
+        "patch0_colonized_initial_vacancy": 0.0,
+        "patch0_joint_ever": 0.0,
+        "patch0_joint_in_individual": 0.0,
+        "patch0_occupied": 0.0,
+        "patch0_q_high_at_horizon": 0.3502222222222222,
+        "patch0_recolonized_after_extinction": 0.0,
+        "patch0_simultaneous_first": 0.0,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.0,
+        "patch1_joint_in_individual": 0.0,
+        "patch1_occupied": 0.02688888888888889,
+        "patch1_recolonized_after_extinction": 0.0
+      },
+      "replicates": 9000,
+      "seed": 719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.9695619732394498,
+          0.9762565464388622
+        ],
+        "both_patches_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "both_patches_occupied": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "global_A_absent": [
+          0.9695619732394498,
+          0.9762565464388622
+        ],
+        "global_B_absent": [
+          0.999573353347206,
+          1.0
+        ],
+        "patch0_A_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_A_supported": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_B_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_any_A_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_any_B_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_occupied": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_q_high_at_horizon": [
+          0.340432464224775,
+          0.36013978459477314
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_simultaneous_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_occupied": [
+          0.02374345356113791,
+          0.030438026760550324
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ]
+      }
+    },
+    "empty_pollen_only": {
+      "event_counts": {
+        "both_patches_extinct": 8738,
+        "both_patches_joint_in_individual": 0,
+        "both_patches_occupied": 0,
+        "global_A_absent": 8738,
+        "global_B_absent": 9000,
+        "patch0_A_first": 0,
+        "patch0_A_supported": 0,
+        "patch0_B_first": 0,
+        "patch0_B_supported": 0,
+        "patch0_alternative_gene_entered_via_pollen": 0,
+        "patch0_alternative_gene_entered_via_seed": 0,
+        "patch0_ancestral_gene_entered_via_pollen": 0,
+        "patch0_ancestral_gene_entered_via_seed": 0,
+        "patch0_any_A_ever": 0,
+        "patch0_any_B_ever": 0,
+        "patch0_colonized_initial_vacancy": 0,
+        "patch0_joint_ever": 0,
+        "patch0_joint_in_individual": 0,
+        "patch0_occupied": 0,
+        "patch0_q_high_at_horizon": 3138,
+        "patch0_recolonized_after_extinction": 0,
+        "patch0_simultaneous_first": 0,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 0,
+        "patch1_joint_in_individual": 0,
+        "patch1_occupied": 262,
+        "patch1_recolonized_after_extinction": 0
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [],
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 0.0,
+        "patch0_initial_colonizations": 0.0,
+        "patch0_recolonizations": 0.0
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.45,
+          0.45
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.0,
+          0.0
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.9708888888888889,
+        "both_patches_joint_in_individual": 0.0,
+        "both_patches_occupied": 0.0,
+        "global_A_absent": 0.9708888888888889,
+        "global_B_absent": 1.0,
+        "patch0_A_first": 0.0,
+        "patch0_A_supported": 0.0,
+        "patch0_B_first": 0.0,
+        "patch0_B_supported": 0.0,
+        "patch0_alternative_gene_entered_via_pollen": 0.0,
+        "patch0_alternative_gene_entered_via_seed": 0.0,
+        "patch0_ancestral_gene_entered_via_pollen": 0.0,
+        "patch0_ancestral_gene_entered_via_seed": 0.0,
+        "patch0_any_A_ever": 0.0,
+        "patch0_any_B_ever": 0.0,
+        "patch0_colonized_initial_vacancy": 0.0,
+        "patch0_joint_ever": 0.0,
+        "patch0_joint_in_individual": 0.0,
+        "patch0_occupied": 0.0,
+        "patch0_q_high_at_horizon": 0.3486666666666667,
+        "patch0_recolonized_after_extinction": 0.0,
+        "patch0_simultaneous_first": 0.0,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.0,
+        "patch1_joint_in_individual": 0.0,
+        "patch1_occupied": 0.029111111111111112,
+        "patch1_recolonized_after_extinction": 0.0
+      },
+      "replicates": 9000,
+      "seed": 100719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.9672096304203528,
+          0.9741663410208603
+        ],
+        "both_patches_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "both_patches_occupied": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "global_A_absent": [
+          0.9672096304203528,
+          0.9741663410208603
+        ],
+        "global_B_absent": [
+          0.999573353347206,
+          1.0
+        ],
+        "patch0_A_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_A_supported": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_B_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_any_A_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_any_B_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_occupied": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_q_high_at_horizon": [
+          0.3388877135870565,
+          0.3585747514665226
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_simultaneous_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_occupied": [
+          0.025833658979139727,
+          0.03279036957964721
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.0,
+          0.0004266466527940478
+        ]
+      }
+    },
+    "empty_seed_only": {
+      "event_counts": {
+        "both_patches_extinct": 8130,
+        "both_patches_joint_in_individual": 0,
+        "both_patches_occupied": 278,
+        "global_A_absent": 8130,
+        "global_B_absent": 9000,
+        "patch0_A_first": 3148,
+        "patch0_A_supported": 573,
+        "patch0_B_first": 0,
+        "patch0_B_supported": 0,
+        "patch0_alternative_gene_entered_via_pollen": 0,
+        "patch0_alternative_gene_entered_via_seed": 0,
+        "patch0_ancestral_gene_entered_via_pollen": 0,
+        "patch0_ancestral_gene_entered_via_seed": 6030,
+        "patch0_any_A_ever": 3148,
+        "patch0_any_B_ever": 0,
+        "patch0_colonized_initial_vacancy": 6030,
+        "patch0_joint_ever": 0,
+        "patch0_joint_in_individual": 0,
+        "patch0_occupied": 573,
+        "patch0_q_high_at_horizon": 3107,
+        "patch0_recolonized_after_extinction": 774,
+        "patch0_simultaneous_first": 0,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 0,
+        "patch1_joint_in_individual": 0,
+        "patch1_occupied": 575,
+        "patch1_recolonized_after_extinction": 667
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [],
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 0.6957777777777778,
+        "patch0_initial_colonizations": 0.67,
+        "patch0_recolonizations": 0.08944444444444444
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.0,
+          0.0
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.35,
+          0.35
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.9033333333333333,
+        "both_patches_joint_in_individual": 0.0,
+        "both_patches_occupied": 0.03088888888888889,
+        "global_A_absent": 0.9033333333333333,
+        "global_B_absent": 1.0,
+        "patch0_A_first": 0.3497777777777778,
+        "patch0_A_supported": 0.06366666666666666,
+        "patch0_B_first": 0.0,
+        "patch0_B_supported": 0.0,
+        "patch0_alternative_gene_entered_via_pollen": 0.0,
+        "patch0_alternative_gene_entered_via_seed": 0.0,
+        "patch0_ancestral_gene_entered_via_pollen": 0.0,
+        "patch0_ancestral_gene_entered_via_seed": 0.67,
+        "patch0_any_A_ever": 0.3497777777777778,
+        "patch0_any_B_ever": 0.0,
+        "patch0_colonized_initial_vacancy": 0.67,
+        "patch0_joint_ever": 0.0,
+        "patch0_joint_in_individual": 0.0,
+        "patch0_occupied": 0.06366666666666666,
+        "patch0_q_high_at_horizon": 0.3452222222222222,
+        "patch0_recolonized_after_extinction": 0.086,
+        "patch0_simultaneous_first": 0.0,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.0,
+        "patch1_joint_in_individual": 0.0,
+        "patch1_occupied": 0.06388888888888888,
+        "patch1_recolonized_after_extinction": 0.07411111111111111
+      },
+      "replicates": 9000,
+      "seed": 200719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.897055079768323,
+          0.9092674252650899
+        ],
+        "both_patches_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "both_patches_occupied": [
+          0.027509700484277307,
+          0.034668366664188585
+        ],
+        "global_A_absent": [
+          0.897055079768323,
+          0.9092674252650899
+        ],
+        "global_B_absent": [
+          0.999573353347206,
+          1.0
+        ],
+        "patch0_A_first": [
+          0.33999109514486525,
+          0.3596926440272632
+        ],
+        "patch0_A_supported": [
+          0.058806200491599875,
+          0.06889945315407173
+        ],
+        "patch0_B_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.6602147549221853,
+          0.6796401852158649
+        ],
+        "patch0_any_A_ever": [
+          0.33999109514486525,
+          0.3596926440272632
+        ],
+        "patch0_any_B_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.6602147549221853,
+          0.6796401852158649
+        ],
+        "patch0_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_occupied": [
+          0.058806200491599875,
+          0.06889945315407173
+        ],
+        "patch0_q_high_at_horizon": [
+          0.33546760551668586,
+          0.35510890976939025
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.08038289956142947,
+          0.09197036386708402
+        ],
+        "patch0_simultaneous_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_occupied": [
+          0.05902014278276665,
+          0.06912976568661484
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.06887904241475151,
+          0.07970658794528399
+        ]
+      }
+    },
+    "empty_seed_source_fragile": {
+      "event_counts": {
+        "both_patches_extinct": 8726,
+        "both_patches_joint_in_individual": 0,
+        "both_patches_occupied": 63,
+        "global_A_absent": 8726,
+        "global_B_absent": 9000,
+        "patch0_A_first": 2527,
+        "patch0_A_supported": 220,
+        "patch0_B_first": 0,
+        "patch0_B_supported": 0,
+        "patch0_alternative_gene_entered_via_pollen": 0,
+        "patch0_alternative_gene_entered_via_seed": 0,
+        "patch0_ancestral_gene_entered_via_pollen": 0,
+        "patch0_ancestral_gene_entered_via_seed": 5387,
+        "patch0_any_A_ever": 2527,
+        "patch0_any_B_ever": 0,
+        "patch0_colonized_initial_vacancy": 5387,
+        "patch0_joint_ever": 0,
+        "patch0_joint_in_individual": 0,
+        "patch0_occupied": 220,
+        "patch0_q_high_at_horizon": 3212,
+        "patch0_recolonized_after_extinction": 287,
+        "patch0_simultaneous_first": 0,
+        "patch1_colonized_initial_vacancy": 0,
+        "patch1_joint_ever": 0,
+        "patch1_joint_in_individual": 0,
+        "patch1_occupied": 117,
+        "patch1_recolonized_after_extinction": 805
+      },
+      "horizon": 7,
+      "initial_populations": [
+        [],
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "initial_q": [
+        0,
+        1
+      ],
+      "mean_events": {
+        "patch0_extinctions": 0.6073333333333333,
+        "patch0_initial_colonizations": 0.5985555555555555,
+        "patch0_recolonizations": 0.03322222222222222
+      },
+      "parameters": {
+        "a_expression_q_feedback": 0.0,
+        "activation_a": 0.75,
+        "activation_b": 0.75,
+        "assurance": 0.45,
+        "b_expression_q_feedback": 0.0,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.32
+        ],
+        "high_stays_high": 0.8,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.12,
+        "pollen_rates": [
+          0.0,
+          0.0
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_rates": [
+          0.35,
+          0.35
+        ],
+        "tie_a": 0.5
+      },
+      "probabilities": {
+        "both_patches_extinct": 0.9695555555555555,
+        "both_patches_joint_in_individual": 0.0,
+        "both_patches_occupied": 0.007,
+        "global_A_absent": 0.9695555555555555,
+        "global_B_absent": 1.0,
+        "patch0_A_first": 0.2807777777777778,
+        "patch0_A_supported": 0.024444444444444446,
+        "patch0_B_first": 0.0,
+        "patch0_B_supported": 0.0,
+        "patch0_alternative_gene_entered_via_pollen": 0.0,
+        "patch0_alternative_gene_entered_via_seed": 0.0,
+        "patch0_ancestral_gene_entered_via_pollen": 0.0,
+        "patch0_ancestral_gene_entered_via_seed": 0.5985555555555555,
+        "patch0_any_A_ever": 0.2807777777777778,
+        "patch0_any_B_ever": 0.0,
+        "patch0_colonized_initial_vacancy": 0.5985555555555555,
+        "patch0_joint_ever": 0.0,
+        "patch0_joint_in_individual": 0.0,
+        "patch0_occupied": 0.024444444444444446,
+        "patch0_q_high_at_horizon": 0.35688888888888887,
+        "patch0_recolonized_after_extinction": 0.03188888888888889,
+        "patch0_simultaneous_first": 0.0,
+        "patch1_colonized_initial_vacancy": 0.0,
+        "patch1_joint_ever": 0.0,
+        "patch1_joint_in_individual": 0.0,
+        "patch1_occupied": 0.013,
+        "patch1_recolonized_after_extinction": 0.08944444444444444
+      },
+      "replicates": 9000,
+      "seed": 300719303,
+      "wilson_95": {
+        "both_patches_extinct": [
+          0.965800828102241,
+          0.9729096143967129
+        ],
+        "both_patches_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "both_patches_occupied": [
+          0.005475441283396264,
+          0.008945232316258668
+        ],
+        "global_A_absent": [
+          0.965800828102241,
+          0.9729096143967129
+        ],
+        "global_B_absent": [
+          0.999573353347206,
+          1.0
+        ],
+        "patch0_A_first": [
+          0.27158871896422976,
+          0.2901538974459843
+        ],
+        "patch0_A_supported": [
+          0.021451189086192573,
+          0.0278434881746871
+        ],
+        "patch0_B_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_alternative_gene_entered_via_seed": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_pollen": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_ancestral_gene_entered_via_seed": [
+          0.5883883242925589,
+          0.608638690022768
+        ],
+        "patch0_any_A_ever": [
+          0.27158871896422976,
+          0.2901538974459843
+        ],
+        "patch0_any_B_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_colonized_initial_vacancy": [
+          0.5883883242925589,
+          0.608638690022768
+        ],
+        "patch0_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch0_occupied": [
+          0.021451189086192573,
+          0.0278434881746871
+        ],
+        "patch0_q_high_at_horizon": [
+          0.3470541228628838,
+          0.36684577066796037
+        ],
+        "patch0_recolonized_after_extinction": [
+          0.028453869317683955,
+          0.035723344537476345
+        ],
+        "patch0_simultaneous_first": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_colonized_initial_vacancy": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_ever": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_joint_in_individual": [
+          0.0,
+          0.0004266466527940478
+        ],
+        "patch1_occupied": [
+          0.01085884642914517,
+          0.015556707410676236
+        ],
+        "patch1_recolonized_after_extinction": [
+          0.08372227247911447,
+          0.09551694071690199
+        ]
+      }
+    }
+  },
+  "source": "both finite patches update simultaneously; no static source reservoir, no external inputs",
+  "status": "CONSTRUCTED Monte Carlo, NOT cross-source replication, empirical fit, or long-run establishment"
+}
