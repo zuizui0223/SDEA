@@ -99,3 +99,7 @@ jobs:
       - name: Run v14 context-conditional Ipomopsis year-heldout source
         run: |
           python scripts/run_within_context.py --fetch-pinned --output /tmp/sdea_v14.json
+
+      - name: Verify frozen v14 within-context original Ipomopsis source forecast
+        run: |
+          python scripts/verify_fixture.py results/v14_within_context.json /tmp/sdea_v14.json
