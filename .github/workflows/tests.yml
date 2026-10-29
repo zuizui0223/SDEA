@@ -107,3 +107,7 @@ jobs:
       - name: Run v15 source-authenticated Ulex plant G-T-F heldout-sites
         run: |
           python scripts/run_ulex_partial.py --fetch-pinned --output /tmp/sdea_v15.json
+
+      - name: Verify frozen v15 original Ulex source plus genetic and trait heldout sites
+        run: |
+          python scripts/verify_fixture.py results/v15_ulex_partial.json /tmp/sdea_v15.json
