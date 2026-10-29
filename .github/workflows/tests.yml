@@ -83,3 +83,7 @@ jobs:
       - name: Run v12 original-author four-site ecological transfer
         run: |
           python scripts/run_site_transfer.py --fetch-pinned --output /tmp/sdea_v12.json
+
+      - name: Verify frozen v12 original four-site ecological transfer
+        run: |
+          python scripts/verify_fixture.py results/v12_site_transfer_real.json /tmp/sdea_v12.json

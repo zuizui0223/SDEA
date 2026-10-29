@@ -276,3 +276,5 @@ python scripts/run_site_transfer.py --fetch-pinned --output /tmp/sdea_v12.json
 ```
 
 Frozen source report will be included as an additional fixture after the original-source runner has succeeded in independent GitHub CI. The entire cross-layer ancestral flower-history/trait-restoration/fitness sequence remains **NOT IDENTIFIED**.
+
+**Source-replayed evidence receipt:** [v12 frozen genuine original-head held-out-site results](results/v12_site_transfer_real.json). Reproduced from the author-pinned original 615-head source in [CI source run #40807391636](https://github.com/zuizui0223/SDEA/actions/runs/40807391636). The frozen source readout contains only aggregate site fold metrics, no sampled individual head or plant raw records. Missing/changed originals invalidate CI rather than being imputed as ecological zero.
