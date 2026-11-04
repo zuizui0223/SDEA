@@ -119,3 +119,7 @@ jobs:
       - name: Verify frozen v16 source-pinned genomic identity and site placebo
         run: |
           python scripts/verify_fixture.py results/v16_ulex_genomic_placebo.json /tmp/sdea_v16.json
+
+      - name: Run v17 original Sinapis plant interaction-seed shelter holdout
+        run: |
+          python scripts/run_sinapis_process.py --fetch-pinned --reps 200 --seed 20261105 --output /tmp/sdea_v17.json

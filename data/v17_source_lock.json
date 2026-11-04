@@ -1,0 +1,43 @@
+{
+  "protocol": "SDEA-v17-2026-11-05-original-independent-Sinapis-plant-visitor-seed-gate",
+  "study": "Hoefer, Lindner, Ayasse & Kuppler (2022), Sinapis arvensis rainfall manipulation",
+  "source_record_id": 7335086,
+  "source_api": "https://zenodo.org/api/records/7335086",
+  "original_dataset_doi": "10.5061/dryad.66t1g1k5f",
+  "study_design": "53 source plants distributed over five rain shelters, three original rainfall treatments, mother-family IDs, different treatment plots; 427 visitor-group source rows not 427 plants",
+  "original_author_files_and_md5": {
+    "Floral_traits.csv": "24f1f01435fa22faa832c415bbd0b77e",
+    "Int_data.csv": "d67c32cc5aa357fe6e6d952a801ea38f",
+    "Plantlist.csv": "630eb7d3d7c871f65c2bd62890e1597c",
+    "README.md": "68bf11faaa9786fbb39f9e32006b336d"
+  },
+  "source_grain": "same plantID must agree on motherID, treatment, shelter and plotID across all three measured tables",
+  "source_visitor_exposure": "observetime is repeated per visitor-group row; sum NrInteraction but use observetime only once per plant",
+  "primary_endpoint": "original estimated seedsperplant, transformed log1p for squared-error forecast, NOT offspring establishment",
+  "heldout_unit": "whole original rain shelter, five folds; original plant only once in each heldout yearless fold",
+  "frozen_models": {
+    "M0": "precipitation treatment and log1p(total seasonal flower count)",
+    "M1": "M0 plus mean floral display size and mean petal width",
+    "M2": "M1 plus log1p(sum visits divided by unique plant observation time in hours)",
+    "M3": "M0 plus identical visitation predictor for secondary direct diagnostic"
+  },
+  "ridge_penalty": 4,
+  "visitation_identity_placebo": {
+    "unit": "within original shelter by rainfall treatment label, shuffle plant visitation predictor one-to-one",
+    "replicates": 200,
+    "seed": 20261105,
+    "qualification": "exploratory descriptive within-archive identity control, NOT a causal randomized p-value"
+  },
+  "strict_process_readiness": "M2 vs M1 positive average equal-shelter gain, positive individual-weighted gain, positive gains at least four/five shelters, and exceeds site-treatment visitor-identity shuffle q97.5",
+  "limitations": [
+    "The original paper already observed rainfall effects and relative roles of flower supply and visitation; not a new discovery.",
+    "No individual genomic sequence: motherID is an ancestry-family label, not a molecular genotype measurement.",
+    "No longitudinal descendant flower traits or functional ancestral pigment molecular pathways.",
+    "Observed visits over time and total seasonal flower counts share period with seed output, not sequential experimental mediation or true prospective deployment.",
+    "Rainfall treatments are assigned in original shelters/plots and original insect taxa are not automatically effective pollinators.",
+    "Five shelters from one published study are NOT independent studies or evolutionary radiations.",
+    "No numeric transfer of Cirsium bagging or Ipomopsis corolla-width effect sizes."
+  ],
+  "source_file_row_data_committed_to_SDEA": false,
+  "registration_note": "retrospective source-audited analysis designed after prior SDEA and original published results; not prospective or preregistered biological effect"
+}
