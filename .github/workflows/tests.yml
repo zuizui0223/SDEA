@@ -123,3 +123,7 @@ jobs:
       - name: Run v17 original Sinapis plant interaction-seed shelter holdout
         run: |
           python scripts/run_sinapis_process.py --fetch-pinned --reps 200 --seed 20261105 --output /tmp/sdea_v17.json
+
+      - name: Verify frozen v17 original Sinapis full plant process receipt
+        run: |
+          python scripts/verify_fixture.py results/v17_sinapis_process.json /tmp/sdea_v17.json

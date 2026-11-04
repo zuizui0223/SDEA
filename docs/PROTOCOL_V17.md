@@ -56,3 +56,13 @@ python scripts/run_sinapis_process.py --fetch-pinned --reps 200 --seed 20261105 
 ```
 
 The original source report is printed in a single machine-readable prefixed JSON record in successful CI, excluding original plant ID and raw visits. Only after actual published source download/replay succeeds is its result frozen as a versioned fixture and byte-checked on the next run. Access/source-schema failure is an epistemic STOP, not a null ecological result. The SDEA Draft PR remains open pending independent field, genotypic and descendant-layer validation.
+
+## Original-source outcome after fixed v17 design (2026-11-05)
+
+Original read-only four-file author MD5 authenticated by [GitHub Actions run #41923722762](https://github.com/zuizui0223/SDEA/actions/runs/41923722762): 53 original plant IDs and 427 nested visitor-group records, one missing original seedsperplant, **52 eligible exactly linked plants**, 5 rain shelters (11,9,8,12,12). There is no individual genomic genotype or descendant trait axis; motherID is a family marker, not an assay.
+
+**Heldout log seed output (not flower or seed survival):** Adding measured floral shape to rainfall+total season flower supply M0 worsens mean predictive MSE **−0.0230344721** (1/5 shelters improves); direct total observed plant visitor intensity added after morphology M1 improves equal-shelter MSE **+0.0631218749**, individual-weighted **+0.0623222860**, and **4/5** shelters improve. Adding interaction intensity directly after M0 rather than after morphology improves **all 5 original shelter fold means** (equal-shelter **+0.0580020583**), but this model is separately measured. Shelter 4 is the negative M1→M2 fold **−0.0248047028**; never omit.
+
+**Within-shelter and original rainfall-treatment 200-permutation observational placebo:** Reassigning plant-specific visitation labels within each site/treatment shows median predictive increment **−0.0094199242**, 97.5th percentile **+0.0115706959**; **0/200** equals or exceeds true source assignment **+0.0631218749**. The fixed exploratory readiness gate passes. The placebo ranking is NOT a randomized ecological causal p-value, and the source original author already showed rainfall-treatment flower/seed supply changes; this new analysis cannot attribute the residual predictive contribution to successful pollen delivery alone.
+
+All exact original-source aggregate fold results, source validity, plus both the positive and negative interpretation boundaries, are frozen in [v17 original-data receipt](../results/v17_sinapis_process.json). The prior SDEA v1–v16 fixtures stay unchanged. Full ancestral molecular genotype, actual individual source pollen movement and next-generation offspring fate are still NOT IDENTIFIABLE in this original archive.
