@@ -1,0 +1,1194 @@
+{
+  "design": {
+    "fixed_initial_genotypes": [
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    ],
+    "fixed_q": 0.75,
+    "fixed_seed_attempt_budget_per_occupied_source": 3,
+    "future_realized_total_seed_budget_endogenous": true,
+    "horizon": 7,
+    "independent_unit": "whole six-patch trajectory",
+    "model_classes": [
+      "structurally_separated",
+      "connected_clustered",
+      "connected_alternating"
+    ],
+    "no_mutation_or_external_gene_reacquisition": true,
+    "number_cells": 12,
+    "paired_random_keys_not_proof_of_causal_mediation": true,
+    "replicates_per_cell": 2000,
+    "seed": 1182026,
+    "selection_affects_first_gen_seed_production": false,
+    "selection_policies": [
+      "lethal",
+      "disfavored",
+      "neutral",
+      "favored"
+    ],
+    "selection_stage": "post-zygote competitive adult recruitment only"
+  },
+  "exact_first_gen_joint_seed_production": {
+    "alternating": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 8.985937499999999,
+      "per_source_viable_hybrid_per_attempt": [
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993
+      ],
+      "probability_any_hybrid_seed_produced": 0.999996076577506
+    },
+    "clustered": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 2.9953125,
+      "per_source_viable_hybrid_per_attempt": [
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997,
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997
+      ],
+      "probability_any_hybrid_seed_produced": 0.9681251026678412
+    },
+    "components": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 0.0,
+      "per_source_viable_hybrid_per_attempt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probability_any_hybrid_seed_produced": 0.0
+    }
+  },
+  "exact_fixed_mixed_pool_recruitment": {
+    "0.0": {
+      "conditional_joint_recruitment": 0.0,
+      "enumerated_cross_check": 0.0,
+      "relative_weight": 0.0
+    },
+    "0.3333333333333333": {
+      "conditional_joint_recruitment": 0.3571428571428572,
+      "enumerated_cross_check": 0.3571428571428572,
+      "relative_weight": 0.3333333333333333
+    },
+    "1.0": {
+      "conditional_joint_recruitment": 0.6666666666666667,
+      "enumerated_cross_check": 0.6666666666666667,
+      "relative_weight": 1.0
+    },
+    "3.0": {
+      "conditional_joint_recruitment": 0.9,
+      "enumerated_cross_check": 0.9,
+      "relative_weight": 3.0
+    }
+  },
+  "exact_pool_forecast_brier_gain_favored_vs_disfavored": 0.0736734693877551,
+  "paired_mc_contrasts": {
+    "alternating_disfavored_minus_neutral": {
+      "ever_joint_adult_recruited": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_any_occupied": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_joint_adult": {
+        "difference": -0.096,
+        "paired_mc_95": [
+          -0.11110847627348035,
+          -0.08089152372651966
+        ],
+        "paired_mc_se": 0.0077085479083565224
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      }
+    },
+    "alternating_favored_minus_neutral": {
+      "ever_joint_adult_recruited": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_any_occupied": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_joint_adult": {
+        "difference": 0.054,
+        "paired_mc_95": [
+          0.04182906857906843,
+          0.06617093142093157
+        ],
+        "paired_mc_se": 0.0062097729942663885
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      }
+    },
+    "clustered_disfavored_minus_neutral": {
+      "ever_joint_adult_recruited": {
+        "difference": -0.0025,
+        "paired_mc_95": [
+          -0.004689112851040412,
+          -0.00031088714895958743
+        ],
+        "paired_mc_se": 0.001116914835327514
+      },
+      "final_any_occupied": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_joint_adult": {
+        "difference": -0.076,
+        "paired_mc_95": [
+          -0.09100893795402519,
+          -0.060991062045974806
+        ],
+        "paired_mc_se": 0.0076577621182908374
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": -0.0575,
+        "paired_mc_95": [
+          -0.06770507723060622,
+          -0.04729492276939379
+        ],
+        "paired_mc_se": 0.005206767732010672
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      }
+    },
+    "clustered_favored_minus_neutral": {
+      "ever_joint_adult_recruited": {
+        "difference": 0.0005,
+        "paired_mc_95": [
+          -0.000479981992270027,
+          0.001479981992270027
+        ],
+        "paired_mc_se": 0.0005
+      },
+      "final_any_occupied": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_joint_adult": {
+        "difference": 0.0605,
+        "paired_mc_95": [
+          0.04780692981991971,
+          0.07319307018008028
+        ],
+        "paired_mc_se": 0.006476175215566003
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": 0.039,
+        "paired_mc_95": [
+          0.030513361732408997,
+          0.047486638267591
+        ],
+        "paired_mc_se": 0.004329997048176663
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      }
+    },
+    "disfavored_alt_minus_cluster": {
+      "ever_joint_adult_recruited": {
+        "difference": 0.003,
+        "paired_mc_95": [
+          0.0006025481122397627,
+          0.005397451887760238
+        ],
+        "paired_mc_se": 0.0012232122154646882
+      },
+      "final_any_occupied": {
+        "difference": -0.0085,
+        "paired_mc_95": [
+          -0.029905239634486266,
+          0.012905239634486265
+        ],
+        "paired_mc_se": 0.010921241310211854
+      },
+      "final_joint_adult": {
+        "difference": 0.003,
+        "paired_mc_95": [
+          -0.027465703638387035,
+          0.03346570363838704
+        ],
+        "paired_mc_se": 0.015544011970983457
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": 0.1425,
+        "paired_mc_95": [
+          0.1271762100427171,
+          0.15782378995728288
+        ],
+        "paired_mc_se": 0.007818403847292597
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0305,
+        "paired_mc_95": [
+          0.022961837065184516,
+          0.03803816293481548
+        ],
+        "paired_mc_se": 0.0038460721698335026
+      }
+    },
+    "favored_alt_minus_cluster": {
+      "ever_joint_adult_recruited": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_any_occupied": {
+        "difference": -0.0085,
+        "paired_mc_95": [
+          -0.029905239634486266,
+          0.012905239634486265
+        ],
+        "paired_mc_se": 0.010921241310211854
+      },
+      "final_joint_adult": {
+        "difference": 0.0165,
+        "paired_mc_95": [
+          -0.011542984496035323,
+          0.044542984496035325
+        ],
+        "paired_mc_se": 0.014307908062206658
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": 0.046,
+        "paired_mc_95": [
+          0.03681678405071208,
+          0.05518321594928792
+        ],
+        "paired_mc_se": 0.00468540035517181
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0305,
+        "paired_mc_95": [
+          0.022961837065184516,
+          0.03803816293481548
+        ],
+        "paired_mc_se": 0.0038460721698335026
+      }
+    },
+    "lethal_alt_minus_cluster": {
+      "ever_joint_adult_recruited": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "final_any_occupied": {
+        "difference": -0.2295,
+        "paired_mc_95": [
+          -0.25273075104301246,
+          -0.20626924895698756
+        ],
+        "paired_mc_se": 0.011852641796611394
+      },
+      "final_joint_adult": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0305,
+        "paired_mc_95": [
+          0.022961837065184516,
+          0.03803816293481548
+        ],
+        "paired_mc_se": 0.0038460721698335026
+      }
+    },
+    "neutral_alt_minus_cluster": {
+      "ever_joint_adult_recruited": {
+        "difference": 0.0005,
+        "paired_mc_95": [
+          -0.000479981992270027,
+          0.001479981992270027
+        ],
+        "paired_mc_se": 0.0005
+      },
+      "final_any_occupied": {
+        "difference": -0.0085,
+        "paired_mc_95": [
+          -0.029905239634486266,
+          0.012905239634486265
+        ],
+        "paired_mc_se": 0.010921241310211854
+      },
+      "final_joint_adult": {
+        "difference": 0.023,
+        "paired_mc_95": [
+          -0.005761639834412996,
+          0.051761639834412995
+        ],
+        "paired_mc_se": 0.014674575686737686
+      },
+      "gen1_joint_adult_recruited": {
+        "difference": 0.085,
+        "paired_mc_95": [
+          0.07277463867120679,
+          0.09722536132879323
+        ],
+        "paired_mc_se": 0.006237543865716567
+      },
+      "gen1_joint_seed_produced": {
+        "difference": 0.0305,
+        "paired_mc_95": [
+          0.022961837065184516,
+          0.03803816293481548
+        ],
+        "paired_mc_se": 0.0038460721698335026
+      }
+    }
+  },
+  "protocol": "SDEA v8 (2026-10-28) exact accessibility vs post-zygotic establishment selection",
+  "scenarios": {
+    "alternating_disfavored": {
+      "joint_recruitment_weight": 0.3333333333333333,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.11169516279841597,
+          0.14074070561524243
+        ],
+        "final_any_occupied": [
+          0.8248415772937184,
+          0.8568490794131859
+        ],
+        "final_both_alleles_global": [
+          0.5657773850317163,
+          0.6088871316940645
+        ],
+        "final_joint_adult": [
+          0.5251145969652531,
+          0.5687052005903093
+        ],
+        "gen1_joint_adult_recruited": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "gen1_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 1.5285,
+        "final_occupied_patches": 3.235,
+        "gen1_joint_seed_count": 9.0535,
+        "time_integrated_occupied_patches": 31.08,
+        "total_seed_attempts": 101.535,
+        "total_viable_seeds": 64.5245
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 1.0,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.1255,
+        "final_any_occupied": 0.8415,
+        "final_both_alleles_global": 0.5875,
+        "final_joint_adult": 0.547,
+        "gen1_joint_adult_recruited": 1.0,
+        "gen1_joint_seed_produced": 1.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "disfavored",
+      "topology": "alternating"
+    },
+    "alternating_favored": {
+      "joint_recruitment_weight": 3.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.11169516279841597,
+          0.14074070561524243
+        ],
+        "final_any_occupied": [
+          0.8248415772937184,
+          0.8568490794131859
+        ],
+        "final_both_alleles_global": [
+          0.6912533656986213,
+          0.7309357233014087
+        ],
+        "final_joint_adult": [
+          0.6764975868255326,
+          0.7167470965456536
+        ],
+        "gen1_joint_adult_recruited": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "gen1_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 2.686,
+        "final_occupied_patches": 3.235,
+        "gen1_joint_seed_count": 9.0535,
+        "time_integrated_occupied_patches": 31.08,
+        "total_seed_attempts": 101.535,
+        "total_viable_seeds": 64.5245
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 1.0,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.1255,
+        "final_any_occupied": 0.8415,
+        "final_both_alleles_global": 0.7115,
+        "final_joint_adult": 0.697,
+        "gen1_joint_adult_recruited": 1.0,
+        "gen1_joint_seed_produced": 1.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "favored",
+      "topology": "alternating"
+    },
+    "alternating_lethal": {
+      "joint_recruitment_weight": 0.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.00271818085849856,
+          0.009179695949941846
+        ],
+        "final_any_occupied": [
+          0.07589362184323717,
+          0.10068794216379648
+        ],
+        "final_both_alleles_global": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "final_joint_adult": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 0.0,
+        "final_occupied_patches": 0.2525,
+        "gen1_joint_seed_count": 9.0535,
+        "time_integrated_occupied_patches": 7.4545,
+        "total_seed_attempts": 39.606,
+        "total_viable_seeds": 21.694
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.0,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.005,
+        "final_any_occupied": 0.0875,
+        "final_both_alleles_global": 0.0,
+        "final_joint_adult": 0.0,
+        "gen1_joint_adult_recruited": 0.0,
+        "gen1_joint_seed_produced": 1.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "lethal",
+      "topology": "alternating"
+    },
+    "alternating_neutral": {
+      "joint_recruitment_weight": 1.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.11169516279841597,
+          0.14074070561524243
+        ],
+        "final_any_occupied": [
+          0.8248415772937184,
+          0.8568490794131859
+        ],
+        "final_both_alleles_global": [
+          0.6485767557412889,
+          0.6897733652303664
+        ],
+        "final_joint_adult": [
+          0.6217464611040721,
+          0.6637052633734896
+        ],
+        "gen1_joint_adult_recruited": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "gen1_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 2.084,
+        "final_occupied_patches": 3.235,
+        "gen1_joint_seed_count": 9.0535,
+        "time_integrated_occupied_patches": 31.08,
+        "total_seed_attempts": 101.535,
+        "total_viable_seeds": 64.5245
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 1.0,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.1255,
+        "final_any_occupied": 0.8415,
+        "final_both_alleles_global": 0.6695,
+        "final_joint_adult": 0.643,
+        "gen1_joint_adult_recruited": 1.0,
+        "gen1_joint_seed_produced": 1.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "neutral",
+      "topology": "alternating"
+    },
+    "clustered_disfavored": {
+      "joint_recruitment_weight": 0.3333333333333333,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          0.9934700849260646,
+          0.9986243700763698
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.12834149027926842,
+          0.15902728147954612
+        ],
+        "final_any_occupied": [
+          0.8336805918528312,
+          0.8649774750502917
+        ],
+        "final_both_alleles_global": [
+          0.5506998816541283,
+          0.59402214649009
+        ],
+        "final_joint_adult": [
+          0.5221083682982768,
+          0.5657229315409731
+        ],
+        "gen1_joint_adult_recruited": [
+          0.8414940520457082,
+          0.8721352591481961
+        ],
+        "gen1_joint_seed_produced": [
+          0.9610172880930726,
+          0.9761826045098309
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 1.4905,
+        "final_occupied_patches": 3.2685,
+        "gen1_joint_seed_count": 3.028,
+        "time_integrated_occupied_patches": 31.134,
+        "total_seed_attempts": 101.5965,
+        "total_viable_seeds": 64.53
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.997,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.143,
+        "final_any_occupied": 0.85,
+        "final_both_alleles_global": 0.5725,
+        "final_joint_adult": 0.544,
+        "gen1_joint_adult_recruited": 0.8575,
+        "gen1_joint_seed_produced": 0.9695
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "disfavored",
+      "topology": "clustered"
+    },
+    "clustered_favored": {
+      "joint_recruitment_weight": 3.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.12834149027926842,
+          0.15902728147954612
+        ],
+        "final_any_occupied": [
+          0.8336805918528312,
+          0.8649774750502917
+        ],
+        "final_both_alleles_global": [
+          0.6754808301901352,
+          0.7157676872756136
+        ],
+        "final_joint_adult": [
+          0.6597352640120161,
+          0.7005726819194517
+        ],
+        "gen1_joint_adult_recruited": [
+          0.9439163444279334,
+          0.9623429766406889
+        ],
+        "gen1_joint_seed_produced": [
+          0.9610172880930726,
+          0.9761826045098309
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 2.527,
+        "final_occupied_patches": 3.2685,
+        "gen1_joint_seed_count": 3.028,
+        "time_integrated_occupied_patches": 31.134,
+        "total_seed_attempts": 101.5965,
+        "total_viable_seeds": 64.53
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 1.0,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.143,
+        "final_any_occupied": 0.85,
+        "final_both_alleles_global": 0.696,
+        "final_joint_adult": 0.6805,
+        "gen1_joint_adult_recruited": 0.954,
+        "gen1_joint_seed_produced": 0.9695
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "favored",
+      "topology": "clustered"
+    },
+    "clustered_lethal": {
+      "joint_recruitment_weight": 0.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.010527098037106688,
+          0.021332437825708653
+        ],
+        "final_any_occupied": [
+          0.29697473321910545,
+          0.33772690608583306
+        ],
+        "final_both_alleles_global": [
+          0.0013756299236301083,
+          0.006529915073935308
+        ],
+        "final_joint_adult": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_seed_produced": [
+          0.9610172880930726,
+          0.9761826045098309
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 0.0,
+        "final_occupied_patches": 0.8715,
+        "gen1_joint_seed_count": 3.028,
+        "time_integrated_occupied_patches": 17.433,
+        "total_seed_attempts": 67.6845,
+        "total_viable_seeds": 38.742
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.0,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.015,
+        "final_any_occupied": 0.317,
+        "final_both_alleles_global": 0.003,
+        "final_joint_adult": 0.0,
+        "gen1_joint_adult_recruited": 0.0,
+        "gen1_joint_seed_produced": 0.9695
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "lethal",
+      "topology": "clustered"
+    },
+    "clustered_neutral": {
+      "joint_recruitment_weight": 1.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          0.9971731374967338,
+          0.9999117322692944
+        ],
+        "ever_joint_seed_produced": [
+          0.9980829527187469,
+          0.9999999999999998
+        ],
+        "final_all_patches_occupied": [
+          0.12834149027926842,
+          0.15902728147954612
+        ],
+        "final_any_occupied": [
+          0.8336805918528312,
+          0.8649774750502917
+        ],
+        "final_both_alleles_global": [
+          0.6212409110643851,
+          0.6632127304604578
+        ],
+        "final_joint_adult": [
+          0.5985165014191288,
+          0.6410234072333704
+        ],
+        "gen1_joint_adult_recruited": [
+          0.9019679515692871,
+          0.926440899187273
+        ],
+        "gen1_joint_seed_produced": [
+          0.9610172880930726,
+          0.9761826045098309
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 1.9955,
+        "final_occupied_patches": 3.2685,
+        "gen1_joint_seed_count": 3.028,
+        "time_integrated_occupied_patches": 31.134,
+        "total_seed_attempts": 101.5965,
+        "total_viable_seeds": 64.53
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.9995,
+        "ever_joint_seed_produced": 1.0,
+        "final_all_patches_occupied": 0.143,
+        "final_any_occupied": 0.85,
+        "final_both_alleles_global": 0.6425,
+        "final_joint_adult": 0.62,
+        "gen1_joint_adult_recruited": 0.915,
+        "gen1_joint_seed_produced": 0.9695
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "neutral",
+      "topology": "clustered"
+    },
+    "components_disfavored": {
+      "joint_recruitment_weight": 0.3333333333333333,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "ever_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "final_all_patches_occupied": [
+          0.07495944584682306,
+          0.0996259522547731
+        ],
+        "final_any_occupied": [
+          0.8347215901219346,
+          0.8659326426866257
+        ],
+        "final_both_alleles_global": [
+          0.34615008208916165,
+          0.3883598524876515
+        ],
+        "final_joint_adult": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 0.0,
+        "final_occupied_patches": 2.8085,
+        "gen1_joint_seed_count": 0.0,
+        "time_integrated_occupied_patches": 29.3015,
+        "total_seed_attempts": 97.479,
+        "total_viable_seeds": 62.8705
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.0,
+        "ever_joint_seed_produced": 0.0,
+        "final_all_patches_occupied": 0.0865,
+        "final_any_occupied": 0.851,
+        "final_both_alleles_global": 0.367,
+        "final_joint_adult": 0.0,
+        "gen1_joint_adult_recruited": 0.0,
+        "gen1_joint_seed_produced": 0.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "disfavored",
+      "topology": "components"
+    },
+    "components_favored": {
+      "joint_recruitment_weight": 3.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "ever_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "final_all_patches_occupied": [
+          0.07495944584682306,
+          0.0996259522547731
+        ],
+        "final_any_occupied": [
+          0.8347215901219346,
+          0.8659326426866257
+        ],
+        "final_both_alleles_global": [
+          0.34615008208916165,
+          0.3883598524876515
+        ],
+        "final_joint_adult": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 0.0,
+        "final_occupied_patches": 2.8085,
+        "gen1_joint_seed_count": 0.0,
+        "time_integrated_occupied_patches": 29.3015,
+        "total_seed_attempts": 97.479,
+        "total_viable_seeds": 62.8705
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.0,
+        "ever_joint_seed_produced": 0.0,
+        "final_all_patches_occupied": 0.0865,
+        "final_any_occupied": 0.851,
+        "final_both_alleles_global": 0.367,
+        "final_joint_adult": 0.0,
+        "gen1_joint_adult_recruited": 0.0,
+        "gen1_joint_seed_produced": 0.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "favored",
+      "topology": "components"
+    },
+    "components_lethal": {
+      "joint_recruitment_weight": 0.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "ever_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "final_all_patches_occupied": [
+          0.07495944584682306,
+          0.0996259522547731
+        ],
+        "final_any_occupied": [
+          0.8347215901219346,
+          0.8659326426866257
+        ],
+        "final_both_alleles_global": [
+          0.34615008208916165,
+          0.3883598524876515
+        ],
+        "final_joint_adult": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 0.0,
+        "final_occupied_patches": 2.8085,
+        "gen1_joint_seed_count": 0.0,
+        "time_integrated_occupied_patches": 29.3015,
+        "total_seed_attempts": 97.479,
+        "total_viable_seeds": 62.8705
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.0,
+        "ever_joint_seed_produced": 0.0,
+        "final_all_patches_occupied": 0.0865,
+        "final_any_occupied": 0.851,
+        "final_both_alleles_global": 0.367,
+        "final_joint_adult": 0.0,
+        "gen1_joint_adult_recruited": 0.0,
+        "gen1_joint_seed_produced": 0.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "lethal",
+      "topology": "components"
+    },
+    "components_neutral": {
+      "joint_recruitment_weight": 1.0,
+      "mc_wilson_95": {
+        "ever_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "ever_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "final_all_patches_occupied": [
+          0.07495944584682306,
+          0.0996259522547731
+        ],
+        "final_any_occupied": [
+          0.8347215901219346,
+          0.8659326426866257
+        ],
+        "final_both_alleles_global": [
+          0.34615008208916165,
+          0.3883598524876515
+        ],
+        "final_joint_adult": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_adult_recruited": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ],
+        "gen1_joint_seed_produced": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ]
+      },
+      "means": {
+        "final_joint_adult_count": 0.0,
+        "final_occupied_patches": 2.8085,
+        "gen1_joint_seed_count": 0.0,
+        "time_integrated_occupied_patches": 29.3015,
+        "total_seed_attempts": 97.479,
+        "total_viable_seeds": 62.8705
+      },
+      "probabilities": {
+        "ever_joint_adult_recruited": 0.0,
+        "ever_joint_seed_produced": 0.0,
+        "final_all_patches_occupied": 0.0865,
+        "final_any_occupied": 0.851,
+        "final_both_alleles_global": 0.367,
+        "final_joint_adult": 0.0,
+        "gen1_joint_adult_recruited": 0.0,
+        "gen1_joint_seed_produced": 0.0
+      },
+      "replicate_unit": "entire six-patch landscape",
+      "selection_policy": "neutral",
+      "topology": "components"
+    }
+  },
+  "scope": "SYNTHETIC; v7-based finite Mendelian generator; no natural trait regain or measured fitness"
+}

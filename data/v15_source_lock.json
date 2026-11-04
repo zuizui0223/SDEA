@@ -1,0 +1,44 @@
+{
+  "protocol": "SDEA-v15-2026-10-29-Ulex-source-locked-partial-genetic-phenotype-fruit-set",
+  "study": "Castellanos et al. (2023), Quantitative genetic analysis of floral traits shows current limits but potential evolution in the wild",
+  "species": "Ulex parviflorus",
+  "paper_doi": "10.1098/rspb.2023.0141",
+  "original_dataset_doi": "10.5061/dryad.9zw3r22jp",
+  "zenodo_record_id": 7761289,
+  "zenodo_metadata_url": "https://zenodo.org/api/records/7761289",
+  "source_licence": "see original Zenodo/Dryad record; never reproduce individual raw rows",
+  "published_original_md5": {
+    "fruits.and.mean.floral.traits.csv": "8ca72b7d9721f6d6279e793a1526c43e",
+    "floral.traits.csv": "14216bb46af39bfd0b959c1aa092485b",
+    "relatedness.matrix.csv": "ecaa79680ffa25cb45ebdb73c11fe407",
+    "pollinator.census.csv": "78494af547de11c1800af50a74c5642f",
+    "README.md": "9a6d62c907a93fe7b67268922f756995"
+  },
+  "previous_EGWE_header_only_receipt": {
+    "repository": "zuizui0223/egwe",
+    "path": "artifacts/empirical/ulex_zenodo_source_gate_20261008.json",
+    "previous_result": "original plant ind key in phenotypes/fruits and relatedness; pollinator census has no ind",
+    "not_prior_original_fitness_refit": true
+  },
+  "primary_measurements": {
+    "individual_id": "ind",
+    "population_id": "site",
+    "floral_structure": ["area standard-petal mm2", "weight flower dry mg"],
+    "fruit_success_fraction": "fruits / scars (scars counts all source-recorded flowers; nofruit=scars-fruits)",
+    "genetic_state": "SNP-derived relatedness matrix, not candidate pigment-allele functionality or heritability coefficient",
+    "interaction_boundary": "pollinator census has no ind, must not join to plant genotypes"
+  },
+  "validation": "six original populations left out intact once each; fixed-ridge elevation-only vs quadratic area/weight vs fixed genomic-similarity residual smoothing",
+  "predeclared_ridge": 5,
+  "predeclared_kinship_residual_shrinkage": 5,
+  "minimum_complete_individuals": 150,
+  "requires_published_source_md5": true,
+  "prospective_or_preregistered": false,
+  "not_identified": [
+    "same-individual pollinator visit, stigma contact or pollen origin",
+    "causal floral traits to plant fitness",
+    "flower-stage genetic regulator or ancestral reexpression",
+    "future recruitment or heritability of trait regain",
+    "source-independent evolutionary selection experiment"
+  ]
+}

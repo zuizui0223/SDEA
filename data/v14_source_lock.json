@@ -1,0 +1,42 @@
+{
+  "protocol": "SDEA-v14-within-ecological-context-original-Ipomopsis-source-audit-2026-10-29",
+  "status": "retrospective challenge to source-internal positive v13 after outcome inspection, NOT registered confirmatory biology",
+  "original_author_source": {
+    "study": "Campbell et al. 2022 American Naturalist Ipomopsis",
+    "publication_doi": "10.1086/716740",
+    "original_data_doi": "10.7280/D1KM49",
+    "original_csv": "Selection_by_pollinators_and_predators.csv",
+    "original_registered_md5": "12ed3dbe6d269c5f808f9c6b230d468c",
+    "expected_original_rows": 437,
+    "expected_same_paired_stage_rows": 367,
+    "source_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018],
+    "original_site_labels_are_not_three_independent_sites": true,
+    "source_stable_individual_id_available": false
+  },
+  "prior_audit": {
+    "repository": "zuizui0223/aza3",
+    "commit": "d54aba2dcac3ecbfd4c4fb6bd5b0b88562f3595d",
+    "path": "data/evidence/ipomopsis_two_stage_trait_selection_independent_original_js_v1.json",
+    "git_blob_sha": "df57a0f13ac30ab2253969917eb5617b1cf64552",
+    "same_original_study_not_separate_replication": true
+  },
+  "prior_result": {
+    "path": "results/v13_ipomopsis_stage_transfer.json",
+    "must_match_recomputed_original_source_v13_before_v14": true
+  },
+  "v14_design": {
+    "year_holdout": "one complete source Year each fold",
+    "modes": ["physical_location", "original_site_code"],
+    "stages": ["seed_initiation_log1p", "fly_escape_fraction"],
+    "center_unlabeled_test_covariates_only": true,
+    "trained_response_means_only_within_training_years": true,
+    "fixed_train_ridge": 1.0,
+    "retrospective_not_preregistered": true
+  },
+  "blocked_cross_study_transport": {
+    "cirsium_v12_intervention": "organza mesh bag vs Control",
+    "v13_v14_ipomopsis_variable": "observed corolla width",
+    "same_intervention_or_denominator": false,
+    "decision": "NOT_IDENTIFIABLE_NO_COMMON_INTERVENTION_OR_ENDPOINT"
+  }
+}

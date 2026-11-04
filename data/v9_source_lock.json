@@ -1,0 +1,14 @@
+{
+  "protocol": "SDEA-v9-source-lock-2026-10-28",
+  "status": "retrospective cross-repository empirical-qualification audit; NOT a registered natural evolution experiment",
+  "admission_units": ["Cirsium undulatum maternal reproductive routes", "Cirsium Ryukyu public leaf-RNA source", "Honshu-Izu pollen-interaction sites", "Oenothera maternal mating data", "Petunia mechanism examples within one genus"],
+  "full_contract": ["same_organism_validated_joint_heritable_pathway", "causally_identified_ancestral_vs_imported_or_alternative_origin", "matched_ongoing_ecological_state", "prospective_descendant_expression", "trait_specific_demographic_establishment"],
+  "sources": {
+    "mother_csv": {"repo":"aza3", "commit":"d54aba2dcac3ecbfd4c4fb6bd5b0b88562f3595d", "path":"data/external/usda_wavyleaf_2007_2008/mother_plants.csv", "blob_sha":"458800272c3d0a03c7653702027a8f8578d9e88c", "doi":"10.15482/USDA.ADC/1522649", "role":"original CC0 source mirrored by empirical owner aza3"},
+    "ryukyu_readiness": {"repo":"aza3", "commit":"d54aba2dcac3ecbfd4c4fb6bd5b0b88562f3595d", "path":"data/anto_source_handoff/p04_afterlife_public_source_readiness_v1.json", "blob_sha":"b35467e86b393c43fda628e04b0c00364f02245f", "role":"source-preparation metadata, not floral function"},
+    "izu_summary": {"repo":"egwe", "commit":"3bb5b673def38c4d3f16990a016ad21ac25b2ebb", "path":"artifacts/empirical/e1_izu_residual_origin_locked_summary.json", "blob_sha":"bd6afc6ce0ae5bc0612f6442a1975670f1432007", "role":"source-reported ecological cross-sectional holdout result; not independently re-fitted by SDEA"},
+    "oenothera_summary": {"repo":"egwe", "commit":"3bb5b673def38c4d3f16990a016ad21ac25b2ebb", "path":"artifacts/empirical/oenothera_mating_state_locked_summary.json", "blob_sha":"837f4aaddd0629885e373ecbc41805edbdd42b7a", "role":"source-reported same-mother cross-sectional state result; not independently re-fitted"},
+    "anto_registry": {"repo":"anto", "commit":"bc4a2bc1a68ad753e47c10d86ab5ff393e9993a3", "path":"data/afterlife_v11_mechanistic_regain_routes_literature_registry_20261020.json", "blob_sha":"f809d48f6290dad3a0ea679b2e9c926d3aae5306", "role":"selected literature mechanisms, non-random, source reported"},
+    "izu_core_boundary": {"repo":"izu-core", "commit":"6e4483f66fd8fb5664775d485f83509132221b29", "path":"docs/CHAPTER2_NEE_SUBMISSION_GATE_20261026.md", "blob_sha":"4b92192b4af1a0b7da859e9799b0bd4ac180c05c", "role":"synthetic Model 3 result; excluded from independent natural evidence units"}
+  }
+}

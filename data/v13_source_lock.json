@@ -1,0 +1,30 @@
+{
+  "protocol": "SDEA-v13-independent-original-study-stage-transfer-2026-10-29",
+  "status": "retrospective, independently sourced biological study; not preregistered; no cross-study bag effect transport",
+  "source": {
+    "plant_system": "Ipomopsis aggregata / I. tenuituba / hybrids",
+    "paper_doi": "10.1086/716740",
+    "data_doi": "10.7280/D1KM49",
+    "url": "https://zenodo.org/records/5083399/files/Selection_by_pollinators_and_predators.csv?download=1",
+    "filename": "Selection_by_pollinators_and_predators.csv",
+    "original_author_registered_md5": "12ed3dbe6d269c5f808f9c6b230d468c",
+    "expected_original_rows": 437,
+    "expected_paired_width_and_stage_rows": 367,
+    "no_stable_plant_ID": true,
+    "original_years": [2010,2011,2012,2013,2014,2015,2016,2017,2018]
+  },
+  "previous_source_audit": {
+    "repo": "zuizui0223/aza3",
+    "commit": "d54aba2dcac3ecbfd4c4fb6bd5b0b88562f3595d",
+    "path": "data/evidence/ipomopsis_two_stage_trait_selection_independent_original_js_v1.json",
+    "git_blob_sha": "df57a0f13ac30ab2253969917eb5617b1cf64552",
+    "not_a_second_independent_Ipomopsis_study": true
+  },
+  "cross_study_gate": {
+    "study_2022_cirsium": "physical bagging intervention, viable seed fraction per floret and emerged insects/head",
+    "study_ipomopsis": "observed trait width and two non-equivalent reproductive stages",
+    "common_randomized_treatment": false,
+    "common_response_denominator": false,
+    "permitted_cross_study_claim": "independent system with heldout-year stage-specific forecast only; no pooled treatment effect"
+  }
+}

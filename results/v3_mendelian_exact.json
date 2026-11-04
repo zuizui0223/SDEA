@@ -1,0 +1,498 @@
+{
+  "feedback": {
+    "expression_conditional": {
+      "alive": 0.14918326898019169,
+      "alive_and_allele_supported": 0.080362061926246,
+      "alive_and_current_three": 0.012032930024797418,
+      "alive_and_ever_three": 0.03751164795334381,
+      "alive_and_fixed_target": 0.014243345476199803,
+      "alive_and_polymorphic": 0.06611871645004619,
+      "extinct": 0.850816731019808,
+      "first_expression_ever": 0.7429050793205165,
+      "generation": 6,
+      "three_consecutive_survived_ever": 0.0736080404523626
+    },
+    "none": {
+      "alive": 0.1305918132420371,
+      "alive_and_allele_supported": 0.06714522648736383,
+      "alive_and_current_three": 0.008037064680414456,
+      "alive_and_ever_three": 0.027003007737689416,
+      "alive_and_fixed_target": 0.012120349792394448,
+      "alive_and_polymorphic": 0.05502487669496939,
+      "extinct": 0.8694081867579642,
+      "first_expression_ever": 0.7429050793205164,
+      "generation": 6,
+      "three_consecutive_survived_ever": 0.05832294018805814
+    }
+  },
+  "gamete_variance_identity": {
+    "0.0": {
+      "one_homozygote": {
+        "conditional_complete_target_loss": 0.1001129150390625,
+        "offspring_aa_by_identity": 0.5625,
+        "offspring_aa_direct": 0.5625,
+        "realized_viable_self_fraction": 0.0,
+        "selected_gamete_mean": 0.25,
+        "selfing_excess_non_target_zygotes": 0.0,
+        "survival": 0.75,
+        "within_parent_gamete_variance": 0.1875
+      },
+      "two_heterozygotes": {
+        "conditional_complete_target_loss": 0.1001129150390625,
+        "offspring_aa_by_identity": 0.5625,
+        "offspring_aa_direct": 0.5625,
+        "realized_viable_self_fraction": 0.0,
+        "selected_gamete_mean": 0.25,
+        "selfing_excess_non_target_zygotes": 0.0,
+        "survival": 0.75,
+        "within_parent_gamete_variance": 0.0625
+      }
+    },
+    "0.5": {
+      "one_homozygote": {
+        "conditional_complete_target_loss": 0.11896533910245921,
+        "offspring_aa_by_identity": 0.5872933884297521,
+        "offspring_aa_direct": 0.5872933884297521,
+        "realized_viable_self_fraction": 0.1322314049586777,
+        "selected_gamete_mean": 0.25,
+        "selfing_excess_non_target_zygotes": 0.024793388429752067,
+        "survival": 0.75625,
+        "within_parent_gamete_variance": 0.1875
+      },
+      "two_heterozygotes": {
+        "conditional_complete_target_loss": 0.1061274428995343,
+        "offspring_aa_by_identity": 0.5707644628099173,
+        "offspring_aa_direct": 0.5707644628099173,
+        "realized_viable_self_fraction": 0.1322314049586777,
+        "selected_gamete_mean": 0.25,
+        "selfing_excess_non_target_zygotes": 0.008264462809917356,
+        "survival": 0.75625,
+        "within_parent_gamete_variance": 0.0625
+      }
+    },
+    "1.0": {
+      "one_homozygote": {
+        "conditional_complete_target_loss": 0.13999033533432936,
+        "offspring_aa_by_identity": 0.6116803278688525,
+        "offspring_aa_direct": 0.6116803278688525,
+        "realized_viable_self_fraction": 0.26229508196721313,
+        "selected_gamete_mean": 0.25,
+        "selfing_excess_non_target_zygotes": 0.04918032786885246,
+        "survival": 0.7625,
+        "within_parent_gamete_variance": 0.1875
+      },
+      "two_heterozygotes": {
+        "conditional_complete_target_loss": 0.1123038178349138,
+        "offspring_aa_by_identity": 0.5788934426229508,
+        "offspring_aa_direct": 0.5788934426229508,
+        "realized_viable_self_fraction": 0.26229508196721313,
+        "selected_gamete_mean": 0.25,
+        "selfing_excess_non_target_zygotes": 0.01639344262295082,
+        "survival": 0.7625,
+        "within_parent_gamete_variance": 0.0625
+      }
+    }
+  },
+  "history_brier_neutral_assurance_0": {
+    "alive_and_ever_three": {
+      "coarse_state_brier": 0.02020495182310218,
+      "founder_history_brier": 0.02020495182310218,
+      "founder_probabilities": [
+        0.020630572338099746,
+        0.020630572338099746
+      ],
+      "full_genotype_brier": 0.02020495182310218,
+      "full_genotype_plus_history_brier": 0.02020495182310218,
+      "history_gain": 0.0
+    },
+    "allele_loss_given_successful_reproduction": {
+      "coarse_state_brier": 0.09009031928144395,
+      "founder_history_brier": 0.09009031928144395,
+      "founder_probabilities": [
+        0.1001129150390625,
+        0.1001129150390625
+      ],
+      "full_genotype_brier": 0.09009031928144395,
+      "full_genotype_plus_history_brier": 0.09009031928144395,
+      "history_gain": 0.0
+    }
+  },
+  "history_brier_neutral_assurance_1": {
+    "alive_and_ever_three": {
+      "coarse_state_brier": 0.027544836847080412,
+      "founder_history_brier": 0.027544697571561826,
+      "founder_probabilities": [
+        0.02872166910852675,
+        0.027975276400670518
+      ],
+      "full_genotype_brier": 0.027544697571561826,
+      "full_genotype_plus_history_brier": 0.027544697571561826,
+      "history_gain": 1.3927551858680665e-07
+    },
+    "allele_loss_given_successful_reproduction": {
+      "coarse_state_brier": 0.11023399165377522,
+      "founder_history_brier": 0.11004235584096383,
+      "founder_probabilities": [
+        0.1123038178349138,
+        0.13999033533432936
+      ],
+      "full_genotype_brier": 0.11004235584096383,
+      "full_genotype_plus_history_brier": 0.11004235584096383,
+      "history_gain": 0.0001916358128113832
+    }
+  },
+  "history_brier_with_selection": {
+    "alive_and_ever_three": {
+      "coarse_state_brier": 0.02660390680536001,
+      "founder_history_brier": 0.026603784981177096,
+      "founder_probabilities": [
+        0.027003007737689416,
+        0.027701074161232596
+      ],
+      "full_genotype_brier": 0.026603784981177096,
+      "full_genotype_plus_history_brier": 0.026603784981177096,
+      "history_gain": 1.218241829151201e-07
+    },
+    "allele_loss_given_successful_reproduction": {
+      "coarse_state_brier": 0.08777216256707755,
+      "founder_history_brier": 0.08777083148391648,
+      "founder_probabilities": [
+        0.09837855594210784,
+        0.0960711043945724
+      ],
+      "full_genotype_brier": 0.08777083148391648,
+      "full_genotype_plus_history_brier": 0.08777083148391648,
+      "history_gain": 1.331083161068558e-06
+    }
+  },
+  "matched_founder_structure": {
+    "0.0": {
+      "by_founder": {
+        "one_homozygote": {
+          "first_step": {
+            "expected_target_copies": 2.0,
+            "maternal_gamete_frequency": 0.25,
+            "offspring_AA": 0.0625,
+            "offspring_Aa": 0.375,
+            "offspring_aa": 0.5625,
+            "offspring_target_absence": 0.1001129150390625,
+            "realized_self_fraction": 0.0,
+            "survival": 0.75
+          },
+          "horizon": {
+            "alive": 0.09047733398437499,
+            "alive_and_allele_supported": 0.044881486380427396,
+            "alive_and_current_three": 0.006533686976595306,
+            "alive_and_ever_three": 0.020630572338099746,
+            "alive_and_fixed_target": 0.005022153221224229,
+            "alive_and_polymorphic": 0.03985933315920317,
+            "extinct": 0.9095226660156263,
+            "first_expression_ever": 0.733242388863497,
+            "generation": 6,
+            "three_consecutive_survived_ever": 0.05264967352168959
+          }
+        },
+        "two_heterozygotes": {
+          "first_step": {
+            "expected_target_copies": 2.0,
+            "maternal_gamete_frequency": 0.25,
+            "offspring_AA": 0.0625,
+            "offspring_Aa": 0.375,
+            "offspring_aa": 0.5625,
+            "offspring_target_absence": 0.1001129150390625,
+            "realized_self_fraction": 0.0,
+            "survival": 0.75
+          },
+          "horizon": {
+            "alive": 0.09047733398437499,
+            "alive_and_allele_supported": 0.044881486380427396,
+            "alive_and_current_three": 0.006533686976595306,
+            "alive_and_ever_three": 0.020630572338099746,
+            "alive_and_fixed_target": 0.005022153221224229,
+            "alive_and_polymorphic": 0.03985933315920317,
+            "extinct": 0.9095226660156263,
+            "first_expression_ever": 0.733242388863497,
+            "generation": 6,
+            "three_consecutive_survived_ever": 0.05264967352168959
+          }
+        }
+      },
+      "difference_absence_homo_minus_hetero": 0.0,
+      "diploids": 4,
+      "initial_q": "high",
+      "initial_target_copies": 2,
+      "parameters": {
+        "activation": 0.7,
+        "assurance": 0.0,
+        "consecutive_required": 3,
+        "diploids": 4,
+        "direct_allele_cost": 0.0,
+        "expression_feedback": 0.0,
+        "high_stays_high": 0.85,
+        "immigration": 0.0,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.15,
+        "mutation": 0.0,
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "selection_strength": 0.0
+      }
+    },
+    "0.5": {
+      "by_founder": {
+        "one_homozygote": {
+          "first_step": {
+            "expected_target_copies": 2.0,
+            "maternal_gamete_frequency": 0.25,
+            "offspring_AA": 0.08729338842975207,
+            "offspring_Aa": 0.32541322314049587,
+            "offspring_aa": 0.5872933884297521,
+            "offspring_target_absence": 0.11896533910245921,
+            "realized_self_fraction": 0.1322314049586777,
+            "survival": 0.75625
+          },
+          "horizon": {
+            "alive": 0.11524170887473195,
+            "alive_and_allele_supported": 0.05443726986307835,
+            "alive_and_current_three": 0.006998423072896161,
+            "alive_and_ever_three": 0.02361497605935572,
+            "alive_and_fixed_target": 0.007821352193873119,
+            "alive_and_polymorphic": 0.04661591766920523,
+            "extinct": 0.8847582911252703,
+            "first_expression_ever": 0.7341366213233862,
+            "generation": 6,
+            "three_consecutive_survived_ever": 0.05411122549309675
+          }
+        },
+        "two_heterozygotes": {
+          "first_step": {
+            "expected_target_copies": 2.0,
+            "maternal_gamete_frequency": 0.25,
+            "offspring_AA": 0.07076446280991736,
+            "offspring_Aa": 0.35847107438016534,
+            "offspring_aa": 0.5707644628099173,
+            "offspring_target_absence": 0.1061274428995343,
+            "realized_self_fraction": 0.1322314049586777,
+            "survival": 0.75625
+          },
+          "horizon": {
+            "alive": 0.11524170887473195,
+            "alive_and_allele_supported": 0.0548621386640931,
+            "alive_and_current_three": 0.007061904520616673,
+            "alive_and_ever_three": 0.023907381263736923,
+            "alive_and_fixed_target": 0.007593113621833448,
+            "alive_and_polymorphic": 0.047269025042259646,
+            "extinct": 0.8847582911252688,
+            "first_expression_ever": 0.7371216138193037,
+            "generation": 6,
+            "three_consecutive_survived_ever": 0.054817408694712355
+          }
+        }
+      },
+      "difference_absence_homo_minus_hetero": 0.012837896202924914,
+      "diploids": 4,
+      "initial_q": "high",
+      "initial_target_copies": 2,
+      "parameters": {
+        "activation": 0.7,
+        "assurance": 0.5,
+        "consecutive_required": 3,
+        "diploids": 4,
+        "direct_allele_cost": 0.0,
+        "expression_feedback": 0.0,
+        "high_stays_high": 0.85,
+        "immigration": 0.0,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.15,
+        "mutation": 0.0,
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "selection_strength": 0.0
+      }
+    },
+    "1.0": {
+      "by_founder": {
+        "one_homozygote": {
+          "first_step": {
+            "expected_target_copies": 2.0,
+            "maternal_gamete_frequency": 0.25,
+            "offspring_AA": 0.11168032786885247,
+            "offspring_Aa": 0.2766393442622951,
+            "offspring_aa": 0.6116803278688525,
+            "offspring_target_absence": 0.13999033533432936,
+            "realized_self_fraction": 0.26229508196721313,
+            "survival": 0.7625
+          },
+          "horizon": {
+            "alive": 0.16284686773031273,
+            "alive_and_allele_supported": 0.07199271175604036,
+            "alive_and_current_three": 0.0075683227573925494,
+            "alive_and_ever_three": 0.027975276400670518,
+            "alive_and_fixed_target": 0.014077141547546426,
+            "alive_and_polymorphic": 0.05791557020849393,
+            "extinct": 0.8371531322696874,
+            "first_expression_ever": 0.7352527328692146,
+            "generation": 6,
+            "three_consecutive_survived_ever": 0.05565916742560165
+          }
+        },
+        "two_heterozygotes": {
+          "first_step": {
+            "expected_target_copies": 2.0,
+            "maternal_gamete_frequency": 0.25,
+            "offspring_AA": 0.07889344262295082,
+            "offspring_Aa": 0.3422131147540984,
+            "offspring_aa": 0.5788934426229508,
+            "offspring_target_absence": 0.1123038178349138,
+            "realized_self_fraction": 0.26229508196721313,
+            "survival": 0.7625
+          },
+          "horizon": {
+            "alive": 0.16284686773031276,
+            "alive_and_allele_supported": 0.07314465180606239,
+            "alive_and_current_three": 0.007711984553968226,
+            "alive_and_ever_three": 0.02872166910852675,
+            "alive_and_fixed_target": 0.013376660638240024,
+            "alive_and_polymorphic": 0.05976799116782237,
+            "extinct": 0.8371531322696865,
+            "first_expression_ever": 0.7418440486459416,
+            "generation": 6,
+            "three_consecutive_survived_ever": 0.05721363862422423
+          }
+        }
+      },
+      "difference_absence_homo_minus_hetero": 0.02768651749941556,
+      "diploids": 4,
+      "initial_q": "high",
+      "initial_target_copies": 2,
+      "parameters": {
+        "activation": 0.7,
+        "assurance": 1.0,
+        "consecutive_required": 3,
+        "diploids": 4,
+        "direct_allele_cost": 0.0,
+        "expression_feedback": 0.0,
+        "high_stays_high": 0.85,
+        "immigration": 0.0,
+        "inbreeding_depression": 0.2,
+        "low_becomes_high": 0.15,
+        "mutation": 0.0,
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "selection_strength": 0.0
+      }
+    }
+  },
+  "protocol": "SDEA v3 constructed Mendelian selfing-and-outcrossing bridge (2026-10-26)",
+  "reopening": {
+    "closed_no_target": {
+      "alive": 0.11524170887473187,
+      "alive_and_allele_supported": 0,
+      "alive_and_current_three": 0,
+      "alive_and_ever_three": 0,
+      "alive_and_fixed_target": 0,
+      "alive_and_polymorphic": 0,
+      "extinct": 0.8847582911252682,
+      "first_expression_ever": 0.0,
+      "generation": 6,
+      "three_consecutive_survived_ever": 0.0
+    },
+    "immigrant_zygotes": {
+      "alive": 0.11524170887473187,
+      "alive_and_allele_supported": 0.04696425036203006,
+      "alive_and_current_three": 0.00297902288357286,
+      "alive_and_ever_three": 0.005019238334292716,
+      "alive_and_fixed_target": 0.002142983527555093,
+      "alive_and_polymorphic": 0.04482126683447497,
+      "extinct": 0.884758291125267,
+      "first_expression_ever": 0.13050989270723629,
+      "generation": 6,
+      "three_consecutive_survived_ever": 0.007198103747213051
+    },
+    "one_way_mutation": {
+      "alive": 0.11524170887473202,
+      "alive_and_allele_supported": 0.06122628712365583,
+      "alive_and_current_three": 0.0038707049267899768,
+      "alive_and_ever_three": 0.006786501389922195,
+      "alive_and_fixed_target": 0.0012407470351544273,
+      "alive_and_polymorphic": 0.059985540088501405,
+      "extinct": 0.8847582911252662,
+      "first_expression_ever": 0.21128054033046467,
+      "generation": 6,
+      "three_consecutive_survived_ever": 0.009889872837253741
+    }
+  },
+  "selection_perturbation": {
+    "by_founder": {
+      "one_homozygote": {
+        "first_step": {
+          "expected_target_copies": 2.233311900411766,
+          "maternal_gamete_frequency": 0.27916398755147076,
+          "offspring_AA": 0.1150625534083285,
+          "offspring_Aa": 0.3282028682862845,
+          "offspring_aa": 0.556734578305387,
+          "offspring_target_absence": 0.0960711043945724,
+          "realized_self_fraction": 0.18451400329489293,
+          "survival": 0.7587499999999999
+        },
+        "horizon": {
+          "alive": 0.1305918132420372,
+          "alive_and_allele_supported": 0.07031647378565684,
+          "alive_and_current_three": 0.008370104236356549,
+          "alive_and_ever_three": 0.027701074161232596,
+          "alive_and_fixed_target": 0.014136445582917743,
+          "alive_and_polymorphic": 0.056180028202739096,
+          "extinct": 0.8694081867579623,
+          "first_expression_ever": 0.7446673742921103,
+          "generation": 6,
+          "three_consecutive_survived_ever": 0.0596443085559428
+        }
+      },
+      "two_heterozygotes": {
+        "first_step": {
+          "expected_target_copies": 2.0749648635141407,
+          "maternal_gamete_frequency": 0.25937060793926764,
+          "offspring_AA": 0.07878903560902423,
+          "offspring_Aa": 0.36116314466048677,
+          "offspring_aa": 0.5600478197304888,
+          "offspring_target_absence": 0.09837855594210784,
+          "realized_self_fraction": 0.18451400329489293,
+          "survival": 0.7587499999999999
+        },
+        "horizon": {
+          "alive": 0.1305918132420371,
+          "alive_and_allele_supported": 0.06714522648736383,
+          "alive_and_current_three": 0.008037064680414456,
+          "alive_and_ever_three": 0.027003007737689416,
+          "alive_and_fixed_target": 0.012120349792394448,
+          "alive_and_polymorphic": 0.05502487669496939,
+          "extinct": 0.8694081867579642,
+          "first_expression_ever": 0.7429050793205164,
+          "generation": 6,
+          "three_consecutive_survived_ever": 0.05832294018805814
+        }
+      }
+    },
+    "difference_absence_homo_minus_hetero": -0.0023074515475354357,
+    "diploids": 4,
+    "initial_q": "high",
+    "initial_target_copies": 2,
+    "parameters": {
+      "activation": 0.7,
+      "assurance": 0.7,
+      "consecutive_required": 3,
+      "diploids": 4,
+      "direct_allele_cost": 0.0,
+      "expression_feedback": 0.0,
+      "high_stays_high": 0.85,
+      "immigration": 0.0,
+      "inbreeding_depression": 0.2,
+      "low_becomes_high": 0.15,
+      "mutation": 0.0,
+      "q_high": 0.75,
+      "q_low": 0.25,
+      "selection_strength": 0.6
+    }
+  },
+  "status": "EXACT SYNTHETIC, not a natural calibration or reproduction of Model 3"
+}

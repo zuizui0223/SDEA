@@ -1,0 +1,36 @@
+{
+  "protocol": "SDEA-v16-2026-10-29-identity-specific-genomic-placebo-after-Ulex-v15",
+  "source": "same original Castellanos et al. (2023) Ulex parviflorus archive as v15; NO new source study",
+  "original_paper_doi": "10.1098/rspb.2023.0141",
+  "original_data_doi": "10.5061/dryad.9zw3r22jp",
+  "zenodo_record_id": 7761289,
+  "original_source_MD5_authority": "data/v15_source_lock.json",
+  "v15_required_frozen_receipt": "results/v15_ulex_partial.json",
+  "expected_genotyped_fruit_trait_joined_individuals": 202,
+  "expected_original_populations": ["AresM", "Cheste", "Chiva", "Montserrat", "Simat", "Sot.Chera"],
+  "v15_m1_ridge_penalty_frozen": 5,
+  "v15_m2_positive_K_training_residual_shrinkage_frozen": 5,
+  "within_site_genomic_identity_placebo": {
+    "replicates": 1000,
+    "python_random_seed": 20261029,
+    "permutation_unit": "individual matching genotyped original K label within original site",
+    "preserve_source_site_id": true,
+    "preserve_original_K_matrix": true,
+    "preserve_test_site_holdouts": true,
+    "preserve_trait_m1_prediction": true,
+    "preserve_training_only_residuals": true,
+    "not_a_causal_randomization_p_value": true
+  },
+  "second_comparator": "mean original nonnegative K across all genotyped individuals in a single heldout source site, one training-residual offset for every heldout individual",
+  "exploratory_adverse_pass": "original equal-site genome gain > 97.5th percentile site-bijective label placebo; original better than site-average genomic K for both mean and individual-weighted MSE; 5/6 original sites prefer original over site-average",
+  "source_pollinator_census_has_ind": false,
+  "original_row_data_redistributed": false,
+  "not_identified": [
+    "causal genotype to fitness effect",
+    "heritability from source pedigree",
+    "ancestral floral trait regain or reparative gene mechanism",
+    "genotyped plant specific pollinator deposition",
+    "prospective descendant establishment",
+    "independent across taxon generalization"
+  ]
+}

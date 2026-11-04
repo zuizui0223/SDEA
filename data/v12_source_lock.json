@@ -1,0 +1,26 @@
+{
+  "schema":"sdea_v12_original_cross_site_bounded_source_lock_20261029",
+  "status":"RETROSPECTIVE original source transfer audit; non-registered before knowledge of earlier aza3 descriptive effects",
+  "sources":{
+    "original_author_seeds":{
+      "repo":"Yogita25/Multitrophic_Interactions",
+      "commit":"8a151c62ed069f775a16b9bc5fbdce209cbb8691",
+      "path":"seeds.csv",
+      "blob_sha":"ca99c762162d15f006f0c73b4603ca71fd320a29",
+      "doi":"10.5281/zenodo.15364152",
+      "role":"original 615 Cirsium arvense 2022 head records; no raw data copied"
+    },
+    "aza3_independent_receipt":{
+      "repo":"zuizui0223/aza3",
+      "commit":"d54aba2dcac3ecbfd4c4fb6bd5b0b88562f3595d",
+      "path":"data/evidence/cirsium_arvense_four_arm_joint_response_independent_js_v1.json",
+      "blob_sha":"740bfe83c881ee61269342070253b3baeaf58aa2",
+      "role":"previously published descriptive receipt and independent calculation crosscheck, not a second source cohort"
+    }
+  },
+  "primary_comparators":["Pollinator Exclusion minus Control", "Predator Exclusion minus Control"],
+  "primary_endpoints":["viable_fraction", "emerged_insects_per_head"],
+  "holdout_unit":"entire one of four original study sites (all its matched four-arm site blocks)",
+  "source_unit":"one original head; aggregated to site×block×arm proxy, then paired matched site block",
+  "validation_claim":"cross-site within-one-study descriptive forecast portability; not ancestral regain or independently randomized treatment effects"
+}

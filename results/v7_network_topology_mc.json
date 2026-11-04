@@ -1,0 +1,2246 @@
+{
+  "design": {
+    "future_total_attempts_not_controlled_because_source_occupancy_is_endogenous": true,
+    "horizon": 7,
+    "outgoing_and_incoming_movement_totals_match_within_operator": true,
+    "paired_seed_keyed_model_draws": true,
+    "replicate_seed": 981027,
+    "replicates": 2500,
+    "same_capacity": 2,
+    "same_initial_genotypes": [
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    ],
+    "same_initial_q": 0.75,
+    "same_pollen_retention_for_active_topologies": 0.25,
+    "same_seed_attempt_budget_per_occupied_source": 3,
+    "same_seed_retention_for_active_topologies": 0.25,
+    "unit": "whole six-patch landscape"
+  },
+  "exact_first_generation_hybrid_production": {
+    "both_alternating": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 8.985937499999999,
+      "per_source_viable_hybrid_per_attempt": [
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993
+      ],
+      "probability_any_hybrid_seed_produced": 0.999996076577506
+    },
+    "both_clustered": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 2.9953125,
+      "per_source_viable_hybrid_per_attempt": [
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997,
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997
+      ],
+      "probability_any_hybrid_seed_produced": 0.9681251026678412
+    },
+    "both_components": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 0.0,
+      "per_source_viable_hybrid_per_attempt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probability_any_hybrid_seed_produced": 0.0
+    },
+    "no_flow": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 0.0,
+      "per_source_viable_hybrid_per_attempt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probability_any_hybrid_seed_produced": 0.0
+    },
+    "pollen_alternating": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 8.985937499999999,
+      "per_source_viable_hybrid_per_attempt": [
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993
+      ],
+      "probability_any_hybrid_seed_produced": 0.999996076577506
+    },
+    "pollen_clustered": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 2.9953125,
+      "per_source_viable_hybrid_per_attempt": [
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997,
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997
+      ],
+      "probability_any_hybrid_seed_produced": 0.9681251026678412
+    },
+    "pollen_components": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 0.0,
+      "per_source_viable_hybrid_per_attempt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probability_any_hybrid_seed_produced": 0.0
+    },
+    "seed_alternating": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 0.0,
+      "per_source_viable_hybrid_per_attempt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probability_any_hybrid_seed_produced": 0.0
+    },
+    "seed_clustered": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 0.0,
+      "per_source_viable_hybrid_per_attempt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probability_any_hybrid_seed_produced": 0.0
+    },
+    "seed_components": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 0.0,
+      "per_source_viable_hybrid_per_attempt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probability_any_hybrid_seed_produced": 0.0
+    },
+    "seedalt_pollencluster": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 2.9953125,
+      "per_source_viable_hybrid_per_attempt": [
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997,
+        0.24960937499999997,
+        0.0,
+        0.24960937499999997
+      ],
+      "probability_any_hybrid_seed_produced": 0.9681251026678412
+    },
+    "seedcluster_pollenalt": {
+      "attempt_budget_initial_total": 18,
+      "exact_given_all_initial_patches_occupied": true,
+      "expected_hybrid_seeds_produced": 8.985937499999999,
+      "per_source_viable_hybrid_per_attempt": [
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993,
+        0.49921874999999993
+      ],
+      "probability_any_hybrid_seed_produced": 0.999996076577506
+    }
+  },
+  "exploratory_binary_saturation_and_brier": [
+    {
+      "alternating_probability": 0.9842279422269193,
+      "attempts_per_source": 1,
+      "clustered_probability": 0.6829340551495318,
+      "coarse_brier": 0.13872371731416605,
+      "exact_gain_identity": 0.022694501597550393,
+      "expected_hybrid_seeds_alternating": 2.9953125,
+      "expected_hybrid_seeds_clustered": 0.9984374999999999,
+      "network_information_gain": 0.022694501597550376,
+      "network_known_brier": 0.11602921571661567
+    },
+    {
+      "alternating_probability": 0.9997512421936026,
+      "attempts_per_source": 2,
+      "clustered_probability": 0.8994691866160798,
+      "coarse_brier": 0.047850655102832755,
+      "exact_gain_identity": 0.0025141226677133422,
+      "expected_hybrid_seeds_alternating": 5.990625,
+      "expected_hybrid_seeds_clustered": 1.9968749999999997,
+      "network_information_gain": 0.0025141226677133435,
+      "network_known_brier": 0.04533653243511941
+    },
+    {
+      "alternating_probability": 0.999996076577506,
+      "attempts_per_source": 3,
+      "clustered_probability": 0.9681251026678412,
+      "coarse_brier": 0.01568534557414956,
+      "exact_gain_identity": 0.0002539397444876329,
+      "expected_hybrid_seeds_alternating": 8.985937499999999,
+      "expected_hybrid_seeds_clustered": 2.9953125,
+      "network_information_gain": 0.00025393974448763464,
+      "network_known_brier": 0.015431405829661926
+    },
+    {
+      "alternating_probability": 0.9999999999999962,
+      "attempts_per_source": 8,
+      "clustered_probability": 0.9998978597807886,
+      "coarse_brier": 5.1067501451491845e-05,
+      "exact_gain_identity": 2.6081560949454134e-09,
+      "expected_hybrid_seeds_alternating": 23.9625,
+      "expected_hybrid_seeds_clustered": 7.987499999999999,
+      "network_information_gain": 2.608156094945752e-09,
+      "network_known_brier": 5.10648932953969e-05
+    }
+  ],
+  "factorial_topology_interaction": {
+    "ever_joint_individual_recruited": {
+      "difference_in_differences": 0.0008,
+      "paired_mc_95": [
+        -0.0011204927418130492,
+        0.002720492741813049
+      ],
+      "paired_mc_se": 0.0009798612407991697
+    },
+    "final_any_patch_occupied": {
+      "difference_in_differences": -0.0104,
+      "paired_mc_95": [
+        -0.03834155557054161,
+        0.017541555570541618
+      ],
+      "paired_mc_se": 0.014256157659498753
+    },
+    "final_both_routes_global": {
+      "difference_in_differences": -0.0216,
+      "paired_mc_95": [
+        -0.057541052097221164,
+        0.014341052097221162
+      ],
+      "paired_mc_se": 0.0183376084360328
+    },
+    "final_joint_individual": {
+      "difference_in_differences": -0.0308,
+      "paired_mc_95": [
+        -0.06729952178551904,
+        0.005699521785519045
+      ],
+      "paired_mc_se": 0.018622547186286902
+    },
+    "gen1_hybrid_seed_produced": {
+      "difference_in_differences": 0.0,
+      "paired_mc_95": [
+        0.0,
+        0.0
+      ],
+      "paired_mc_se": 0.0
+    }
+  },
+  "network_matrices": {
+    "alternating": {
+      "matrix": [
+        [
+          0.25,
+          0.0,
+          0.0,
+          0.375,
+          0.0,
+          0.375
+        ],
+        [
+          0.0,
+          0.25,
+          0.0,
+          0.375,
+          0.375,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.375,
+          0.375
+        ],
+        [
+          0.375,
+          0.375,
+          0.0,
+          0.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.375,
+          0.375,
+          0.0,
+          0.25,
+          0.0
+        ],
+        [
+          0.375,
+          0.0,
+          0.375,
+          0.0,
+          0.0,
+          0.25
+        ]
+      ],
+      "signature": {
+        "cross_route_edges": 12,
+        "cross_route_mass": 4.5,
+        "incoming": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "outgoing": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "retention": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "undirected_edges": 6
+      }
+    },
+    "clustered": {
+      "matrix": [
+        [
+          0.25,
+          0.375,
+          0.0,
+          0.0,
+          0.0,
+          0.375
+        ],
+        [
+          0.375,
+          0.25,
+          0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.375,
+          0.25,
+          0.375,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.375,
+          0.25,
+          0.375,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.375,
+          0.25,
+          0.375
+        ],
+        [
+          0.375,
+          0.0,
+          0.0,
+          0.0,
+          0.375,
+          0.25
+        ]
+      ],
+      "signature": {
+        "cross_route_edges": 4,
+        "cross_route_mass": 1.5,
+        "incoming": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "outgoing": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "retention": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "undirected_edges": 6
+      }
+    },
+    "components": {
+      "matrix": [
+        [
+          0.25,
+          0.375,
+          0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          0.25,
+          0.375,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          0.375,
+          0.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.375,
+          0.375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.375,
+          0.25,
+          0.375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.375,
+          0.375,
+          0.25
+        ]
+      ],
+      "signature": {
+        "cross_route_edges": 0,
+        "cross_route_mass": 0.0,
+        "incoming": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "outgoing": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "retention": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "undirected_edges": 6
+      }
+    }
+  },
+  "paired_contrasts": {
+    "both_alt_minus_cluster": {
+      "ever_joint_individual_recruited": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0008,
+        "paired_mc_95": [
+          -0.00030850120393782494,
+          0.001908501203937825
+        ],
+        "paired_mc_se": 0.0005655722312662741,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0152,
+        "paired_mc_95": [
+          -0.004905607838881927,
+          0.035305607838881925
+        ],
+        "paired_mc_se": 0.010258151679047652,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "final_both_routes_global": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.026,
+        "paired_mc_95": [
+          0.0001671774380232055,
+          0.05183282256197679
+        ],
+        "paired_mc_se": 0.01318025370146774,
+        "sign_resolved": true,
+        "variant": "both_alternating"
+      },
+      "final_joint_individual": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0252,
+        "paired_mc_95": [
+          -0.0010120931019091672,
+          0.05141209310190917
+        ],
+        "paired_mc_se": 0.01337376263475632,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0316,
+        "paired_mc_95": [
+          0.024741393374780124,
+          0.03845860662521988
+        ],
+        "paired_mc_se": 0.0034993533959398657,
+        "sign_resolved": true,
+        "variant": "both_alternating"
+      }
+    },
+    "both_cluster_minus_components": {
+      "ever_joint_individual_recruited": {
+        "baseline": "both_components",
+        "difference_variant_minus_baseline": 0.9992,
+        "paired_mc_95": [
+          0.9980914987960622,
+          1.0003085012039379
+        ],
+        "paired_mc_se": 0.0005655722312662665,
+        "sign_resolved": true,
+        "variant": "both_clustered"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "both_components",
+        "difference_variant_minus_baseline": -0.0136,
+        "paired_mc_95": [
+          -0.03395053735119626,
+          0.006750537351196266
+        ],
+        "paired_mc_se": 0.010383118012228423,
+        "sign_resolved": false,
+        "variant": "both_clustered"
+      },
+      "final_both_routes_global": {
+        "baseline": "both_components",
+        "difference_variant_minus_baseline": 0.274,
+        "paired_mc_95": [
+          0.24790666622476512,
+          0.30009333377523495
+        ],
+        "paired_mc_se": 0.0133131700281518,
+        "sign_resolved": true,
+        "variant": "both_clustered"
+      },
+      "final_joint_individual": {
+        "baseline": "both_components",
+        "difference_variant_minus_baseline": 0.6028,
+        "paired_mc_95": [
+          0.583615247327892,
+          0.621984752672108
+        ],
+        "paired_mc_se": 0.009788318981080978,
+        "sign_resolved": true,
+        "variant": "both_clustered"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "both_components",
+        "difference_variant_minus_baseline": 0.9684,
+        "paired_mc_95": [
+          0.9615413933747802,
+          0.9752586066252199
+        ],
+        "paired_mc_se": 0.0034993533959398657,
+        "sign_resolved": true,
+        "variant": "both_clustered"
+      }
+    },
+    "pollen_alt_minus_cluster": {
+      "ever_joint_individual_recruited": {
+        "baseline": "pollen_clustered",
+        "difference_variant_minus_baseline": 0.0012,
+        "paired_mc_95": [
+          -0.00015735939362489563,
+          0.002557359393624895
+        ],
+        "paired_mc_se": 0.0006925430285105291,
+        "sign_resolved": false,
+        "variant": "pollen_alternating"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "pollen_clustered",
+        "difference_variant_minus_baseline": 0.0012,
+        "paired_mc_95": [
+          -0.007706021798117781,
+          0.01010602179811778
+        ],
+        "paired_mc_se": 0.004543972169064121,
+        "sign_resolved": false,
+        "variant": "pollen_alternating"
+      },
+      "final_both_routes_global": {
+        "baseline": "pollen_clustered",
+        "difference_variant_minus_baseline": -0.0132,
+        "paired_mc_95": [
+          -0.03042553020680701,
+          0.004025530206807012
+        ],
+        "paired_mc_se": 0.008788697314175297,
+        "sign_resolved": false,
+        "variant": "pollen_alternating"
+      },
+      "final_joint_individual": {
+        "baseline": "pollen_clustered",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          -0.019461903494844723,
+          0.019461903494844723
+        ],
+        "paired_mc_se": 0.009929725060439003,
+        "sign_resolved": false,
+        "variant": "pollen_alternating"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "pollen_clustered",
+        "difference_variant_minus_baseline": 0.0316,
+        "paired_mc_95": [
+          0.024741393374780124,
+          0.03845860662521988
+        ],
+        "paired_mc_se": 0.0034993533959398657,
+        "sign_resolved": true,
+        "variant": "pollen_alternating"
+      }
+    },
+    "pollen_cluster_minus_components": {
+      "ever_joint_individual_recruited": {
+        "baseline": "pollen_components",
+        "difference_variant_minus_baseline": 0.9988,
+        "paired_mc_95": [
+          0.9974426406063751,
+          1.0001573593936248
+        ],
+        "paired_mc_se": 0.0006925430285105284,
+        "sign_resolved": true,
+        "variant": "pollen_clustered"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "pollen_components",
+        "difference_variant_minus_baseline": -0.0068,
+        "paired_mc_95": [
+          -0.015349828311102175,
+          0.0017498283111021763
+        ],
+        "paired_mc_se": 0.004362237458719837,
+        "sign_resolved": false,
+        "variant": "pollen_clustered"
+      },
+      "final_both_routes_global": {
+        "baseline": "pollen_components",
+        "difference_variant_minus_baseline": 0.1704,
+        "paired_mc_95": [
+          0.15097906016330342,
+          0.18982093983669657
+        ],
+        "paired_mc_se": 0.009908824850806961,
+        "sign_resolved": true,
+        "variant": "pollen_clustered"
+      },
+      "final_joint_individual": {
+        "baseline": "pollen_components",
+        "difference_variant_minus_baseline": 0.8292,
+        "paired_mc_95": [
+          0.8144450227966851,
+          0.843954977203315
+        ],
+        "paired_mc_se": 0.007528187925748011,
+        "sign_resolved": true,
+        "variant": "pollen_clustered"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "pollen_components",
+        "difference_variant_minus_baseline": 0.9684,
+        "paired_mc_95": [
+          0.9615413933747802,
+          0.9752586066252199
+        ],
+        "paired_mc_se": 0.0034993533959398657,
+        "sign_resolved": true,
+        "variant": "pollen_clustered"
+      }
+    },
+    "pollen_components_minus_no_flow": {
+      "ever_joint_individual_recruited": {
+        "baseline": "no_flow",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "pollen_components"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "no_flow",
+        "difference_variant_minus_baseline": 0.0124,
+        "paired_mc_95": [
+          0.0027765690009054073,
+          0.022023430999094592
+        ],
+        "paired_mc_se": 0.004910003997524064,
+        "sign_resolved": true,
+        "variant": "pollen_components"
+      },
+      "final_both_routes_global": {
+        "baseline": "no_flow",
+        "difference_variant_minus_baseline": 0.0736,
+        "paired_mc_95": [
+          0.04887205112277919,
+          0.09832794887722081
+        ],
+        "paired_mc_se": 0.01261653227930329,
+        "sign_resolved": true,
+        "variant": "pollen_components"
+      },
+      "final_joint_individual": {
+        "baseline": "no_flow",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "pollen_components"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "no_flow",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "pollen_components"
+      }
+    },
+    "pollen_topology_given_alternating_seed": {
+      "ever_joint_individual_recruited": {
+        "baseline": "seedalt_pollencluster",
+        "difference_variant_minus_baseline": 0.0016,
+        "paired_mc_95": [
+          3.297025417465832e-05,
+          0.0031670297458253416
+        ],
+        "paired_mc_se": 0.0007995196637213314,
+        "sign_resolved": true,
+        "variant": "both_alternating"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "seedalt_pollencluster",
+        "difference_variant_minus_baseline": 0.0136,
+        "paired_mc_95": [
+          -0.006230241353511608,
+          0.03343024135351161
+        ],
+        "paired_mc_se": 0.010117655992625665,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "final_both_routes_global": {
+        "baseline": "seedalt_pollencluster",
+        "difference_variant_minus_baseline": 0.0224,
+        "paired_mc_95": [
+          -0.0029939368065694666,
+          0.047793936806569466
+        ],
+        "paired_mc_se": 0.012956328283006371,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "final_joint_individual": {
+        "baseline": "seedalt_pollencluster",
+        "difference_variant_minus_baseline": 0.0132,
+        "paired_mc_95": [
+          -0.012528529545254477,
+          0.03892852954525448
+        ],
+        "paired_mc_se": 0.013127042000872743,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "seedalt_pollencluster",
+        "difference_variant_minus_baseline": 0.0316,
+        "paired_mc_95": [
+          0.024741393374780124,
+          0.03845860662521988
+        ],
+        "paired_mc_se": 0.0034993533959398657,
+        "sign_resolved": true,
+        "variant": "both_alternating"
+      }
+    },
+    "pollen_topology_given_clustered_seed": {
+      "ever_joint_individual_recruited": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0008,
+        "paired_mc_95": [
+          -0.00030850120393782494,
+          0.001908501203937825
+        ],
+        "paired_mc_se": 0.0005655722312662741,
+        "sign_resolved": false,
+        "variant": "seedcluster_pollenalt"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.024,
+        "paired_mc_95": [
+          0.004403340718622202,
+          0.0435966592813778
+        ],
+        "paired_mc_se": 0.009998479276126647,
+        "sign_resolved": true,
+        "variant": "seedcluster_pollenalt"
+      },
+      "final_both_routes_global": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.044,
+        "paired_mc_95": [
+          0.018552674993305898,
+          0.0694473250066941
+        ],
+        "paired_mc_se": 0.012983567661150948,
+        "sign_resolved": true,
+        "variant": "seedcluster_pollenalt"
+      },
+      "final_joint_individual": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.044,
+        "paired_mc_95": [
+          0.018192777544105865,
+          0.06980722245589413
+        ],
+        "paired_mc_se": 0.013167192182845665,
+        "sign_resolved": true,
+        "variant": "seedcluster_pollenalt"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0316,
+        "paired_mc_95": [
+          0.024741393374780124,
+          0.03845860662521988
+        ],
+        "paired_mc_se": 0.0034993533959398657,
+        "sign_resolved": true,
+        "variant": "seedcluster_pollenalt"
+      }
+    },
+    "seed_alt_minus_cluster": {
+      "ever_joint_individual_recruited": {
+        "baseline": "seed_clustered",
+        "difference_variant_minus_baseline": 0.0072,
+        "paired_mc_95": [
+          -0.0026524743591361463,
+          0.017052474359136146
+        ],
+        "paired_mc_se": 0.005026865002036506,
+        "sign_resolved": false,
+        "variant": "seed_alternating"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "seed_clustered",
+        "difference_variant_minus_baseline": -0.0428,
+        "paired_mc_95": [
+          -0.06941953270673674,
+          -0.01618046729326325
+        ],
+        "paired_mc_se": 0.01358164380402342,
+        "sign_resolved": true,
+        "variant": "seed_alternating"
+      },
+      "final_both_routes_global": {
+        "baseline": "seed_clustered",
+        "difference_variant_minus_baseline": -0.0112,
+        "paired_mc_95": [
+          -0.035567614543571595,
+          0.013167614543571593
+        ],
+        "paired_mc_se": 0.012432684853283478,
+        "sign_resolved": false,
+        "variant": "seed_alternating"
+      },
+      "final_joint_individual": {
+        "baseline": "seed_clustered",
+        "difference_variant_minus_baseline": -0.0088,
+        "paired_mc_95": [
+          -0.032607556197417106,
+          0.015007556197417104
+        ],
+        "paired_mc_se": 0.012146935548412485,
+        "sign_resolved": false,
+        "variant": "seed_alternating"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "seed_clustered",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "seed_alternating"
+      }
+    },
+    "seed_cluster_minus_components": {
+      "ever_joint_individual_recruited": {
+        "baseline": "seed_components",
+        "difference_variant_minus_baseline": 0.962,
+        "paired_mc_95": [
+          0.9545037459361552,
+          0.9694962540638448
+        ],
+        "paired_mc_se": 0.0038246896998998738,
+        "sign_resolved": true,
+        "variant": "seed_clustered"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "seed_components",
+        "difference_variant_minus_baseline": 0.0196,
+        "paired_mc_95": [
+          -0.00668970812500589,
+          0.04588970812500589
+        ],
+        "paired_mc_se": 0.013413362863999787,
+        "sign_resolved": false,
+        "variant": "seed_clustered"
+      },
+      "final_both_routes_global": {
+        "baseline": "seed_components",
+        "difference_variant_minus_baseline": 0.1784,
+        "paired_mc_95": [
+          0.15726545412669915,
+          0.19953454587330086
+        ],
+        "paired_mc_se": 0.010783129710549798,
+        "sign_resolved": true,
+        "variant": "seed_clustered"
+      },
+      "final_joint_individual": {
+        "baseline": "seed_components",
+        "difference_variant_minus_baseline": 0.2688,
+        "paired_mc_95": [
+          0.2514180824113321,
+          0.28618191758866784
+        ],
+        "paired_mc_se": 0.00886848826089393,
+        "sign_resolved": true,
+        "variant": "seed_clustered"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "seed_components",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "seed_clustered"
+      }
+    },
+    "seed_topology_given_alternating_pollen": {
+      "ever_joint_individual_recruited": {
+        "baseline": "seedcluster_pollenalt",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "seedcluster_pollenalt",
+        "difference_variant_minus_baseline": -0.0088,
+        "paired_mc_95": [
+          -0.028634408277317266,
+          0.011034408277317264
+        ],
+        "paired_mc_se": 0.01011978201322529,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "final_both_routes_global": {
+        "baseline": "seedcluster_pollenalt",
+        "difference_variant_minus_baseline": -0.018,
+        "paired_mc_95": [
+          -0.04377181676133309,
+          0.007771816761333095
+        ],
+        "paired_mc_se": 0.013149127721028858,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "final_joint_individual": {
+        "baseline": "seedcluster_pollenalt",
+        "difference_variant_minus_baseline": -0.0188,
+        "paired_mc_95": [
+          -0.04511398363530683,
+          0.007513983635306833
+        ],
+        "paired_mc_se": 0.013425748556029042,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "seedcluster_pollenalt",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "both_alternating"
+      }
+    },
+    "seed_topology_given_clustered_pollen": {
+      "ever_joint_individual_recruited": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": -0.0008,
+        "paired_mc_95": [
+          -0.002720492741813049,
+          0.0011204927418130492
+        ],
+        "paired_mc_se": 0.0009798612407991697,
+        "sign_resolved": false,
+        "variant": "seedalt_pollencluster"
+      },
+      "final_any_patch_occupied": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0016,
+        "paired_mc_95": [
+          -0.018847836845258856,
+          0.022047836845258857
+        ],
+        "paired_mc_se": 0.010432761523451118,
+        "sign_resolved": false,
+        "variant": "seedalt_pollencluster"
+      },
+      "final_both_routes_global": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0036,
+        "paired_mc_95": [
+          -0.02260687555666388,
+          0.029806875556663878
+        ],
+        "paired_mc_se": 0.013371100572960062,
+        "sign_resolved": false,
+        "variant": "seedalt_pollencluster"
+      },
+      "final_joint_individual": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.012,
+        "paired_mc_95": [
+          -0.014517930438962396,
+          0.0385179304389624
+        ],
+        "paired_mc_se": 0.013529804959750882,
+        "sign_resolved": false,
+        "variant": "seedalt_pollencluster"
+      },
+      "gen1_hybrid_seed_produced": {
+        "baseline": "both_clustered",
+        "difference_variant_minus_baseline": 0.0,
+        "paired_mc_95": [
+          0.0,
+          0.0
+        ],
+        "paired_mc_se": 0.0,
+        "sign_resolved": false,
+        "variant": "seedalt_pollencluster"
+      }
+    }
+  },
+  "protocol": "SDEA v7: topology vs latent genotype alignment under matched finite per-source reproductive budgets",
+  "scenarios": {
+    "both_alternating": {
+      "means": {
+        "final_occupied_patches": 3.2316,
+        "time_integrated_occupied_patches": 30.882,
+        "total_attempts": 100.9512,
+        "total_exports": 47.8152,
+        "total_viable_seeds": 63.9312
+      },
+      "n": 2500,
+      "pollen_topology": "alternating",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 1.0,
+        "ever_hybrid_seed_produced": 1.0,
+        "ever_joint_individual_recruited": 1.0,
+        "ever_visible_A": 1.0,
+        "ever_visible_B": 0.9828,
+        "final_A_global": 0.7428,
+        "final_B_global": 0.7332,
+        "final_all_patches_occupied": 0.1304,
+        "final_any_patch_occupied": 0.838,
+        "final_both_routes_global": 0.6556,
+        "final_joint_individual": 0.628,
+        "final_same_patch_A_B": 0.6392,
+        "gen1_hybrid_seed_produced": 1.0,
+        "gen1_joint_individual_recruited": 1.0
+      },
+      "seed_topology": "alternating",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_hybrid_seed_produced": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_joint_individual_recruited": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_A": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_B": [
+          0.9769130658505035,
+          0.9872054854642393
+        ],
+        "final_A_global": [
+          0.7253029510894133,
+          0.7595520287349851
+        ],
+        "final_B_global": [
+          0.7155144986914375,
+          0.7501699382733471
+        ],
+        "final_all_patches_occupied": [
+          0.11776491381186001,
+          0.14416918609300955
+        ],
+        "final_any_patch_occupied": [
+          0.8230401952715348,
+          0.8519226679107
+        ],
+        "final_both_routes_global": [
+          0.6367476287355972,
+          0.6739749201139761
+        ],
+        "final_joint_individual": [
+          0.6088706234975853,
+          0.6467366146305985
+        ],
+        "final_same_patch_A_B": [
+          0.6201748972766582,
+          0.6577979741877414
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "gen1_joint_individual_recruited": [
+          0.9984657739382173,
+          0.9999999999999999
+        ]
+      }
+    },
+    "both_clustered": {
+      "means": {
+        "final_occupied_patches": 3.184,
+        "time_integrated_occupied_patches": 30.7036,
+        "total_attempts": 100.5588,
+        "total_exports": 47.7084,
+        "total_viable_seeds": 63.5252
+      },
+      "n": 2500,
+      "pollen_topology": "clustered",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.9996,
+        "ever_hybrid_seed_produced": 1.0,
+        "ever_joint_individual_recruited": 0.9992,
+        "ever_visible_A": 1.0,
+        "ever_visible_B": 0.9744,
+        "final_A_global": 0.722,
+        "final_B_global": 0.7192,
+        "final_all_patches_occupied": 0.1328,
+        "final_any_patch_occupied": 0.8228,
+        "final_both_routes_global": 0.6296,
+        "final_joint_individual": 0.6028,
+        "final_same_patch_A_B": 0.6148,
+        "gen1_hybrid_seed_produced": 0.9684,
+        "gen1_joint_individual_recruited": 0.9068
+      },
+      "seed_topology": "clustered",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.9977376146310255,
+          0.9999293866880412
+        ],
+        "ever_hybrid_seed_produced": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_joint_individual_recruited": [
+          0.9970876449764905,
+          0.9997805837234259
+        ],
+        "ever_visible_A": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_B": [
+          0.9674431613694194,
+          0.9799011649431615
+        ],
+        "final_A_global": [
+          0.7041077715384141,
+          0.7392110320901544
+        ],
+        "final_B_global": [
+          0.7012582399992189,
+          0.7364691552952956
+        ],
+        "final_all_patches_occupied": [
+          0.12005903622410206,
+          0.14666769939567095
+        ],
+        "final_any_patch_occupied": [
+          0.8073402713472446,
+          0.8372692323072686
+        ],
+        "final_both_routes_global": [
+          0.6104848500559446,
+          0.6483174785488415
+        ],
+        "final_joint_individual": [
+          0.5834754368803355,
+          0.621809126241362
+        ],
+        "final_same_patch_A_B": [
+          0.5955616592690044,
+          0.6336860824272105
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.9607918142461888,
+          0.9745709227791334
+        ],
+        "gen1_joint_individual_recruited": [
+          0.8947718098927842,
+          0.9175799437833496
+        ]
+      }
+    },
+    "both_components": {
+      "means": {
+        "final_occupied_patches": 2.7296,
+        "time_integrated_occupied_patches": 28.9584,
+        "total_attempts": 96.6864,
+        "total_exports": 46.5732,
+        "total_viable_seeds": 62.0056
+      },
+      "n": 2500,
+      "pollen_topology": "components",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.0,
+        "ever_hybrid_seed_produced": 0.0,
+        "ever_joint_individual_recruited": 0.0,
+        "ever_visible_A": 0.9988,
+        "ever_visible_B": 0.9508,
+        "final_A_global": 0.5976,
+        "final_B_global": 0.5944,
+        "final_all_patches_occupied": 0.0784,
+        "final_any_patch_occupied": 0.8364,
+        "final_both_routes_global": 0.3556,
+        "final_joint_individual": 0.0,
+        "final_same_patch_A_B": 0.0,
+        "gen1_hybrid_seed_produced": 0.0,
+        "gen1_joint_individual_recruited": 0.0
+      },
+      "seed_topology": "components",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_visible_A": [
+          0.9964776464237726,
+          0.9995918096569933
+        ],
+        "ever_visible_B": [
+          0.9416084612395087,
+          0.9586082805431883
+        ],
+        "final_A_global": [
+          0.57824181690294,
+          0.6166587021698002
+        ],
+        "final_B_global": [
+          0.5750222428474375,
+          0.6134880952720979
+        ],
+        "final_all_patches_occupied": [
+          0.0684982990340356,
+          0.08959536038125936
+        ],
+        "final_any_patch_occupied": [
+          0.8213855327280128,
+          0.85038223997762
+        ],
+        "final_both_routes_global": [
+          0.3370701450560294,
+          0.3745729394306134
+        ],
+        "final_joint_individual": [
+          0.0,
+          0.001534226061782461
+        ],
+        "final_same_patch_A_B": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ]
+      }
+    },
+    "no_flow": {
+      "means": {
+        "final_occupied_patches": 2.4212,
+        "time_integrated_occupied_patches": 28.1076,
+        "total_attempts": 95.0592,
+        "total_exports": 0.0,
+        "total_viable_seeds": 63.4664
+      },
+      "n": 2500,
+      "pollen_topology": "identity",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.0,
+        "ever_hybrid_seed_produced": 0.0,
+        "ever_joint_individual_recruited": 0.0,
+        "ever_visible_A": 0.9996,
+        "ever_visible_B": 0.982,
+        "final_A_global": 0.7964,
+        "final_B_global": 0.7916,
+        "final_all_patches_occupied": 0.004,
+        "final_any_patch_occupied": 0.9592,
+        "final_both_routes_global": 0.6288,
+        "final_joint_individual": 0.0,
+        "final_same_patch_A_B": 0.0,
+        "gen1_hybrid_seed_produced": 0.0,
+        "gen1_joint_individual_recruited": 0.0
+      },
+      "seed_topology": "identity",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_visible_A": [
+          0.9977376146310255,
+          0.9999293866880412
+        ],
+        "ever_visible_B": [
+          0.9760006707571925,
+          0.9865203353192492
+        ],
+        "final_A_global": [
+          0.7801662501267546,
+          0.8117242606638209
+        ],
+        "final_B_global": [
+          0.7752372006348159,
+          0.8070680387259525
+        ],
+        "final_all_patches_occupied": [
+          0.0021741940918635163,
+          0.0073477581614246855
+        ],
+        "final_any_patch_occupied": [
+          0.9507148129264875,
+          0.9662761538583715
+        ],
+        "final_both_routes_global": [
+          0.6096777090361254,
+          0.6475270743303594
+        ],
+        "final_joint_individual": [
+          0.0,
+          0.001534226061782461
+        ],
+        "final_same_patch_A_B": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ]
+      }
+    },
+    "pollen_alternating": {
+      "means": {
+        "final_occupied_patches": 4.396,
+        "time_integrated_occupied_patches": 36.6488,
+        "total_attempts": 114.7584,
+        "total_exports": 0.0,
+        "total_viable_seeds": 80.5436
+      },
+      "n": 2500,
+      "pollen_topology": "alternating",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 1.0,
+        "ever_hybrid_seed_produced": 1.0,
+        "ever_joint_individual_recruited": 1.0,
+        "ever_visible_A": 1.0,
+        "ever_visible_B": 0.9948,
+        "final_A_global": 0.9096,
+        "final_B_global": 0.908,
+        "final_all_patches_occupied": 0.3852,
+        "final_any_patch_occupied": 0.966,
+        "final_both_routes_global": 0.8596,
+        "final_joint_individual": 0.8292,
+        "final_same_patch_A_B": 0.8424,
+        "gen1_hybrid_seed_produced": 1.0,
+        "gen1_joint_individual_recruited": 1.0
+      },
+      "seed_topology": "identity",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_hybrid_seed_produced": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_joint_individual_recruited": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_A": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_B": [
+          0.9911231987401355,
+          0.9969585311491246
+        ],
+        "final_A_global": [
+          0.8977220918804608,
+          0.920221070129727
+        ],
+        "final_B_global": [
+          0.896035828698728,
+          0.9187122428348575
+        ],
+        "final_all_patches_occupied": [
+          0.36631391757278964,
+          0.4044383407309956
+        ],
+        "final_any_patch_occupied": [
+          0.9581505378239923,
+          0.9724195634864263
+        ],
+        "final_both_routes_global": [
+          0.8454296723030048,
+          0.8726669123133612
+        ],
+        "final_joint_individual": [
+          0.8139455775515131,
+          0.8434442880094094
+        ],
+        "final_same_patch_A_B": [
+          0.827593110750702,
+          0.8561562512421894
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "gen1_joint_individual_recruited": [
+          0.9984657739382173,
+          0.9999999999999999
+        ]
+      }
+    },
+    "pollen_clustered": {
+      "means": {
+        "final_occupied_patches": 4.4628,
+        "time_integrated_occupied_patches": 36.862,
+        "total_attempts": 115.1976,
+        "total_exports": 0.0,
+        "total_viable_seeds": 80.8
+      },
+      "n": 2500,
+      "pollen_topology": "clustered",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.9988,
+        "ever_hybrid_seed_produced": 0.9992,
+        "ever_joint_individual_recruited": 0.9988,
+        "ever_visible_A": 1.0,
+        "ever_visible_B": 0.9932,
+        "final_A_global": 0.9196,
+        "final_B_global": 0.9144,
+        "final_all_patches_occupied": 0.388,
+        "final_any_patch_occupied": 0.9648,
+        "final_both_routes_global": 0.8728,
+        "final_joint_individual": 0.8292,
+        "final_same_patch_A_B": 0.848,
+        "gen1_hybrid_seed_produced": 0.9684,
+        "gen1_joint_individual_recruited": 0.9424
+      },
+      "seed_topology": "identity",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.9964776464237726,
+          0.9995918096569933
+        ],
+        "ever_hybrid_seed_produced": [
+          0.9970876449764905,
+          0.9997805837234259
+        ],
+        "ever_joint_individual_recruited": [
+          0.9964776464237726,
+          0.9995918096569933
+        ],
+        "ever_visible_A": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_B": [
+          0.9891366053742684,
+          0.9957500340383892
+        ],
+        "final_A_global": [
+          0.9082862471239596,
+          0.9296262303649926
+        ],
+        "final_B_global": [
+          0.9027873253298246,
+          0.92474110811017
+        ],
+        "final_all_patches_occupied": [
+          0.36908412233996496,
+          0.4072595442978743
+        ],
+        "final_any_patch_occupied": [
+          0.9568334571383103,
+          0.9713403263146568
+        ],
+        "final_both_routes_global": [
+          0.8591644590666477,
+          0.8852916219816872
+        ],
+        "final_joint_individual": [
+          0.8139455775515131,
+          0.8434442880094094
+        ],
+        "final_same_patch_A_B": [
+          0.8333933972261965,
+          0.8615387814348029
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.9607918142461888,
+          0.9745709227791334
+        ],
+        "gen1_joint_individual_recruited": [
+          0.9325701973876999,
+          0.950872319392835
+        ]
+      }
+    },
+    "pollen_components": {
+      "means": {
+        "final_occupied_patches": 4.4344,
+        "time_integrated_occupied_patches": 36.7872,
+        "total_attempts": 115.0584,
+        "total_exports": 0.0,
+        "total_viable_seeds": 81.3072
+      },
+      "n": 2500,
+      "pollen_topology": "components",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.0,
+        "ever_hybrid_seed_produced": 0.0,
+        "ever_joint_individual_recruited": 0.0,
+        "ever_visible_A": 0.9992,
+        "ever_visible_B": 0.9884,
+        "final_A_global": 0.8336,
+        "final_B_global": 0.8404,
+        "final_all_patches_occupied": 0.388,
+        "final_any_patch_occupied": 0.9716,
+        "final_both_routes_global": 0.7024,
+        "final_joint_individual": 0.0,
+        "final_same_patch_A_B": 0.0,
+        "gen1_hybrid_seed_produced": 0.0,
+        "gen1_joint_individual_recruited": 0.0
+      },
+      "seed_topology": "identity",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_visible_A": [
+          0.9970876449764905,
+          0.9997805837234259
+        ],
+        "ever_visible_B": [
+          0.9833901615658878,
+          0.9919112064169631
+        ],
+        "final_A_global": [
+          0.8184910574654929,
+          0.8476853069060859
+        ],
+        "final_B_global": [
+          0.8255231274271764,
+          0.8542323714699622
+        ],
+        "final_all_patches_occupied": [
+          0.36908412233996496,
+          0.4072595442978743
+        ],
+        "final_any_patch_occupied": [
+          0.964329850220103,
+          0.9774230677584239
+        ],
+        "final_both_routes_global": [
+          0.6841785205193417,
+          0.7200004247708488
+        ],
+        "final_joint_individual": [
+          0.0,
+          0.001534226061782461
+        ],
+        "final_same_patch_A_B": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ]
+      }
+    },
+    "seed_alternating": {
+      "means": {
+        "final_occupied_patches": 1.1864,
+        "time_integrated_occupied_patches": 23.4824,
+        "total_attempts": 84.888,
+        "total_exports": 33.348,
+        "total_viable_seeds": 44.4152
+      },
+      "n": 2500,
+      "pollen_topology": "identity",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.9772,
+        "ever_hybrid_seed_produced": 0.9712,
+        "ever_joint_individual_recruited": 0.9692,
+        "ever_visible_A": 0.9988,
+        "ever_visible_B": 0.9536,
+        "final_A_global": 0.3868,
+        "final_B_global": 0.3908,
+        "final_all_patches_occupied": 0.0032,
+        "final_any_patch_occupied": 0.5256,
+        "final_both_routes_global": 0.278,
+        "final_joint_individual": 0.26,
+        "final_same_patch_A_B": 0.2644,
+        "gen1_hybrid_seed_produced": 0.0,
+        "gen1_joint_individual_recruited": 0.0
+      },
+      "seed_topology": "alternating",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.970575599475625,
+          0.9823601351710097
+        ],
+        "ever_hybrid_seed_produced": [
+          0.963886489547286,
+          0.9770676558120902
+        ],
+        "ever_joint_individual_recruited": [
+          0.961674486770785,
+          0.9752857954928381
+        ],
+        "ever_visible_A": [
+          0.9964776464237726,
+          0.9995918096569933
+        ],
+        "ever_visible_B": [
+          0.9446355036310304,
+          0.9611726464857205
+        ],
+        "final_A_global": [
+          0.3678968104637123,
+          0.4060505383166752
+        ],
+        "final_B_global": [
+          0.3718549894928234,
+          0.4100800854790699
+        ],
+        "final_all_patches_occupied": [
+          0.0016223814822816404,
+          0.006302025532705414
+        ],
+        "final_any_patch_occupied": [
+          0.5060017722132912,
+          0.5451196754123455
+        ],
+        "final_both_routes_global": [
+          0.26078896790984557,
+          0.29589222846158586
+        ],
+        "final_joint_individual": [
+          0.2431833175130838,
+          0.2775531109965718
+        ],
+        "final_same_patch_A_B": [
+          0.24748354905536388,
+          0.282039378264948
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ]
+      }
+    },
+    "seed_clustered": {
+      "means": {
+        "final_occupied_patches": 1.2652,
+        "time_integrated_occupied_patches": 23.7412,
+        "total_attempts": 85.428,
+        "total_exports": 33.7856,
+        "total_viable_seeds": 45.0324
+      },
+      "n": 2500,
+      "pollen_topology": "identity",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.9724,
+        "ever_hybrid_seed_produced": 0.9668,
+        "ever_joint_individual_recruited": 0.962,
+        "ever_visible_A": 1.0,
+        "ever_visible_B": 0.9508,
+        "final_A_global": 0.4232,
+        "final_B_global": 0.4112,
+        "final_all_patches_occupied": 0.0028,
+        "final_any_patch_occupied": 0.5684,
+        "final_both_routes_global": 0.2892,
+        "final_joint_individual": 0.2688,
+        "final_same_patch_A_B": 0.2744,
+        "gen1_hybrid_seed_produced": 0.0,
+        "gen1_joint_individual_recruited": 0.0
+      },
+      "seed_topology": "clustered",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.9652175837021082,
+          0.9781328795147197
+        ],
+        "ever_hybrid_seed_produced": [
+          0.9590298790571729,
+          0.973137767491547
+        ],
+        "ever_joint_individual_recruited": [
+          0.9537687156924177,
+          0.9688136594264951
+        ],
+        "ever_visible_A": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_B": [
+          0.9416084612395087,
+          0.9586082805431883
+        ],
+        "final_A_global": [
+          0.40396527923364284,
+          0.442670377889447
+        ],
+        "final_B_global": [
+          0.3920624999113902,
+          0.4306099786371824
+        ],
+        "final_all_patches_occupied": [
+          0.0013569852192520607,
+          0.005768649176584418
+        ],
+        "final_any_patch_occupied": [
+          0.5488942971124192,
+          0.587695820762329
+        ],
+        "final_both_routes_global": [
+          0.27176151007344496,
+          0.3072853196342026
+        ],
+        "final_joint_individual": [
+          0.25178598610970193,
+          0.2865234400212663
+        ],
+        "final_same_patch_A_B": [
+          0.2572649507369929,
+          0.29222729206208337
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ]
+      }
+    },
+    "seed_components": {
+      "means": {
+        "final_occupied_patches": 1.1828,
+        "time_integrated_occupied_patches": 23.4988,
+        "total_attempts": 84.948,
+        "total_exports": 33.5916,
+        "total_viable_seeds": 44.6436
+      },
+      "n": 2500,
+      "pollen_topology": "identity",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.0,
+        "ever_hybrid_seed_produced": 0.0,
+        "ever_joint_individual_recruited": 0.0,
+        "ever_visible_A": 0.9988,
+        "ever_visible_B": 0.9388,
+        "final_A_global": 0.3284,
+        "final_B_global": 0.3312,
+        "final_all_patches_occupied": 0.004,
+        "final_any_patch_occupied": 0.5488,
+        "final_both_routes_global": 0.1108,
+        "final_joint_individual": 0.0,
+        "final_same_patch_A_B": 0.0,
+        "gen1_hybrid_seed_produced": 0.0,
+        "gen1_joint_individual_recruited": 0.0
+      },
+      "seed_topology": "components",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ],
+        "ever_visible_A": [
+          0.9964776464237726,
+          0.9995918096569933
+        ],
+        "ever_visible_B": [
+          0.928713944288549,
+          0.9475396189196306
+        ],
+        "final_A_global": [
+          0.31026631288791506,
+          0.34706023349648873
+        ],
+        "final_B_global": [
+          0.3130223777139479,
+          0.3498955770045098
+        ],
+        "final_all_patches_occupied": [
+          0.0021741940918635163,
+          0.0073477581614246855
+        ],
+        "final_any_patch_occupied": [
+          0.5292338893334498,
+          0.5682163702029202
+        ],
+        "final_both_routes_global": [
+          0.09908803227774868,
+          0.12370620928874276
+        ],
+        "final_joint_individual": [
+          0.0,
+          0.001534226061782461
+        ],
+        "final_same_patch_A_B": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.0,
+          0.001534226061782461
+        ],
+        "gen1_joint_individual_recruited": [
+          0.0,
+          0.001534226061782461
+        ]
+      }
+    },
+    "seedalt_pollencluster": {
+      "means": {
+        "final_occupied_patches": 3.2912,
+        "time_integrated_occupied_patches": 31.2376,
+        "total_attempts": 101.8392,
+        "total_exports": 48.2052,
+        "total_viable_seeds": 64.3512
+      },
+      "n": 2500,
+      "pollen_topology": "clustered",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 0.9996,
+        "ever_hybrid_seed_produced": 0.9996,
+        "ever_joint_individual_recruited": 0.9984,
+        "ever_visible_A": 0.9988,
+        "ever_visible_B": 0.9696,
+        "final_A_global": 0.7224,
+        "final_B_global": 0.7256,
+        "final_all_patches_occupied": 0.148,
+        "final_any_patch_occupied": 0.8244,
+        "final_both_routes_global": 0.6332,
+        "final_joint_individual": 0.6148,
+        "final_same_patch_A_B": 0.6228,
+        "gen1_hybrid_seed_produced": 0.9684,
+        "gen1_joint_individual_recruited": 0.9144
+      },
+      "seed_topology": "alternating",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.9977376146310255,
+          0.9999293866880412
+        ],
+        "ever_hybrid_seed_produced": [
+          0.9977376146310255,
+          0.9999293866880412
+        ],
+        "ever_joint_individual_recruited": [
+          0.9958930626633852,
+          0.99937762079823
+        ],
+        "ever_visible_A": [
+          0.9964776464237726,
+          0.9995918096569933
+        ],
+        "ever_visible_B": [
+          0.962116267677882,
+          0.9756427872048918
+        ],
+        "final_A_global": [
+          0.7045149168368146,
+          0.7396026594109046
+        ],
+        "final_B_global": [
+          0.7077727079379166,
+          0.7427350492630072
+        ],
+        "final_all_patches_occupied": [
+          0.13462058562766516,
+          0.16245950951982963
+        ],
+        "final_any_patch_occupied": [
+          0.8089909124308732,
+          0.8388136817002423
+        ],
+        "final_both_routes_global": [
+          0.6141176732157327,
+          0.6518736089614083
+        ],
+        "final_joint_individual": [
+          0.5955616592690044,
+          0.6336860824272105
+        ],
+        "final_same_patch_A_B": [
+          0.6036259148663125,
+          0.6415972792129138
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.9607918142461888,
+          0.9745709227791334
+        ],
+        "gen1_joint_individual_recruited": [
+          0.9027873253298246,
+          0.92474110811017
+        ]
+      }
+    },
+    "seedcluster_pollenalt": {
+      "means": {
+        "final_occupied_patches": 3.5316,
+        "time_integrated_occupied_patches": 32.0188,
+        "total_attempts": 103.4616,
+        "total_exports": 49.5784,
+        "total_viable_seeds": 65.8468
+      },
+      "n": 2500,
+      "pollen_topology": "alternating",
+      "probabilities": {
+        "ever_cooccurrence_same_patch": 1.0,
+        "ever_hybrid_seed_produced": 1.0,
+        "ever_joint_individual_recruited": 1.0,
+        "ever_visible_A": 1.0,
+        "ever_visible_B": 0.98,
+        "final_A_global": 0.7516,
+        "final_B_global": 0.7536,
+        "final_all_patches_occupied": 0.1776,
+        "final_any_patch_occupied": 0.8468,
+        "final_both_routes_global": 0.6736,
+        "final_joint_individual": 0.6468,
+        "final_same_patch_A_B": 0.6604,
+        "gen1_hybrid_seed_produced": 1.0,
+        "gen1_joint_individual_recruited": 1.0
+      },
+      "seed_topology": "clustered",
+      "wilson95": {
+        "ever_cooccurrence_same_patch": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_hybrid_seed_produced": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_joint_individual_recruited": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_A": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "ever_visible_B": [
+          0.973730655644177,
+          0.9847964873365117
+        ],
+        "final_A_global": [
+          0.7342851646992516,
+          0.7681428127464596
+        ],
+        "final_B_global": [
+          0.7363278731778945,
+          0.7700939673635695
+        ],
+        "final_all_patches_occupied": [
+          0.1631169503616952,
+          0.1930723186029421
+        ],
+        "final_any_patch_occupied": [
+          0.832149932072048,
+          0.8603859287314997
+        ],
+        "final_both_routes_global": [
+          0.6549654645451165,
+          0.6917018521662325
+        ],
+        "final_joint_individual": [
+          0.6278519472587792,
+          0.6652976039694815
+        ],
+        "final_same_patch_A_B": [
+          0.6416027845115441,
+          0.678705035767836
+        ],
+        "gen1_hybrid_seed_produced": [
+          0.9984657739382173,
+          0.9999999999999999
+        ],
+        "gen1_joint_individual_recruited": [
+          0.9984657739382173,
+          0.9999999999999999
+        ]
+      }
+    }
+  },
+  "scope": "CONSTRUCTED model; no natural dispersal/trait estimates; not independent source-repo reproduction"
+}

@@ -1,0 +1,2117 @@
+{
+  "contrasts": [
+    {
+      "difference_second_minus_first": -0.155,
+      "endpoint": "patch0_occupied",
+      "first": "single_local_B3",
+      "mc_95_difference": [
+        -0.1711415900161241,
+        -0.13885840998387589
+      ],
+      "mc_se": 0.008235656442387397,
+      "p_first": 0.20033333333333334,
+      "p_second": 0.04533333333333334,
+      "second": "single_strong_B3"
+    },
+    {
+      "difference_second_minus_first": 0.8416666666666667,
+      "endpoint": "patch1_first_colonization",
+      "first": "single_local_B3",
+      "mc_95_difference": [
+        0.8286036432614949,
+        0.8547296900718384
+      ],
+      "mc_se": 0.0066649303294405325,
+      "p_first": 0.0,
+      "p_second": 0.8416666666666667,
+      "second": "single_strong_B3"
+    },
+    {
+      "difference_second_minus_first": 0.9316666666666666,
+      "endpoint": "patch0_occupied",
+      "first": "single_strong_B3",
+      "mc_95_difference": [
+        0.9224911025666722,
+        0.9408422307666611
+      ],
+      "mc_se": 0.004681496278692039,
+      "p_first": 0.04533333333333334,
+      "p_second": 0.977,
+      "second": "single_strong_B8"
+    },
+    {
+      "difference_second_minus_first": 0.15833333333333333,
+      "endpoint": "patch1_first_colonization",
+      "first": "single_strong_B3",
+      "mc_95_difference": [
+        0.14527030992816156,
+        0.1713963567385051
+      ],
+      "mc_se": 0.0066649303294405325,
+      "p_first": 0.8416666666666667,
+      "p_second": 1.0,
+      "second": "single_strong_B8"
+    },
+    {
+      "difference_second_minus_first": 0.02466666666666667,
+      "endpoint": "patch1_ever_joint",
+      "first": "distinct_seed_chain_B3",
+      "mc_95_difference": [
+        0.0052767617629828345,
+        0.044056571570350506
+      ],
+      "mc_se": 0.009892990410349101,
+      "p_first": 0.16666666666666666,
+      "p_second": 0.19133333333333333,
+      "second": "distinct_seed_pollen_chain_B3"
+    },
+    {
+      "difference_second_minus_first": 0.06866666666666668,
+      "endpoint": "patch1_ever_joint",
+      "first": "distinct_seed_pollen_chain_B3",
+      "mc_95_difference": [
+        0.047583767069247156,
+        0.0897495662640862
+      ],
+      "mc_se": 0.010756779085595107,
+      "p_first": 0.19133333333333333,
+      "p_second": 0.26,
+      "second": "distinct_seed_pollen_connected_B3"
+    },
+    {
+      "difference_second_minus_first": -0.006999999999999999,
+      "endpoint": "patch0_A_supported",
+      "first": "distinct_seed_pollen_connected_B3",
+      "mc_95_difference": [
+        -0.017762742669295676,
+        0.0037627426692956774
+      ],
+      "mc_se": 0.005491296143291976,
+      "p_first": 0.051,
+      "p_second": 0.044,
+      "second": "distinct_seed_pollen_connected_B3_selection"
+    }
+  ],
+  "exact_one_step": {
+    "one_source_moderate_budget3_joint_and_retention": {
+      "budget": 3,
+      "joint_colonization": 0.09104213349501794,
+      "joint_minus_independent": -0.029060020141074658,
+      "naive_independent_joint": 0.1201021536360926,
+      "per_attempt_receiver_arrival": [
+        0.13223437499999996,
+        0.13223437499999996
+      ],
+      "recipient_colonization": [
+        0.34655757622088224,
+        0.34655757622088224
+      ],
+      "source_retention": 0.8682491779422912,
+      "source_seed_success_probability": 0.7556249999999999
+    },
+    "one_source_strong_budget1_joint_and_retention": {
+      "budget": 1,
+      "joint_colonization": 0.0,
+      "joint_minus_independent": -0.09135506249999994,
+      "naive_independent_joint": 0.09135506249999994,
+      "per_attempt_receiver_arrival": [
+        0.30224999999999996,
+        0.30224999999999996
+      ],
+      "recipient_colonization": [
+        0.3022499999999999,
+        0.3022499999999999
+      ],
+      "source_retention": 0.15112499999999995,
+      "source_seed_success_probability": 0.7556249999999999
+    },
+    "one_source_strong_budget3_joint_and_retention": {
+      "budget": 3,
+      "joint_colonization": 0.38245796915624974,
+      "joint_minus_independent": -0.05353400076719289,
+      "naive_independent_joint": 0.43599196992344263,
+      "per_attempt_receiver_arrival": [
+        0.30224999999999996,
+        0.30224999999999996
+      ],
+      "recipient_colonization": [
+        0.6602968801406248,
+        0.6602968801406248
+      ],
+      "source_retention": 0.38831021158007806,
+      "source_seed_success_probability": 0.7556249999999999
+    },
+    "one_source_strong_budget8_joint_and_retention": {
+      "budget": 8,
+      "joint_colonization": 0.8882342433700596,
+      "joint_minus_independent": -0.0025577913798267016,
+      "naive_independent_joint": 0.8907920347498863,
+      "per_attempt_receiver_arrival": [
+        0.30224999999999996,
+        0.30224999999999996
+      ],
+      "recipient_colonization": [
+        0.943817797432262,
+        0.943817797432262
+      ],
+      "source_retention": 0.7303813388396057,
+      "source_seed_success_probability": 0.7556249999999999
+    },
+    "single_source_moderate_patch1": {
+      "colonized_after_catastrophe": 0.34655757622088224,
+      "colonized_before_catastrophe": 0.34655757622088224,
+      "per_attempt_arrival_probability": 0.13223437499999996,
+      "source_viability_per_attempt": 0.7556249999999999
+    },
+    "single_source_moderate_patch2": {
+      "colonized_after_catastrophe": 0.34655757622088224,
+      "colonized_before_catastrophe": 0.34655757622088224,
+      "per_attempt_arrival_probability": 0.13223437499999996,
+      "source_viability_per_attempt": 0.7556249999999999
+    },
+    "single_source_strong_patch0_retained_probability": 0.38831021158007806,
+    "single_source_strong_patch1": {
+      "colonized_after_catastrophe": 0.6602968801406248,
+      "colonized_before_catastrophe": 0.6602968801406248,
+      "per_attempt_arrival_probability": 0.30224999999999996,
+      "source_viability_per_attempt": 0.7556249999999999
+    }
+  },
+  "protocol": "SDEA v6 (2026-10-26) finite seed budgets, 3-patch pollen routing and retention",
+  "replicate_unit": "whole 3-patch landscape for 8 generations",
+  "scenarios": {
+    "distinct_seed_chain_B3": {
+      "event_counts": {
+        "all_three_occupied": 20,
+        "any_patch_occupied": 502,
+        "global_extinction": 2498,
+        "globally_A_absent": 2654,
+        "globally_B_absent": 2800,
+        "patch0_A_supported": 143,
+        "patch0_B_supported": 65,
+        "patch0_ever_joint": 229,
+        "patch0_ever_visible_A": 2084,
+        "patch0_joint": 18,
+        "patch0_occupied": 193,
+        "patch0_recolonized": 575,
+        "patch1_A_supported": 229,
+        "patch1_ever_joint": 500,
+        "patch1_ever_visible_A": 1375,
+        "patch1_first_colonization": 2767,
+        "patch1_joint": 37,
+        "patch1_occupied": 325,
+        "patch1_recolonized": 651,
+        "patch2_A_supported": 96,
+        "patch2_B_supported": 82,
+        "patch2_ever_joint": 206,
+        "patch2_ever_visible_B": 1555,
+        "patch2_first_colonization": 0,
+        "patch2_joint": 16,
+        "patch2_occupied": 167
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.004319839120639022,
+          0.010275291621682595
+        ],
+        "any_patch_occupied": [
+          0.1544033648302494,
+          0.18111416252166745
+        ],
+        "global_extinction": [
+          0.8188858374783325,
+          0.8455966351697506
+        ],
+        "globally_A_absent": [
+          0.872741236273029,
+          0.8956082361076204
+        ],
+        "globally_B_absent": [
+          0.9238416093144765,
+          0.941716721790241
+        ],
+        "patch0_A_supported": [
+          0.040603968243672725,
+          0.05588629690317218
+        ],
+        "patch0_B_supported": [
+          0.017036032303674745,
+          0.027520732976887098
+        ],
+        "patch0_ever_joint": [
+          0.06736405211705591,
+          0.08638622570287029
+        ],
+        "patch0_ever_visible_A": [
+          0.6779461649255487,
+          0.7108892699707243
+        ],
+        "patch0_joint": [
+          0.003798702829958543,
+          0.00946479971066351
+        ],
+        "patch0_occupied": [
+          0.05609900349433693,
+          0.07368196669499709
+        ],
+        "patch0_recolonized": [
+          0.17797949316558398,
+          0.20614246354836707
+        ],
+        "patch1_A_supported": [
+          0.06736405211705591,
+          0.08638622570287029
+        ],
+        "patch1_ever_joint": [
+          0.15375879809721082,
+          0.18042710105300647
+        ],
+        "patch1_ever_visible_A": [
+          0.44056823501093123,
+          0.4762050023828459
+        ],
+        "patch1_first_colonization": [
+          0.9122067075244634,
+          0.9313797582522113
+        ],
+        "patch1_joint": [
+          0.008961127098019293,
+          0.01695284335874863
+        ],
+        "patch1_occupied": [
+          0.09770838464898784,
+          0.11996004685251749
+        ],
+        "patch1_recolonized": [
+          0.20261669640012445,
+          0.23210713197841001
+        ],
+        "patch2_A_supported": [
+          0.026276173957395833,
+          0.038920828449509275
+        ],
+        "patch2_B_supported": [
+          0.022075623775343264,
+          0.03379998121966488
+        ],
+        "patch2_ever_joint": [
+          0.06015799866455327,
+          0.07827855483582792
+        ],
+        "patch2_ever_visible_B": [
+          0.5004413988680428,
+          0.5361783766786951
+        ],
+        "patch2_first_colonization": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_joint": [
+          0.0032855756253714974,
+          0.00864629871355099
+        ],
+        "patch2_occupied": [
+          0.04801606556145486,
+          0.06445373800578483
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 3.568,
+        "patch0_time_integrated_occupancy": 3.9086666666666665,
+        "patch1_time_integrated_occupancy": 4.427333333333333,
+        "patch2_time_integrated_occupancy": 2.5533333333333332,
+        "viable_seeds": 11.738666666666667
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 3,
+        "seed_routing": [
+          [
+            0.7,
+            0.3,
+            0.0
+          ],
+          [
+            0.15,
+            0.7,
+            0.15
+          ],
+          [
+            0.0,
+            0.3,
+            0.7
+          ]
+        ],
+        "selection_a": 0.0,
+        "selection_b": 0.0
+      },
+      "probabilities": {
+        "all_three_occupied": 0.006666666666666667,
+        "any_patch_occupied": 0.16733333333333333,
+        "global_extinction": 0.8326666666666667,
+        "globally_A_absent": 0.8846666666666667,
+        "globally_B_absent": 0.9333333333333333,
+        "patch0_A_supported": 0.04766666666666667,
+        "patch0_B_supported": 0.021666666666666667,
+        "patch0_ever_joint": 0.07633333333333334,
+        "patch0_ever_visible_A": 0.6946666666666667,
+        "patch0_joint": 0.006,
+        "patch0_occupied": 0.06433333333333334,
+        "patch0_recolonized": 0.19166666666666668,
+        "patch1_A_supported": 0.07633333333333334,
+        "patch1_ever_joint": 0.16666666666666666,
+        "patch1_ever_visible_A": 0.4583333333333333,
+        "patch1_first_colonization": 0.9223333333333333,
+        "patch1_joint": 0.012333333333333333,
+        "patch1_occupied": 0.10833333333333334,
+        "patch1_recolonized": 0.217,
+        "patch2_A_supported": 0.032,
+        "patch2_B_supported": 0.027333333333333334,
+        "patch2_ever_joint": 0.06866666666666667,
+        "patch2_ever_visible_B": 0.5183333333333333,
+        "patch2_first_colonization": 0.0,
+        "patch2_joint": 0.005333333333333333,
+        "patch2_occupied": 0.05566666666666667
+      },
+      "replicates": 3000,
+      "seed": 40719401
+    },
+    "distinct_seed_pollen_chain_B3": {
+      "event_counts": {
+        "all_three_occupied": 28,
+        "any_patch_occupied": 435,
+        "global_extinction": 2565,
+        "globally_A_absent": 2728,
+        "globally_B_absent": 2796,
+        "patch0_A_supported": 122,
+        "patch0_B_supported": 57,
+        "patch0_ever_joint": 451,
+        "patch0_ever_visible_A": 1788,
+        "patch0_joint": 25,
+        "patch0_occupied": 162,
+        "patch0_recolonized": 461,
+        "patch1_A_supported": 183,
+        "patch1_ever_joint": 574,
+        "patch1_ever_visible_A": 1053,
+        "patch1_first_colonization": 2427,
+        "patch1_joint": 38,
+        "patch1_occupied": 299,
+        "patch1_recolonized": 473,
+        "patch2_A_supported": 89,
+        "patch2_B_supported": 90,
+        "patch2_ever_joint": 292,
+        "patch2_ever_visible_B": 1448,
+        "patch2_first_colonization": 0,
+        "patch2_joint": 15,
+        "patch2_occupied": 173
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.0064653588228406,
+          0.01345628472627928
+        ],
+        "any_patch_occupied": [
+          0.13285433341243352,
+          0.15805364918254788
+        ],
+        "global_extinction": [
+          0.8419463508174521,
+          0.8671456665875665
+        ],
+        "globally_A_absent": [
+          0.8985283078098747,
+          0.9190914080336585
+        ],
+        "globally_B_absent": [
+          0.9224279180795827,
+          0.9404671566217357
+        ],
+        "patch0_A_supported": [
+          0.03416630327106453,
+          0.04834186575793492
+        ],
+        "patch0_B_supported": [
+          0.014694268417491864,
+          0.024535984056271713
+        ],
+        "patch0_ever_joint": [
+          0.13799178133307122,
+          0.16356922687550673
+        ],
+        "patch0_ever_visible_A": [
+          0.5783289718103618,
+          0.6134254892343755
+        ],
+        "patch0_joint": [
+          0.005650966062941269,
+          0.012273235183629263
+        ],
+        "patch0_occupied": [
+          0.046467649316585216,
+          0.06267308374640554
+        ],
+        "patch0_recolonized": [
+          0.14120552234157943,
+          0.16701362687549634
+        ],
+        "patch1_A_supported": [
+          0.05298433102545966,
+          0.07013849815537654
+        ],
+        "patch1_ever_joint": [
+          0.17765591635433178,
+          0.2058002262587694
+        ],
+        "patch1_ever_visible_A": [
+          0.3341213724548832,
+          0.36825972446526384
+        ],
+        "patch1_first_colonization": [
+          0.7945420273124847,
+          0.822667644175264
+        ],
+        "patch1_joint": [
+          0.00924242683594685,
+          0.01733735772167086
+        ],
+        "patch1_occupied": [
+          0.08945401935526073,
+          0.11090324552415023
+        ],
+        "patch1_recolonized": [
+          0.1450647942741924,
+          0.17114412415308078
+        ],
+        "patch2_A_supported": [
+          0.024170985762442646,
+          0.03636531793851398
+        ],
+        "patch2_B_supported": [
+          0.02447115109496187,
+          0.03673096670684454
+        ],
+        "patch2_ever_joint": [
+          0.08723582560137695,
+          0.10846074057208553
+        ],
+        "patch2_ever_visible_B": [
+          0.4648190698176409,
+          0.5005585969381705
+        ],
+        "patch2_first_colonization": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_joint": [
+          0.0030324533483749192,
+          0.008233606889697785
+        ],
+        "patch2_occupied": [
+          0.04987685524861582,
+          0.06658783292372254
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 2.9073333333333333,
+        "patch0_time_integrated_occupancy": 3.11,
+        "patch1_time_integrated_occupancy": 3.6453333333333333,
+        "patch2_time_integrated_occupancy": 2.385666666666667,
+        "viable_seeds": 9.757333333333333
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            0.7,
+            0.3,
+            0.0
+          ],
+          [
+            0.15,
+            0.7,
+            0.15
+          ],
+          [
+            0.0,
+            0.3,
+            0.7
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 3,
+        "seed_routing": [
+          [
+            0.7,
+            0.3,
+            0.0
+          ],
+          [
+            0.15,
+            0.7,
+            0.15
+          ],
+          [
+            0.0,
+            0.3,
+            0.7
+          ]
+        ],
+        "selection_a": 0.0,
+        "selection_b": 0.0
+      },
+      "probabilities": {
+        "all_three_occupied": 0.009333333333333334,
+        "any_patch_occupied": 0.145,
+        "global_extinction": 0.855,
+        "globally_A_absent": 0.9093333333333333,
+        "globally_B_absent": 0.932,
+        "patch0_A_supported": 0.04066666666666666,
+        "patch0_B_supported": 0.019,
+        "patch0_ever_joint": 0.15033333333333335,
+        "patch0_ever_visible_A": 0.596,
+        "patch0_joint": 0.008333333333333333,
+        "patch0_occupied": 0.054,
+        "patch0_recolonized": 0.15366666666666667,
+        "patch1_A_supported": 0.061,
+        "patch1_ever_joint": 0.19133333333333333,
+        "patch1_ever_visible_A": 0.351,
+        "patch1_first_colonization": 0.809,
+        "patch1_joint": 0.012666666666666666,
+        "patch1_occupied": 0.09966666666666667,
+        "patch1_recolonized": 0.15766666666666668,
+        "patch2_A_supported": 0.029666666666666668,
+        "patch2_B_supported": 0.03,
+        "patch2_ever_joint": 0.09733333333333333,
+        "patch2_ever_visible_B": 0.4826666666666667,
+        "patch2_first_colonization": 0.0,
+        "patch2_joint": 0.005,
+        "patch2_occupied": 0.057666666666666665
+      },
+      "replicates": 3000,
+      "seed": 50719401
+    },
+    "distinct_seed_pollen_connected_B3": {
+      "event_counts": {
+        "all_three_occupied": 56,
+        "any_patch_occupied": 438,
+        "global_extinction": 2562,
+        "globally_A_absent": 2726,
+        "globally_B_absent": 2763,
+        "patch0_A_supported": 153,
+        "patch0_B_supported": 122,
+        "patch0_ever_joint": 1267,
+        "patch0_ever_visible_A": 1850,
+        "patch0_joint": 46,
+        "patch0_occupied": 245,
+        "patch0_recolonized": 702,
+        "patch1_A_supported": 136,
+        "patch1_ever_joint": 780,
+        "patch1_ever_visible_A": 828,
+        "patch1_first_colonization": 2101,
+        "patch1_joint": 43,
+        "patch1_occupied": 228,
+        "patch1_recolonized": 471,
+        "patch2_A_supported": 128,
+        "patch2_B_supported": 112,
+        "patch2_ever_joint": 987,
+        "patch2_ever_visible_B": 1509,
+        "patch2_first_colonization": 0,
+        "patch2_joint": 39,
+        "patch2_occupied": 217
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.014403168044713586,
+          0.02416127032820021
+        ],
+        "any_patch_occupied": [
+          0.13381717039352256,
+          0.15908825450400818
+        ],
+        "global_extinction": [
+          0.8409117454959918,
+          0.8661828296064773
+        ],
+        "globally_A_absent": [
+          0.8978286776289708,
+          0.9184594100128627
+        ],
+        "globally_B_absent": [
+          0.9108004647994692,
+          0.9301227445738065
+        ],
+        "patch0_A_supported": [
+          0.04368593909682877,
+          0.05946246705851394
+        ],
+        "patch0_B_supported": [
+          0.03416630327106453,
+          0.04834186575793492
+        ],
+        "patch0_ever_joint": [
+          0.40476891220736244,
+          0.4400964022946382
+        ],
+        "patch0_ever_visible_A": [
+          0.5991298890483508,
+          0.6339050462490731
+        ],
+        "patch0_joint": [
+          0.011515523944774946,
+          0.020390773419641017
+        ],
+        "patch0_occupied": [
+          0.07239367990574448,
+          0.09200962352777824
+        ],
+        "patch0_recolonized": [
+          0.21919614262289566,
+          0.24948420489897777
+        ],
+        "patch1_A_supported": [
+          0.038452586272197074,
+          0.053376980168699344
+        ],
+        "patch1_ever_joint": [
+          0.24461792446191874,
+          0.27599592292623776
+        ],
+        "patch1_ever_visible_A": [
+          0.2602981311123777,
+          0.2922747931165684
+        ],
+        "patch1_first_colonization": [
+          0.6836925953994801,
+          0.7164616792112393
+        ],
+        "patch1_joint": [
+          0.01065870981448653,
+          0.019250145247380092
+        ],
+        "patch1_occupied": [
+          0.06705013576453428,
+          0.08603432795454213
+        ],
+        "patch1_recolonized": [
+          0.14442137515397485,
+          0.17045591507159874
+        ],
+        "patch2_A_supported": [
+          0.03600044409660137,
+          0.05050260953749677
+        ],
+        "patch2_B_supported": [
+          0.03111977038239726,
+          0.04473025763810436
+        ],
+        "patch2_ever_joint": [
+          0.3124149577097778,
+          0.3460224085542837
+        ],
+        "patch2_ever_visible_B": [
+          0.48511598766016784,
+          0.5208763392474802
+        ],
+        "patch2_first_colonization": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_joint": [
+          0.009524410987561932,
+          0.017721187670905556
+        ],
+        "patch2_occupied": [
+          0.06360062957884215,
+          0.08215987903088666
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 3.6726666666666667,
+        "patch0_time_integrated_occupancy": 3.8033333333333332,
+        "patch1_time_integrated_occupancy": 2.5993333333333335,
+        "patch2_time_integrated_occupancy": 3.391,
+        "viable_seeds": 10.525333333333334
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            0.65,
+            0.175,
+            0.175
+          ],
+          [
+            0.175,
+            0.65,
+            0.175
+          ],
+          [
+            0.175,
+            0.175,
+            0.65
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 3,
+        "seed_routing": [
+          [
+            0.65,
+            0.175,
+            0.175
+          ],
+          [
+            0.175,
+            0.65,
+            0.175
+          ],
+          [
+            0.175,
+            0.175,
+            0.65
+          ]
+        ],
+        "selection_a": 0.0,
+        "selection_b": 0.0
+      },
+      "probabilities": {
+        "all_three_occupied": 0.018666666666666668,
+        "any_patch_occupied": 0.146,
+        "global_extinction": 0.854,
+        "globally_A_absent": 0.9086666666666666,
+        "globally_B_absent": 0.921,
+        "patch0_A_supported": 0.051,
+        "patch0_B_supported": 0.04066666666666666,
+        "patch0_ever_joint": 0.42233333333333334,
+        "patch0_ever_visible_A": 0.6166666666666667,
+        "patch0_joint": 0.015333333333333332,
+        "patch0_occupied": 0.08166666666666667,
+        "patch0_recolonized": 0.234,
+        "patch1_A_supported": 0.04533333333333334,
+        "patch1_ever_joint": 0.26,
+        "patch1_ever_visible_A": 0.276,
+        "patch1_first_colonization": 0.7003333333333334,
+        "patch1_joint": 0.014333333333333333,
+        "patch1_occupied": 0.076,
+        "patch1_recolonized": 0.157,
+        "patch2_A_supported": 0.042666666666666665,
+        "patch2_B_supported": 0.037333333333333336,
+        "patch2_ever_joint": 0.329,
+        "patch2_ever_visible_B": 0.503,
+        "patch2_first_colonization": 0.0,
+        "patch2_joint": 0.013,
+        "patch2_occupied": 0.07233333333333333
+      },
+      "replicates": 3000,
+      "seed": 60719401
+    },
+    "distinct_seed_pollen_connected_B3_selection": {
+      "event_counts": {
+        "all_three_occupied": 39,
+        "any_patch_occupied": 461,
+        "global_extinction": 2539,
+        "globally_A_absent": 2721,
+        "globally_B_absent": 2756,
+        "patch0_A_supported": 132,
+        "patch0_B_supported": 107,
+        "patch0_ever_joint": 1270,
+        "patch0_ever_visible_A": 1884,
+        "patch0_joint": 42,
+        "patch0_occupied": 217,
+        "patch0_recolonized": 712,
+        "patch1_A_supported": 137,
+        "patch1_ever_joint": 844,
+        "patch1_ever_visible_A": 842,
+        "patch1_first_colonization": 2143,
+        "patch1_joint": 52,
+        "patch1_occupied": 236,
+        "patch1_recolonized": 460,
+        "patch2_A_supported": 145,
+        "patch2_B_supported": 122,
+        "patch2_ever_joint": 1008,
+        "patch2_ever_visible_B": 1577,
+        "patch2_first_colonization": 0,
+        "patch2_joint": 48,
+        "patch2_occupied": 240
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.009524410987561932,
+          0.017721187670905556
+        ],
+        "any_patch_occupied": [
+          0.14120552234157943,
+          0.16701362687549634
+        ],
+        "global_extinction": [
+          0.8329863731245037,
+          0.8587944776584207
+        ],
+        "globally_A_absent": [
+          0.8960803220544571,
+          0.9168786950831276
+        ],
+        "globally_B_absent": [
+          0.908341466339869,
+          0.9279210443274579
+        ],
+        "patch0_A_supported": [
+          0.037225603621850144,
+          0.05194070641564714
+        ],
+        "patch0_B_supported": [
+          0.029601796731603472,
+          0.042919160784649246
+        ],
+        "patch0_ever_joint": [
+          0.4057620545457101,
+          0.4411007022588399
+        ],
+        "patch0_ever_visible_A": [
+          0.6105508707445737,
+          0.6451217439817429
+        ],
+        "patch0_joint": [
+          0.010374225398683868,
+          0.01886881556233297
+        ],
+        "patch0_occupied": [
+          0.06360062957884215,
+          0.08215987903088666
+        ],
+        "patch0_recolonized": [
+          0.22245108364311653,
+          0.25288740488725475
+        ],
+        "patch1_A_supported": [
+          0.03875960781167959,
+          0.0537357727300666
+        ],
+        "patch1_ever_joint": [
+          0.2655306216465346,
+          0.29769532819600786
+        ],
+        "patch1_ever_visible_A": [
+          0.26487640661975553,
+          0.29701791502108743
+        ],
+        "patch1_first_colonization": [
+          0.6979025454987549,
+          0.7302159213476556
+        ],
+        "patch1_joint": [
+          0.013242778833405518,
+          0.022658403136109142
+        ],
+        "patch1_occupied": [
+          0.06956292580188018,
+          0.08884805072399447
+        ],
+        "patch1_recolonized": [
+          0.14088405228258669,
+          0.16666928283363927
+        ],
+        "patch2_A_supported": [
+          0.041219579683999655,
+          0.056602313664544796
+        ],
+        "patch2_B_supported": [
+          0.03416630327106453,
+          0.04834186575793492
+        ],
+        "patch2_ever_joint": [
+          0.3193171217658948,
+          0.3531023406160122
+        ],
+        "patch2_ever_visible_B": [
+          0.5077768895700459,
+          0.5434907961953872
+        ],
+        "patch2_first_colonization": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_joint": [
+          0.012089359129497938,
+          0.0211485664366176
+        ],
+        "patch2_occupied": [
+          0.07082054503843029,
+          0.09025368789084352
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 3.7536666666666667,
+        "patch0_time_integrated_occupancy": 3.824,
+        "patch1_time_integrated_occupancy": 2.713,
+        "patch2_time_integrated_occupancy": 3.409,
+        "viable_seeds": 10.735
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            0.65,
+            0.175,
+            0.175
+          ],
+          [
+            0.175,
+            0.65,
+            0.175
+          ],
+          [
+            0.175,
+            0.175,
+            0.65
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 3,
+        "seed_routing": [
+          [
+            0.65,
+            0.175,
+            0.175
+          ],
+          [
+            0.175,
+            0.65,
+            0.175
+          ],
+          [
+            0.175,
+            0.175,
+            0.65
+          ]
+        ],
+        "selection_a": 1.4,
+        "selection_b": 1.4
+      },
+      "probabilities": {
+        "all_three_occupied": 0.013,
+        "any_patch_occupied": 0.15366666666666667,
+        "global_extinction": 0.8463333333333334,
+        "globally_A_absent": 0.907,
+        "globally_B_absent": 0.9186666666666666,
+        "patch0_A_supported": 0.044,
+        "patch0_B_supported": 0.035666666666666666,
+        "patch0_ever_joint": 0.42333333333333334,
+        "patch0_ever_visible_A": 0.628,
+        "patch0_joint": 0.014,
+        "patch0_occupied": 0.07233333333333333,
+        "patch0_recolonized": 0.23733333333333334,
+        "patch1_A_supported": 0.04566666666666667,
+        "patch1_ever_joint": 0.2813333333333333,
+        "patch1_ever_visible_A": 0.2806666666666667,
+        "patch1_first_colonization": 0.7143333333333334,
+        "patch1_joint": 0.017333333333333333,
+        "patch1_occupied": 0.07866666666666666,
+        "patch1_recolonized": 0.15333333333333332,
+        "patch2_A_supported": 0.04833333333333333,
+        "patch2_B_supported": 0.04066666666666666,
+        "patch2_ever_joint": 0.336,
+        "patch2_ever_visible_B": 0.5256666666666666,
+        "patch2_first_colonization": 0.0,
+        "patch2_joint": 0.016,
+        "patch2_occupied": 0.08
+      },
+      "replicates": 3000,
+      "seed": 70719401
+    },
+    "single_local_B3": {
+      "event_counts": {
+        "all_three_occupied": 0,
+        "any_patch_occupied": 601,
+        "global_extinction": 2399,
+        "globally_A_absent": 2399,
+        "globally_B_absent": 3000,
+        "patch0_A_supported": 601,
+        "patch0_B_supported": 0,
+        "patch0_ever_joint": 0,
+        "patch0_ever_visible_A": 2551,
+        "patch0_joint": 0,
+        "patch0_occupied": 601,
+        "patch0_recolonized": 0,
+        "patch1_A_supported": 0,
+        "patch1_ever_joint": 0,
+        "patch1_ever_visible_A": 0,
+        "patch1_first_colonization": 0,
+        "patch1_joint": 0,
+        "patch1_occupied": 0,
+        "patch1_recolonized": 0,
+        "patch2_A_supported": 0,
+        "patch2_B_supported": 0,
+        "patch2_ever_joint": 0,
+        "patch2_ever_visible_B": 0,
+        "patch2_first_colonization": 0,
+        "patch2_joint": 0,
+        "patch2_occupied": 0
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        []
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "any_patch_occupied": [
+          0.18639810198621942,
+          0.21503502134982594
+        ],
+        "global_extinction": [
+          0.7849649786501741,
+          0.8136018980137806
+        ],
+        "globally_A_absent": [
+          0.7849649786501741,
+          0.8136018980137806
+        ],
+        "globally_B_absent": [
+          0.9987211512746742,
+          1.0
+        ],
+        "patch0_A_supported": [
+          0.18639810198621942,
+          0.21503502134982594
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_visible_A": [
+          0.8371199115594129,
+          0.8626507084337088
+        ],
+        "patch0_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_occupied": [
+          0.18639810198621942,
+          0.21503502134982594
+        ],
+        "patch0_recolonized": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_A_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_ever_visible_A": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_first_colonization": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_occupied": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_recolonized": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_A_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_visible_B": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_first_colonization": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_occupied": [
+          0.0,
+          0.0012788487253259629
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 0.0,
+        "patch0_time_integrated_occupancy": 7.538333333333333,
+        "patch1_time_integrated_occupancy": 0.0,
+        "patch2_time_integrated_occupancy": 0.0,
+        "viable_seeds": 8.975
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 3,
+        "seed_routing": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "selection_a": 0.0,
+        "selection_b": 0.0
+      },
+      "probabilities": {
+        "all_three_occupied": 0.0,
+        "any_patch_occupied": 0.20033333333333334,
+        "global_extinction": 0.7996666666666666,
+        "globally_A_absent": 0.7996666666666666,
+        "globally_B_absent": 1.0,
+        "patch0_A_supported": 0.20033333333333334,
+        "patch0_B_supported": 0.0,
+        "patch0_ever_joint": 0.0,
+        "patch0_ever_visible_A": 0.8503333333333334,
+        "patch0_joint": 0.0,
+        "patch0_occupied": 0.20033333333333334,
+        "patch0_recolonized": 0.0,
+        "patch1_A_supported": 0.0,
+        "patch1_ever_joint": 0.0,
+        "patch1_ever_visible_A": 0.0,
+        "patch1_first_colonization": 0.0,
+        "patch1_joint": 0.0,
+        "patch1_occupied": 0.0,
+        "patch1_recolonized": 0.0,
+        "patch2_A_supported": 0.0,
+        "patch2_B_supported": 0.0,
+        "patch2_ever_joint": 0.0,
+        "patch2_ever_visible_B": 0.0,
+        "patch2_first_colonization": 0.0,
+        "patch2_joint": 0.0,
+        "patch2_occupied": 0.0
+      },
+      "replicates": 3000,
+      "seed": 719401
+    },
+    "single_moderate_B3": {
+      "event_counts": {
+        "all_three_occupied": 20,
+        "any_patch_occupied": 325,
+        "global_extinction": 2675,
+        "globally_A_absent": 2675,
+        "globally_B_absent": 3000,
+        "patch0_A_supported": 159,
+        "patch0_B_supported": 0,
+        "patch0_ever_joint": 0,
+        "patch0_ever_visible_A": 2049,
+        "patch0_joint": 0,
+        "patch0_occupied": 159,
+        "patch0_recolonized": 575,
+        "patch1_A_supported": 158,
+        "patch1_ever_joint": 0,
+        "patch1_ever_visible_A": 1003,
+        "patch1_first_colonization": 2015,
+        "patch1_joint": 0,
+        "patch1_occupied": 158,
+        "patch1_recolonized": 338,
+        "patch2_A_supported": 161,
+        "patch2_B_supported": 0,
+        "patch2_ever_joint": 0,
+        "patch2_ever_visible_B": 0,
+        "patch2_first_colonization": 1989,
+        "patch2_joint": 0,
+        "patch2_occupied": 161
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        []
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.004319839120639022,
+          0.010275291621682595
+        ],
+        "any_patch_occupied": [
+          0.09770838464898784,
+          0.11996004685251749
+        ],
+        "global_extinction": [
+          0.8800399531474826,
+          0.9022916153510122
+        ],
+        "globally_A_absent": [
+          0.8800399531474826,
+          0.9022916153510122
+        ],
+        "globally_B_absent": [
+          0.9987211512746742,
+          1.0
+        ],
+        "patch0_A_supported": [
+          0.04553961731667641,
+          0.061603673443764995
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_visible_A": [
+          0.666124468765165,
+          0.6994074726013658
+        ],
+        "patch0_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_occupied": [
+          0.04553961731667641,
+          0.061603673443764995
+        ],
+        "patch0_recolonized": [
+          0.17797949316558398,
+          0.20614246354836707
+        ],
+        "patch1_A_supported": [
+          0.04523044741686434,
+          0.06124702924272729
+        ],
+        "patch1_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_ever_visible_A": [
+          0.3176733704462714,
+          0.35141702143138653
+        ],
+        "patch1_first_colonization": [
+          0.6546520895639794,
+          0.6882421723736587
+        ],
+        "patch1_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_occupied": [
+          0.04523044741686434,
+          0.06124702924272729
+        ],
+        "patch1_recolonized": [
+          0.10184407632453579,
+          0.1244799384880167
+        ],
+        "patch2_A_supported": [
+          0.04615821902958661,
+          0.06231669993255437
+        ],
+        "patch2_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_visible_B": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_first_colonization": [
+          0.6458865808749804,
+          0.6796965144405634
+        ],
+        "patch2_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_occupied": [
+          0.04615821902958661,
+          0.06231669993255437
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 2.697,
+        "patch0_time_integrated_occupancy": 3.4426666666666668,
+        "patch1_time_integrated_occupancy": 1.9496666666666667,
+        "patch2_time_integrated_occupancy": 1.9166666666666667,
+        "viable_seeds": 7.681333333333333
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 3,
+        "seed_routing": [
+          [
+            0.65,
+            0.175,
+            0.175
+          ],
+          [
+            0.175,
+            0.65,
+            0.175
+          ],
+          [
+            0.175,
+            0.175,
+            0.65
+          ]
+        ],
+        "selection_a": 0.0,
+        "selection_b": 0.0
+      },
+      "probabilities": {
+        "all_three_occupied": 0.006666666666666667,
+        "any_patch_occupied": 0.10833333333333334,
+        "global_extinction": 0.8916666666666667,
+        "globally_A_absent": 0.8916666666666667,
+        "globally_B_absent": 1.0,
+        "patch0_A_supported": 0.053,
+        "patch0_B_supported": 0.0,
+        "patch0_ever_joint": 0.0,
+        "patch0_ever_visible_A": 0.683,
+        "patch0_joint": 0.0,
+        "patch0_occupied": 0.053,
+        "patch0_recolonized": 0.19166666666666668,
+        "patch1_A_supported": 0.05266666666666667,
+        "patch1_ever_joint": 0.0,
+        "patch1_ever_visible_A": 0.3343333333333333,
+        "patch1_first_colonization": 0.6716666666666666,
+        "patch1_joint": 0.0,
+        "patch1_occupied": 0.05266666666666667,
+        "patch1_recolonized": 0.11266666666666666,
+        "patch2_A_supported": 0.05366666666666667,
+        "patch2_B_supported": 0.0,
+        "patch2_ever_joint": 0.0,
+        "patch2_ever_visible_B": 0.0,
+        "patch2_first_colonization": 0.663,
+        "patch2_joint": 0.0,
+        "patch2_occupied": 0.05366666666666667
+      },
+      "replicates": 3000,
+      "seed": 10719401
+    },
+    "single_strong_B3": {
+      "event_counts": {
+        "all_three_occupied": 25,
+        "any_patch_occupied": 244,
+        "global_extinction": 2756,
+        "globally_A_absent": 2756,
+        "globally_B_absent": 3000,
+        "patch0_A_supported": 136,
+        "patch0_B_supported": 0,
+        "patch0_ever_joint": 0,
+        "patch0_ever_visible_A": 1545,
+        "patch0_joint": 0,
+        "patch0_occupied": 136,
+        "patch0_recolonized": 1563,
+        "patch1_A_supported": 118,
+        "patch1_ever_joint": 0,
+        "patch1_ever_visible_A": 1200,
+        "patch1_first_colonization": 2525,
+        "patch1_joint": 0,
+        "patch1_occupied": 118,
+        "patch1_recolonized": 802,
+        "patch2_A_supported": 116,
+        "patch2_B_supported": 0,
+        "patch2_ever_joint": 0,
+        "patch2_ever_visible_B": 0,
+        "patch2_first_colonization": 2517,
+        "patch2_joint": 0,
+        "patch2_occupied": 116
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        []
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.005650966062941269,
+          0.012273235183629263
+        ],
+        "any_patch_occupied": [
+          0.072078955672542,
+          0.09165853366013091
+        ],
+        "global_extinction": [
+          0.908341466339869,
+          0.9279210443274579
+        ],
+        "globally_A_absent": [
+          0.908341466339869,
+          0.9279210443274579
+        ],
+        "globally_B_absent": [
+          0.9987211512746742,
+          1.0
+        ],
+        "patch0_A_supported": [
+          0.038452586272197074,
+          0.053376980168699344
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_visible_A": [
+          0.4971083577756577,
+          0.5328532767625827
+        ],
+        "patch0_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_occupied": [
+          0.038452586272197074,
+          0.053376980168699344
+        ],
+        "patch0_recolonized": [
+          0.5031084043163935,
+          0.538837884037143
+        ],
+        "patch1_A_supported": [
+          0.03294607272180487,
+          0.04689883990379545
+        ],
+        "patch1_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_ever_visible_A": [
+          0.38260818029115184,
+          0.41764758945391334
+        ],
+        "patch1_first_colonization": [
+          0.828167748619973,
+          0.8542917047510543
+        ],
+        "patch1_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_occupied": [
+          0.03294607272180487,
+          0.04689883990379545
+        ],
+        "patch1_recolonized": [
+          0.25180141886538393,
+          0.28346033874146775
+        ],
+        "patch2_A_supported": [
+          0.03233675293648952,
+          0.04617653148741124
+        ],
+        "patch2_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_visible_B": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_first_colonization": [
+          0.8254160499472128,
+          0.8517168906170162
+        ],
+        "patch2_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_occupied": [
+          0.03233675293648952,
+          0.04617653148741124
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 5.460333333333334,
+        "patch0_time_integrated_occupancy": 1.9966666666666666,
+        "patch1_time_integrated_occupancy": 2.2983333333333333,
+        "patch2_time_integrated_occupancy": 2.2986666666666666,
+        "viable_seeds": 6.791333333333333
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 3,
+        "seed_routing": [
+          [
+            0.2,
+            0.4,
+            0.4
+          ],
+          [
+            0.4,
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.4,
+            0.2
+          ]
+        ],
+        "selection_a": 0.0,
+        "selection_b": 0.0
+      },
+      "probabilities": {
+        "all_three_occupied": 0.008333333333333333,
+        "any_patch_occupied": 0.08133333333333333,
+        "global_extinction": 0.9186666666666666,
+        "globally_A_absent": 0.9186666666666666,
+        "globally_B_absent": 1.0,
+        "patch0_A_supported": 0.04533333333333334,
+        "patch0_B_supported": 0.0,
+        "patch0_ever_joint": 0.0,
+        "patch0_ever_visible_A": 0.515,
+        "patch0_joint": 0.0,
+        "patch0_occupied": 0.04533333333333334,
+        "patch0_recolonized": 0.521,
+        "patch1_A_supported": 0.03933333333333333,
+        "patch1_ever_joint": 0.0,
+        "patch1_ever_visible_A": 0.4,
+        "patch1_first_colonization": 0.8416666666666667,
+        "patch1_joint": 0.0,
+        "patch1_occupied": 0.03933333333333333,
+        "patch1_recolonized": 0.2673333333333333,
+        "patch2_A_supported": 0.03866666666666667,
+        "patch2_B_supported": 0.0,
+        "patch2_ever_joint": 0.0,
+        "patch2_ever_visible_B": 0.0,
+        "patch2_first_colonization": 0.839,
+        "patch2_joint": 0.0,
+        "patch2_occupied": 0.03866666666666667
+      },
+      "replicates": 3000,
+      "seed": 20719401
+    },
+    "single_strong_B8": {
+      "event_counts": {
+        "all_three_occupied": 2835,
+        "any_patch_occupied": 2991,
+        "global_extinction": 9,
+        "globally_A_absent": 9,
+        "globally_B_absent": 3000,
+        "patch0_A_supported": 2931,
+        "patch0_B_supported": 0,
+        "patch0_ever_joint": 0,
+        "patch0_ever_visible_A": 2965,
+        "patch0_joint": 0,
+        "patch0_occupied": 2931,
+        "patch0_recolonized": 1129,
+        "patch1_A_supported": 2941,
+        "patch1_ever_joint": 0,
+        "patch1_ever_visible_A": 2917,
+        "patch1_first_colonization": 3000,
+        "patch1_joint": 0,
+        "patch1_occupied": 2941,
+        "patch1_recolonized": 468,
+        "patch2_A_supported": 2940,
+        "patch2_B_supported": 0,
+        "patch2_ever_joint": 0,
+        "patch2_ever_visible_B": 0,
+        "patch2_first_colonization": 2999,
+        "patch2_joint": 0,
+        "patch2_occupied": 2940
+      },
+      "horizon": 8,
+      "initial_populations": [
+        [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [],
+        []
+      ],
+      "mc_wilson_95": {
+        "all_three_occupied": [
+          0.9362582736191412,
+          0.9526035510153186
+        ],
+        "any_patch_occupied": [
+          0.9943079568813202,
+          0.9984208674857058
+        ],
+        "global_extinction": [
+          0.0015791325142942543,
+          0.005692043118679753
+        ],
+        "globally_A_absent": [
+          0.0015791325142942543,
+          0.005692043118679753
+        ],
+        "globally_B_absent": [
+          0.9987211512746742,
+          1.0
+        ],
+        "patch0_A_supported": [
+          0.9709947020540618,
+          0.9817852762619773
+        ],
+        "patch0_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_ever_visible_A": [
+          0.9838183479129743,
+          0.9915993098319573
+        ],
+        "patch0_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch0_occupied": [
+          0.9709947020540618,
+          0.9817852762619773
+        ],
+        "patch0_recolonized": [
+          0.3591658041867039,
+          0.3938171643980268
+        ],
+        "patch1_A_supported": [
+          0.9747157214293537,
+          0.984722397895183
+        ],
+        "patch1_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_ever_visible_A": [
+          0.9658328965073789,
+          0.9776256843967633
+        ],
+        "patch1_first_colonization": [
+          0.9987211512746742,
+          1.0
+        ],
+        "patch1_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch1_occupied": [
+          0.9747157214293537,
+          0.984722397895183
+        ],
+        "patch1_recolonized": [
+          0.14345640087787917,
+          0.1694234470451451
+        ],
+        "patch2_A_supported": [
+          0.9743421221170571,
+          0.9844301831066299
+        ],
+        "patch2_B_supported": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_ever_visible_B": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_first_colonization": [
+          0.9981141811156959,
+          0.9999411560581286
+        ],
+        "patch2_joint": [
+          0.0,
+          0.0012788487253259629
+        ],
+        "patch2_occupied": [
+          0.9743421221170571,
+          0.9844301831066299
+        ]
+      },
+      "mean_events": {
+        "exported_seeds": 70.269,
+        "patch0_time_integrated_occupancy": 14.001333333333333,
+        "patch1_time_integrated_occupancy": 14.641666666666667,
+        "patch2_time_integrated_occupancy": 14.611333333333333,
+        "viable_seeds": 87.77733333333333
+      },
+      "parameters": {
+        "assurance": 0.45,
+        "capacity": 2,
+        "catastrophe_rates": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inbreeding_depression": 0.2,
+        "pollen_routing": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "q_high": 0.75,
+        "q_low": 0.25,
+        "seed_attempts": 8,
+        "seed_routing": [
+          [
+            0.2,
+            0.4,
+            0.4
+          ],
+          [
+            0.4,
+            0.2,
+            0.4
+          ],
+          [
+            0.4,
+            0.4,
+            0.2
+          ]
+        ],
+        "selection_a": 0.0,
+        "selection_b": 0.0
+      },
+      "probabilities": {
+        "all_three_occupied": 0.945,
+        "any_patch_occupied": 0.997,
+        "global_extinction": 0.003,
+        "globally_A_absent": 0.003,
+        "globally_B_absent": 1.0,
+        "patch0_A_supported": 0.977,
+        "patch0_B_supported": 0.0,
+        "patch0_ever_joint": 0.0,
+        "patch0_ever_visible_A": 0.9883333333333333,
+        "patch0_joint": 0.0,
+        "patch0_occupied": 0.977,
+        "patch0_recolonized": 0.37633333333333335,
+        "patch1_A_supported": 0.9803333333333333,
+        "patch1_ever_joint": 0.0,
+        "patch1_ever_visible_A": 0.9723333333333334,
+        "patch1_first_colonization": 1.0,
+        "patch1_joint": 0.0,
+        "patch1_occupied": 0.9803333333333333,
+        "patch1_recolonized": 0.156,
+        "patch2_A_supported": 0.98,
+        "patch2_B_supported": 0.0,
+        "patch2_ever_joint": 0.0,
+        "patch2_ever_visible_B": 0.0,
+        "patch2_first_colonization": 0.9996666666666667,
+        "patch2_joint": 0.0,
+        "patch2_occupied": 0.98
+      },
+      "replicates": 3000,
+      "seed": 30719401
+    }
+  },
+  "status": "CONSTRUCTED Monte Carlo; no natural rates or original parent-repository mechanism reproduced"
+}
